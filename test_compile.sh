@@ -23,11 +23,10 @@ COMPILE_TIMEOUT=600
 # key|fqbn
 BOARDS=(
   "esp32s3|esp32:esp32:esp32s3:USBMode=default,CDCOnBoot=default,PSRAM=opi"
-  "rp2040|rp2040:rp2040:rpipico"
-  "rp2040tusb|rp2040:rp2040:rpipico:usbstack=tinyusb"
-  "rp2350|rp2040:rp2040:rpipico2"
-  "rp2040rtos|rp2040:rp2040:rpipico:os=freertos"
-  "rp2350rtos|rp2040:rp2040:rpipico2:os=freertos"
+  "rp2040|rp2040:rp2040:rpipico:usbstack=tinyusb"
+  "rp2350|rp2040:rp2040:rpipico2:usbstack=tinyusb"
+  "rp2040rtos|rp2040:rp2040:rpipico:usbstack=tinyusb,os=freertos"
+  "rp2350rtos|rp2040:rp2040:rpipico2:usbstack=tinyusb,os=freertos"
   "stm32f4|STMicroelectronics:stm32:GenF4:pnum=BLACKPILL_F411CE,usb=none"
   "stm32h7|STMicroelectronics:stm32:GenH7:pnum=WeActMiniH750VBTX,usb=none"
 )
@@ -37,9 +36,9 @@ BOARDS=(
 # only build those examples.
 declare -A ONLY
 ONLY["ESP32CameraWebcam"]="esp32s3"
-ONLY["RP2040CameraWebcam"]="rp2040 rp2040tusb rp2350"
+ONLY["RP2040CameraWebcam"]="rp2040 rp2350"
 ONLY["STM32CameraWebcam"]="stm32h7"
-ONLY["TestPatternWebcam"]="esp32s3 rp2040 rp2040tusb rp2350 stm32f4 stm32h7"
+ONLY["TestPatternWebcam"]="esp32s3 rp2040 rp2350 stm32f4 stm32h7"
 ONLY["AudioToolsJpegWebcam"]="esp32s3 rp2040rtos rp2350rtos"
 ONLY["AudioToolsAviWebcam"]="esp32s3 rp2040rtos rp2350rtos"
 

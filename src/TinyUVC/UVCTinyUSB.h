@@ -3,9 +3,9 @@
  * @file UVCTinyUSB.h
  * @brief Connects UVCDevice to TinyUSB as an application class driver
  * (usbd_app_driver_get_cb()). This works with every TinyUSB build -
- * the one in the ESP32 Arduino core, the Adafruit TinyUSB Library and the
- * Pico SDK of arduino-pico - whether its own video class (CFG_TUD_VIDEO)
- * is compiled in or not, because application drivers are asked first.
+ * the one in the ESP32 Arduino core and the Adafruit TinyUSB Library -
+ * whether its own video class (CFG_TUD_VIDEO) is compiled in or not,
+ * because application drivers are asked first.
  *
  * TinyUSB knows only one usbd_app_driver_get_cb(): this header defines it
  * unless TINYUVC_NO_APP_DRIVER is defined. Define TINYUVC_NO_APP_DRIVER in

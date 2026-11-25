@@ -1,9 +1,12 @@
 #pragma once
 /**
- * @file UVCPlatformAdafruit.h
- * @brief Boards that use the Adafruit TinyUSB Library: RP2040/RP2350 with
+ * @file UVCPlatformTinyUSB.h
+ * @brief The generic TinyUSB platform layer, for every board that uses the
+ * Adafruit TinyUSB Library (Adafruit_USBD_Device): RP2040/RP2350 with
  * Tools > USB Stack > "Adafruit TinyUSB", STM32 (OTG_FS, e.g. F4/F7/H7),
- * and also SAMD and nRF52.
+ * SAMD, nRF52 - and optionally the ESP32 (TINYUVC_USE_ADAFRUIT_TINYUSB).
+ * The camera is added as an additional interface next to the other
+ * interfaces of the device (e.g. the USB serial port).
  */
 #include <Arduino.h>
 #include <Adafruit_TinyUSB.h>
@@ -17,7 +20,7 @@ namespace platform {
 inline uint16_t maxPacketSize() { return TUD_OPT_HIGH_SPEED ? 512 : 64; }
 
 /// The camera as interface of Adafruit_USBD_Device
-class UVCAdafruitInterface : public Adafruit_USBD_Interface {
+class UVCTinyUSBInterface : public Adafruit_USBD_Interface {
  public:
   uint16_t getInterfaceDescriptor(uint8_t itfnum_deprecated, uint8_t *buf,
                                   uint16_t bufsize) override {
@@ -36,8 +39,8 @@ class UVCAdafruitInterface : public Adafruit_USBD_Interface {
   }
 };
 
-inline UVCAdafruitInterface &adafruitInterface() {
-  static UVCAdafruitInterface itf;
+inline UVCTinyUSBInterface &tinyusbInterface() {
+  static UVCTinyUSBInterface itf;
   return itf;
 }
 
@@ -47,7 +50,7 @@ inline bool begin(UVCDevice &dev) {
   // the default 256 byte buffer is too small for UVC + CDC
   static uint8_t config[TINYUVC_CONFIG_BUFFER_SIZE];
   TinyUSBDevice.setConfigurationBuffer(config, sizeof(config));
-  UVCAdafruitInterface &itf = adafruitInterface();
+  UVCTinyUSBInterface &itf = tinyusbInterface();
   itf.setStringDescriptor(dev.name());
   if (!TinyUSBDevice.addInterface(itf)) return false;
   // if the host already enumerated the device it does not know the camera:

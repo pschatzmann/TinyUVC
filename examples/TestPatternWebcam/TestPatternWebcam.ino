@@ -10,8 +10,7 @@
  * - ESP32-S2/S3/P4: Tools > USB Mode > "USB-OTG (TinyUSB)",
  *   USB CDC On Boot > "Disabled". The sketch adds its own USB serial port
  *   next to the camera (logging, and uploads without pressing BOOT).
- * - RP2040/RP2350: Tools > USB Stack > "Pico SDK" (default) or
- *   "Adafruit TinyUSB"
+ * - RP2040/RP2350: Tools > USB Stack > "Adafruit TinyUSB"
  * - STM32: install the Adafruit TinyUSB Library, Tools > USB support >
  *   "None"
  */

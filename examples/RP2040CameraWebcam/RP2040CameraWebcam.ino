@@ -5,8 +5,7 @@
  * https://github.com/pschatzmann/TinyCamera). The sensor's RGB565 frames
  * are converted to YUY2 while they are sent.
  *
- * Board settings: Tools > USB Stack > "Pico SDK" (default) or
- * "Adafruit TinyUSB".
+ * Board settings: Tools > USB Stack > "Adafruit TinyUSB".
  *
  * RP2040 camera modules have no standard pinout: set the pins below.
  */

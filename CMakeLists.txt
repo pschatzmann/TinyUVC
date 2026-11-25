@@ -10,7 +10,7 @@ cmake_minimum_required(VERSION 3.16)
 #   cmake -B build && cmake --build build -j && ctest --test-dir build --output-on-failure
 #
 # Other CMake projects can use add_subdirectory() + target_link_libraries(
-# ... TinyUVC). See docs/Desktop.md.
+# ... TinyUVC). See https://github.com/pschatzmann/TinyUVC/wiki/Desktop
 project(TinyUVC VERSION 0.1.0 LANGUAGES C CXX)
 
 set(CMAKE_CXX_STANDARD 17)
