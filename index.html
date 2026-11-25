@@ -84,6 +84,7 @@ Features</h1>
 <li>One generic TinyUSB implementation (Adafruit TinyUSB Library) for RP2040, RP2350, STM32, SAMD and nRF52; the ESP32 uses the TinyUSB of its core.</li>
 <li>UVC 1.1 with a bulk endpoint: MJPEG and/or uncompressed YUY2, several resolutions and frame rates. The host picks, your sketch is told.</li>
 <li>Frames in RGB565, RGB888, BGR888 or grayscale are converted to YUY2 while they are sent: no second frame buffer.</li>
+<li>PSRAM: frame buffers are taken from PSRAM where the board has it (ESP32, RP2350).</li>
 <li><a href="https://github.com/pschatzmann/TinyCamera">TinyCamera</a> integration: ESP32, ESP32-P4, RP2040 and STM32 camera sensors become webcams in a few lines.</li>
 <li><a href="https://github.com/pschatzmann/arduino-audio-tools">arduino-audio-tools</a> integration: video encoders, decoders and demuxers (e.g. <code>MJPEGEncoder</code>, <code>DemuxerAVI</code>) feed the webcam.</li>
 <li>Desktop build with CMake: the device code runs against a simulated USB host that behaves like Linux' <code>uvcvideo</code> driver.</li>
