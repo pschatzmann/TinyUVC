@@ -17,7 +17,7 @@ namespace tinyuvc {
 
 class UVCDevice;
 
-/// Functions every platform layer (platform/UVCPlatform*.h) implements
+/// @brief Functions every platform layer (platform/UVCPlatform*.h) implements
 namespace platform {
 /// Registers the UVC function with the USB stack (and starts it if needed)
 bool begin(UVCDevice &dev);
@@ -32,8 +32,9 @@ uint32_t micros();
 /// Allocates the transfer buffer (DMA capable, aligned)
 uint8_t *allocBuffer(size_t size);
 void freeBuffer(uint8_t *buf);
-/// Serializes app context calls into the USB stack against the USB task,
-/// where the stack needs that (arduino-pico); no-op elsewhere
+/// @brief Serializes app context calls into the USB stack against the USB
+/// task, for USB stacks that need that (a TINYUVC_PLATFORM_CUSTOM layer);
+/// a no-op on the supported platforms.
 struct AppLock {
   AppLock();
   ~AppLock();

@@ -23,6 +23,7 @@
 #endif
 
 namespace tinyuvc {
+/// @brief TinyUSB class driver callbacks that connect TinyUSB to UVCDevice
 namespace tusb_glue {
 
 inline uint8_t &rhport() {

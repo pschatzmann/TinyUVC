@@ -12,6 +12,7 @@
 namespace tinyuvc {
 
 /// Constants of the USB Video Class specification (UVC 1.1)
+/// @brief Constants of the USB Video Class 1.1 specification
 namespace uvc_spec {
 // Interface class/subclass
 constexpr uint8_t CC_VIDEO = 0x0E;

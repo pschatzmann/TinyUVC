@@ -21,6 +21,8 @@
  * - TinyUVCAudioTools.h: VideoOutput / VideoFrameSource of arduino-audio-tools
  */
 
+/// @namespace tinyuvc
+/// @brief TinyUVC: USB Video Class (UVC) device for Arduino and the desktop
 #include "TinyUVC/UVCConfig.h"
 
 // ------------------------------------------------------- platform selection

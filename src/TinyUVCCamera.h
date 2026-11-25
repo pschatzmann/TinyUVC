@@ -170,6 +170,7 @@ class UVCCamera {
   uint32_t frames() const { return frames_; }
 
  protected:
+  /// @brief A camera frame size offered to the host
   struct Size {
     framesize_t size;
     uint16_t width = 0;

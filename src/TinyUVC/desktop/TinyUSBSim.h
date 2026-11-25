@@ -79,6 +79,7 @@ enum {
   CONTROL_STAGE_ACK
 };
 
+/// @brief Desktop stand-in for TinyUSB's class driver table entry
 typedef struct {
   char const *name;
   void (*init)(void);

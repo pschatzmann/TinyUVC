@@ -21,6 +21,8 @@
 
 namespace tinyuvc {
 
+/// @brief Desktop only: a simulated USB host (modeled on Linux' uvcvideo)
+/// that enumerates, negotiates and streams from a UVCDevice
 class UVCHostSimulator {
  public:
   /// A frame received from the device

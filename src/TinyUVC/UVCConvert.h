@@ -9,6 +9,8 @@
 
 namespace tinyuvc {
 
+/// @brief Converts raw pixel formats (RGB565, RGB888, BGR888, gray) to
+/// YUY2, one pixel pair at a time
 class UVCConvert {
  public:
   /// Converts `pairs` pixel pairs from `src` (in format fmt) to YUY2 in
@@ -48,6 +50,7 @@ class UVCConvert {
     }
   }
 
+  /// @brief One pixel as 8 bit red, green and blue
   struct Rgb {
     uint8_t r, g, b;
   };
