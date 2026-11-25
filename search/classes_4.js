@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rgb_0',['Rgb',['../structtinyuvc_1_1UVCConvert_1_1Rgb.html',1,'tinyuvc::UVCConvert']]]
+  ['size_0',['Size',['../structtinyuvc_1_1UVCCamera_1_1Size.html',1,'tinyuvc::UVCCamera']]]
 ];

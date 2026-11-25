@@ -1,0 +1,5 @@
+<map id="tinyuvc::platform::UVCTinyUSBInterface" name="tinyuvc::platform::UVCTinyUSBInterface">
+<area shape="rect" id="Node000001" title="The camera as interface of Adafruit_USBD_Device." alt="" coords="15,81,178,126"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,188,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,47,99,81,94,79,95,51"/>
+</map>

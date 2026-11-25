@@ -4,7 +4,7 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="333,23,244,33,193,43,143,57,98,78,61,106,47,123,37,142,30,163,28,186,28,340,32,374,43,407,71,463,66,464,38,409,27,375,23,340,23,186,25,162,32,140,43,120,57,102,95,74,141,52,191,37,243,27,337,20"/>
 <area shape="rect" id="Node000003" href="$UVCDevice_8h.html" title="The USB Video Class device: descriptors, probe/commit negotiation and streaming of frames...." alt="" coords="434,174,600,201"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="403,31,445,79,503,161,497,161,440,83,403,36"/>
-<area shape="rect" id="Node000016" href="$UVCPlatformAdafruit_8h.html" title="Boards that use the Adafruit TinyUSB Library: RP2040/RP2350 with Tools &gt; USB Stack &gt; &quot;Adafruit TinyUS..." alt="" coords="204,81,430,126"/>
+<area shape="rect" id="Node000016" href="$UVCPlatformTinyUSB_8h.html" title="The generic TinyUSB platform layer, for every board that uses the Adafruit TinyUSB Library (Adafruit_..." alt="" coords="204,81,430,126"/>
 <area shape="poly" id="edge19_Node000001_Node000016" title=" " alt="" coords="378,36,349,71,345,68,382,32"/>
 <area shape="rect" id="Node000020" href="$UVCTinyUSB_8h.html" title="Connects UVCDevice to TinyUSB as an application class driver (usbd_app_driver_get_cb())...." alt="" coords="505,90,681,117"/>
 <area shape="poly" id="edge24_Node000001_Node000020" title=" " alt="" coords="424,31,549,82,544,84,424,36"/>

@@ -4,7 +4,7 @@ var searchData=
   ['encoder_5f_1',['encoder_',['../classtinyuvc_1_1UVCDevice.html#a0cf15945b558fe9077741a4b3a2504f9',1,'tinyuvc::UVCDevice']]],
   ['encodergeneration_5f_2',['encoderGeneration_',['../classtinyuvc_1_1UVCDevice.html#a2ae28d11c5a19c6368c793b3c361e747',1,'tinyuvc::UVCDevice']]],
   ['end_3',['end',['../classtinyuvc_1_1UVCDevice.html#ae41d4d9d2aa59fa0fea2242e2f3b51d2',1,'tinyuvc::UVCDevice::end()'],['../classtinyuvc_1_1UVCCamera.html#ad81d48b36d24304d89c1c5e36c527a3c',1,'tinyuvc::UVCCamera::end()'],['../namespacetinyuvc_1_1platform.html#a32f9ff2c586c80a2368c5693e0d824e4',1,'tinyuvc::platform::end()']]],
-  ['endpoint_4',['endpoint',['../structtinyuvc_1_1platform_1_1PicoState.html#ab73e7068e3e33179d8b13d1c7c7378d5',1,'tinyuvc::platform::PicoState::endpoint'],['../classtinyuvc_1_1UVCDevice.html#a5961cba594db20142aaee704c8cedf7f',1,'tinyuvc::UVCDevice::endpoint()'],['../structtinyuvc_1_1UVCRequest.html#a3ddffdd9b97bc70aacd159ceba926251a6e4da758afc5a146589596518e1ab842',1,'tinyuvc::UVCRequest::Endpoint']]],
+  ['endpoint_4',['endpoint',['../structtinyuvc_1_1UVCRequest.html#a3ddffdd9b97bc70aacd159ceba926251a6e4da758afc5a146589596518e1ab842',1,'tinyuvc::UVCRequest::Endpoint'],['../classtinyuvc_1_1UVCDevice.html#a5961cba594db20142aaee704c8cedf7f',1,'tinyuvc::UVCDevice::endpoint() const']]],
   ['endpoint_5f_5',['endpoint_',['../classtinyuvc_1_1UVCDevice.html#a50beca4ed0327b10ea90290f9e885af8',1,'tinyuvc::UVCDevice']]],
   ['endpointin_6',['endpointIn',['../structtinyuvc_1_1UVCDescriptorParams.html#aef3b91ae42fd7cfa437711cd6ec76ff7',1,'tinyuvc::UVCDescriptorParams']]],
   ['ep_5f_7',['ep_',['../classtinyuvc_1_1UVCHostSimulator.html#a4ffa5c7922974d494b9ff6c0fca92335',1,'tinyuvc::UVCHostSimulator']]],
@@ -18,6 +18,5 @@ var searchData=
   ['errorcode_5f_15',['errorCode_',['../classtinyuvc_1_1UVCDevice.html#a9eaa46afc94c18f4408184f91379d4b5',1,'tinyuvc::UVCDevice']]],
   ['errorframes_5f_16',['errorFrames_',['../classtinyuvc_1_1UVCHostSimulator.html#a26fe73abe5e8a6056e0917129a059db2',1,'tinyuvc::UVCHostSimulator']]],
   ['esp32camerawebcam_2eino_17',['ESP32CameraWebcam.ino',['../ESP32CameraWebcam_8ino.html',1,'']]],
-  ['esp32loaddescriptor_18',['esp32LoadDescriptor',['../namespacetinyuvc_1_1platform.html#ae94ad7ce7ae96e10bb906b0536ed3b26',1,'tinyuvc::platform']]],
-  ['examples_19',['Examples',['../index.html#autotoc_md4',1,'']]]
+  ['esp32loaddescriptor_18',['esp32LoadDescriptor',['../namespacetinyuvc_1_1platform.html#ae94ad7ce7ae96e10bb906b0536ed3b26',1,'tinyuvc::platform']]]
 ];

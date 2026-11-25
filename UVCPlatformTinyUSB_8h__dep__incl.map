@@ -1,5 +1,5 @@
-<map id="src/TinyUVC/platform/UVCPlatformAdafruit.h" name="src/TinyUVC/platform/UVCPlatformAdafruit.h">
-<area shape="rect" id="Node000001" title="Boards that use the Adafruit TinyUSB Library: RP2040/RP2350 with Tools &gt; USB Stack &gt; &quot;Adafruit TinyUS..." alt="" coords="108,5,282,50"/>
+<map id="src/TinyUVC/platform/UVCPlatformTinyUSB.h" name="src/TinyUVC/platform/UVCPlatformTinyUSB.h">
+<area shape="rect" id="Node000001" title="The generic TinyUSB platform layer, for every board that uses the Adafruit TinyUSB Library (Adafruit_..." alt="" coords="107,5,283,50"/>
 <area shape="rect" id="Node000002" href="$TinyUVC_8h.html" title="TinyUVC: header&#45;only USB Video Class (UVC) device &#45; turns a microcontroller into a USB webcam." alt="" coords="139,98,251,126"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,64,198,98,193,96,194,68"/>
 <area shape="rect" id="Node000003" href="$TinyUVCAudioTools_8h.html" title="Integration with the video classes of arduino&#45;audio&#45;tools (https://github.com/pschatzmann/arduino&#45;aud..." alt="" coords="5,174,188,201"/>

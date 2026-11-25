@@ -84,25 +84,22 @@ Directory dependency graph for platform:</div>
 <map name="adir__98f840196e11908987541d0a24adbbec__dep" id="adir__98f840196e11908987541d0a24adbbec__dep">
 <area shape="rect" href="dir_6d9f79046b96328788440f59152e0d63.html" title="desktop" alt="" coords="29,130,102,158"/>
 <area shape="rect" href="dir_98f840196e11908987541d0a24adbbec.html" title="platform" alt="" coords="27,54,104,82"/>
-<area shape="poly" href="dir_000006_000002.html" alt="" coords="67,80,68,115,63,114,64,85"/>
-<area shape="rect" href="dir_000006_000002.html" title="1" alt="" coords="70,103,78,120"/>
+<area shape="poly" href="dir_000005_000002.html" alt="" coords="67,80,68,115,63,114,64,85"/>
+<area shape="rect" href="dir_000005_000002.html" title="1" alt="" coords="70,103,78,120"/>
 <area shape="rect" href="dir_e32fdebd1996fe95c7257df3dbf88739.html" title="TinyUVC" alt="" coords="16,16,115,168"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="files" name="files"></a>
 Files</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="UVCPlatformAdafruit_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UVCPlatformAdafruit_8h.html">UVCPlatformAdafruit.h</a></td></tr>
-<tr class="memdesc:UVCPlatformAdafruit_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boards that use the Adafruit TinyUSB Library: RP2040/RP2350 with Tools &gt; USB Stack &gt; "Adafruit TinyUSB", STM32 (OTG_FS, e.g. F4/F7/H7), and also SAMD and nRF52. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="UVCPlatformDesktop_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UVCPlatformDesktop_8h.html">UVCPlatformDesktop.h</a></td></tr>
 <tr class="memdesc:UVCPlatformDesktop_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desktop platform: there is no USB device controller, the device is driven by UVCHostSimulator (<a class="el" href="UVCHostSimulator_8h.html" title="Desktop only: plays the USB host (and the TinyUSB core) for a UVCDevice, so the complete device side ...">desktop/UVCHostSimulator.h</a>). <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="UVCPlatformESP32_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UVCPlatformESP32_8h.html">UVCPlatformESP32.h</a></td></tr>
 <tr class="memdesc:UVCPlatformESP32_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">ESP32-S2/S3/P4 with the TinyUSB stack of the arduino-esp32 core (Tools &gt; USB Mode &gt; "USB-OTG (TinyUSB)"). <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="UVCPlatformPico_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UVCPlatformPico_8h.html">UVCPlatformPico.h</a></td></tr>
-<tr class="memdesc:UVCPlatformPico_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">RP2040/RP2350 with arduino-pico and its default USB stack (Tools &gt; USB Stack &gt; "Pico SDK"). The camera is added as an additional interface of the core's USB class, next to the USB serial port. <br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="UVCPlatformTinyUSB_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UVCPlatformTinyUSB_8h.html">UVCPlatformTinyUSB.h</a></td></tr>
+<tr class="memdesc:UVCPlatformTinyUSB_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">The generic TinyUSB platform layer, for every board that uses the Adafruit TinyUSB Library (Adafruit_USBD_Device): RP2040/RP2350 with Tools &gt; USB Stack &gt; "Adafruit TinyUSB", STM32 (OTG_FS, e.g. F4/F7/H7), SAMD, nRF52 - and optionally the ESP32 (TINYUVC_USE_ADAFRUIT_TINYUSB). The camera is added as an additional interface next to the other interfaces of the device (e.g. the USB serial port). <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

@@ -84,7 +84,7 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="UVCConfig_8h_source.html">TinyUVC/UVCConfig.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UVCDevice_8h_source.html">TinyUVC/UVCDevice.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="UVCPlatformAdafruit_8h_source.html">TinyUVC/platform/UVCPlatformAdafruit.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="UVCPlatformTinyUSB_8h_source.html">TinyUVC/platform/UVCPlatformTinyUSB.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UVCTinyUSB_8h_source.html">TinyUVC/UVCTinyUSB.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for TinyUVC.h:</div>
@@ -96,7 +96,7 @@ Include dependency graph for TinyUVC.h:</div>
 <area shape="poly" title=" " alt="" coords="333,23,244,33,193,43,143,57,98,78,61,106,47,123,37,142,30,163,28,186,28,340,32,374,43,407,71,463,66,464,38,409,27,375,23,340,23,186,25,162,32,140,43,120,57,102,95,74,141,52,191,37,243,27,337,20"/>
 <area shape="rect" href="UVCDevice_8h.html" title="The USB Video Class device: descriptors, probe/commit negotiation and streaming of frames...." alt="" coords="434,174,600,201"/>
 <area shape="poly" title=" " alt="" coords="403,31,445,79,503,161,497,161,440,83,403,36"/>
-<area shape="rect" href="UVCPlatformAdafruit_8h.html" title="Boards that use the Adafruit TinyUSB Library: RP2040/RP2350 with Tools &gt; USB Stack &gt; &quot;Adafruit TinyUS..." alt="" coords="204,81,430,126"/>
+<area shape="rect" href="UVCPlatformTinyUSB_8h.html" title="The generic TinyUSB platform layer, for every board that uses the Adafruit TinyUSB Library (Adafruit_..." alt="" coords="204,81,430,126"/>
 <area shape="poly" title=" " alt="" coords="378,36,349,71,345,68,382,32"/>
 <area shape="rect" href="UVCTinyUSB_8h.html" title="Connects UVCDevice to TinyUSB as an application class driver (usbd_app_driver_get_cb())...." alt="" coords="505,90,681,117"/>
 <area shape="poly" title=" " alt="" coords="424,31,549,82,544,84,424,36"/>
@@ -159,8 +159,8 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a834c944dee1efedbb116b22f5204ec28" id="r_a834c944dee1efedbb116b22f5204ec28"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TinyUVC_8h.html#a834c944dee1efedbb116b22f5204ec28">TINYUVC_PLATFORM_ADAFRUIT</a></td></tr>
-<tr class="separator:a834c944dee1efedbb116b22f5204ec28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fb9cf40d145de43457716d6aaec9820" id="r_a4fb9cf40d145de43457716d6aaec9820"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TinyUVC_8h.html#a4fb9cf40d145de43457716d6aaec9820">TINYUVC_PLATFORM_TINYUSB</a></td></tr>
+<tr class="separator:a4fb9cf40d145de43457716d6aaec9820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TinyUVC: header-only USB Video Class (UVC) device - turns a microcontroller into a USB webcam. </p>
@@ -170,28 +170,26 @@ Macros</h2></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">ESP32-S2/S3/P4   </td><td class="markdownTableBodyNone">arduino-esp32 core, USB Mode "USB-OTG"    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">RP2040/RP2350, USB Stack Pico SDK   </td><td class="markdownTableBodyNone">arduino-pico USB class    </td></tr>
+<td class="markdownTableBodyNone">all other Arduino boards: RP2040/   </td><td class="markdownTableBodyNone">generic: Adafruit TinyUSB Library    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">RP2040/RP2350, Adafruit TinyUSB   </td><td class="markdownTableBodyNone">Adafruit TinyUSB Library    </td></tr>
+<td class="markdownTableBodyNone">RP2350, STM32, SAMD, nRF52   </td><td class="markdownTableBodyNone">(Adafruit_USBD_Device)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">STM32 (and SAMD, nRF52)   </td><td class="markdownTableBodyNone">Adafruit TinyUSB Library    </td></tr>
-<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Linux/macOS/Windows   </td><td class="markdownTableBodyNone">simulated (UVCHostSimulator)   </td></tr>
 </table>
-<p>Override with -DTINYUVC_PLATFORM_ESP32 / _PICO / _ADAFRUIT / _DESKTOP, or with TINYUVC_PLATFORM_CUSTOM to provide your own <a class="el" href="namespacetinyuvc_1_1platform.html" title="Functions every platform layer (platform/UVCPlatform*.h) implements.">tinyuvc::platform</a> functions (see <a class="el" href="UVCDevice_8h.html" title="The USB Video Class device: descriptors, probe/commit negotiation and streaming of frames....">UVCDevice.h</a>).</p>
+<p>Override with -DTINYUVC_PLATFORM_ESP32 / _TINYUSB / _DESKTOP, or with TINYUVC_PLATFORM_CUSTOM to provide your own <a class="el" href="namespacetinyuvc_1_1platform.html" title="Functions every platform layer (platform/UVCPlatform*.h) implements.">tinyuvc::platform</a> functions (see <a class="el" href="UVCDevice_8h.html" title="The USB Video Class device: descriptors, probe/commit negotiation and streaming of frames....">UVCDevice.h</a>).</p>
 <p>Integrations (include separately):</p><ul>
 <li><a class="el" href="TinyUVCCamera_8h.html" title="Streams a camera of the TinyCamera library (https://github.com/pschatzmann/TinyCamera) as USB webcam:...">TinyUVCCamera.h</a>: stream a TinyCamera (esp32-camera, RP2040, STM32 DCMI)</li>
 <li><a class="el" href="TinyUVCAudioTools_8h.html" title="Integration with the video classes of arduino-audio-tools (https://github.com/pschatzmann/arduino-aud...">TinyUVCAudioTools.h</a>: VideoOutput / VideoFrameSource of arduino-audio-tools </li>
 </ul>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a834c944dee1efedbb116b22f5204ec28" name="a834c944dee1efedbb116b22f5204ec28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a834c944dee1efedbb116b22f5204ec28">&#9670;&#160;</a></span>TINYUVC_PLATFORM_ADAFRUIT</h2>
+<a id="a4fb9cf40d145de43457716d6aaec9820" name="a4fb9cf40d145de43457716d6aaec9820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fb9cf40d145de43457716d6aaec9820">&#9670;&#160;</a></span>TINYUVC_PLATFORM_TINYUSB</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TINYUVC_PLATFORM_ADAFRUIT</td>
+          <td class="memname">#define TINYUVC_PLATFORM_TINYUSB</td>
         </tr>
       </table>
 </div><div class="memdoc">

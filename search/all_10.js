@@ -20,6 +20,5 @@ var searchData=
   ['rgb565be_5f_17',['rgb565BE_',['../classtinyuvc_1_1UVCCamera.html#ad34bb9b71a8b023acd0593304d945a31',1,'tinyuvc::UVCCamera']]],
   ['rgb888_18',['RGB888',['../namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4a30ff380a3be74628024063a99fba10f0',1,'tinyuvc']]],
   ['rhport_19',['rhport',['../namespacetinyuvc_1_1tusb__glue.html#a42f0fb93cc55461315b36fdae4c6d816',1,'tinyuvc::tusb_glue']]],
-  ['rp2040camerawebcam_2eino_20',['RP2040CameraWebcam.ino',['../RP2040CameraWebcam_8ino.html',1,'']]],
-  ['running_21',['Running',['../md_docs_2Desktop.html#autotoc_md17',1,'']]]
+  ['rp2040camerawebcam_2eino_20',['RP2040CameraWebcam.ino',['../RP2040CameraWebcam_8ino.html',1,'']]]
 ];

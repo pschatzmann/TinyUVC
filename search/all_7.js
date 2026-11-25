@@ -11,7 +11,7 @@ var searchData=
   ['get_5fmax_8',['GET_MAX',['../namespacetinyuvc_1_1uvc__spec.html#a8c6a4c568480e7abd2991e7702f4f310',1,'tinyuvc::uvc_spec']]],
   ['get_5fmin_9',['GET_MIN',['../namespacetinyuvc_1_1uvc__spec.html#a2693260554de532580dde36144dd0446',1,'tinyuvc::uvc_spec']]],
   ['get_5fres_10',['GET_RES',['../namespacetinyuvc_1_1uvc__spec.html#acfb3db9fc8f3ec4f7fd2b45210bc3fe3',1,'tinyuvc::uvc_spec']]],
-  ['getinterfacedescriptor_11',['getInterfaceDescriptor',['../classtinyuvc_1_1platform_1_1UVCAdafruitInterface.html#a99ffa282eaaab4d55dd5c801dffec14c',1,'tinyuvc::platform::UVCAdafruitInterface']]],
+  ['getinterfacedescriptor_11',['getInterfaceDescriptor',['../classtinyuvc_1_1platform_1_1UVCTinyUSBInterface.html#a7d79c41f28ad52c4cb6050e0a50350f3',1,'tinyuvc::platform::UVCTinyUSBInterface']]],
   ['getprobe_12',['getProbe',['../classtinyuvc_1_1UVCHostSimulator.html#aa4bb89dd7c78bcca9b2a62769a13f60d',1,'tinyuvc::UVCHostSimulator']]],
   ['gray8_13',['GRAY8',['../namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4ab05f65488c7c7ff2ebca625a87e3e79e',1,'tinyuvc']]]
 ];

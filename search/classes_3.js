@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['picostate_0',['PicoState',['../structtinyuvc_1_1platform_1_1PicoState.html',1,'tinyuvc::platform']]]
+  ['rgb_0',['Rgb',['../structtinyuvc_1_1UVCConvert_1_1Rgb.html',1,'tinyuvc::UVCConvert']]]
 ];

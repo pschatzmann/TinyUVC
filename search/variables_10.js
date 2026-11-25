@@ -7,7 +7,7 @@ var searchData=
   ['sentonce_5f_4',['sentOnce_',['../classtinyuvc_1_1UVCCamera.html#aaf7696bac26eec89aff1417cdf2dd609',1,'tinyuvc::UVCCamera']]],
   ['set_5fcur_5',['SET_CUR',['../namespacetinyuvc_1_1uvc__spec.html#ae0d33b41ddd6c3dbab94d236788cd718',1,'tinyuvc::uvc_spec']]],
   ['settings_6',['settings',['../structtinyuvc_1_1UVCHostSimulator_1_1Frame.html#a0f7450d634dd418eda8cb3f5dc9ca2ec',1,'tinyuvc::UVCHostSimulator::Frame']]],
-  ['settings_5f_7',['settings_',['../classtinyuvc_1_1UVCHostSimulator.html#a382443d947784e80131feae1761fffbb',1,'tinyuvc::UVCHostSimulator::settings_'],['../classtinyuvc_1_1UVCDevice.html#abccaeb469d476131052795b9031aeae7',1,'tinyuvc::UVCDevice::settings_']]],
+  ['settings_5f_7',['settings_',['../classtinyuvc_1_1UVCDevice.html#abccaeb469d476131052795b9031aeae7',1,'tinyuvc::UVCDevice::settings_'],['../classtinyuvc_1_1UVCHostSimulator.html#a382443d947784e80131feae1761fffbb',1,'tinyuvc::UVCHostSimulator::settings_']]],
   ['size_8',['size',['../structtinyuvc_1_1UVCCamera_1_1Size.html#ae5f92ad06abf3f7bb35c7a1def334ff5',1,'tinyuvc::UVCCamera::Size::size'],['../structtinyuvc_1_1UVCHostSimulator_1_1Frame.html#aca1028fcb0b9e211eaf2f6cde1affe26',1,'tinyuvc::UVCHostSimulator::Frame::size']]],
   ['sizecount_5f_9',['sizeCount_',['../classtinyuvc_1_1UVCCamera.html#a46d628e7d6442d91161702e40db92f75',1,'tinyuvc::UVCCamera']]],
   ['sizes_5f_10',['sizes_',['../classtinyuvc_1_1UVCCamera.html#a1a26a9cf5d9839abd6d5a89ee8b0e73f',1,'tinyuvc::UVCCamera']]],
@@ -18,5 +18,5 @@ var searchData=
   ['streamcb_5f_15',['streamCb_',['../classtinyuvc_1_1UVCDevice.html#a7fbe298855d192d1eaa414edbe2a4612',1,'tinyuvc::UVCDevice']]],
   ['streamcbref_5f_16',['streamCbRef_',['../classtinyuvc_1_1UVCDevice.html#a20d34dc791d0145f749bce35dafb70b0',1,'tinyuvc::UVCDevice']]],
   ['streaming_5f_17',['streaming_',['../classtinyuvc_1_1UVCHostSimulator.html#af7906bdbc1fe129dd102db6ab27707b5',1,'tinyuvc::UVCHostSimulator::streaming_'],['../classtinyuvc_1_1UVCDevice.html#a30c4b06bb6906de807e5a357409d452e',1,'tinyuvc::UVCDevice::streaming_']]],
-  ['stringindex_18',['stringindex',['../structtinyuvc_1_1platform_1_1PicoState.html#a1c8601222ca811c502ac1752a768c691',1,'tinyuvc::platform::PicoState::stringIndex'],['../structtinyuvc_1_1UVCDescriptorParams.html#a46bda885594b0e67ca2523be39893f19',1,'tinyuvc::UVCDescriptorParams::stringIndex']]]
+  ['stringindex_18',['stringIndex',['../structtinyuvc_1_1UVCDescriptorParams.html#a46bda885594b0e67ca2523be39893f19',1,'tinyuvc::UVCDescriptorParams']]]
 ];

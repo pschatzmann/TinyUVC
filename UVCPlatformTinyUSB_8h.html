@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TinyUVC: src/TinyUVC/platform/UVCPlatformPico.h File Reference</title>
+<title>TinyUVC: src/TinyUVC/platform/UVCPlatformTinyUSB.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -78,73 +78,82 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">UVCPlatformPico.h File Reference</div></div>
+  <div class="headertitle"><div class="title">UVCPlatformTinyUSB.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>RP2040/RP2350 with arduino-pico and its default USB stack (Tools &gt; USB Stack &gt; "Pico SDK"). The camera is added as an additional interface of the core's USB class, next to the USB serial port.  
+<p>The generic TinyUSB platform layer, for every board that uses the Adafruit TinyUSB Library (Adafruit_USBD_Device): RP2040/RP2350 with Tools &gt; USB Stack &gt; "Adafruit TinyUSB", STM32 (OTG_FS, e.g. F4/F7/H7), SAMD, nRF52 - and optionally the ESP32 (TINYUVC_USE_ADAFRUIT_TINYUSB). The camera is added as an additional interface next to the other interfaces of the device (e.g. the USB serial port).  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;Arduino.h&gt;</code><br />
-<code>#include &lt;CoreMutex.h&gt;</code><br />
-<code>#include &lt;USB.h&gt;</code><br />
+<code>#include &lt;Adafruit_TinyUSB.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &lt;new&gt;</code><br />
 <code>#include &quot;<a class="el" href="UVCDevice_8h_source.html">../UVCDevice.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Include dependency graph for UVCPlatformPico.h:</div>
+Include dependency graph for UVCPlatformTinyUSB.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="UVCPlatformPico_8h__incl.png" border="0" usemap="#asrc_2TinyUVC_2platform_2UVCPlatformPico_8h" alt=""/></div>
-<map name="asrc_2TinyUVC_2platform_2UVCPlatformPico_8h" id="asrc_2TinyUVC_2platform_2UVCPlatformPico_8h">
-<area shape="rect" title="RP2040/RP2350 with arduino&#45;pico and its default USB stack (Tools &gt; USB Stack &gt; &quot;Pico SDK&quot;)...." alt="" coords="235,5,395,50"/>
+<div class="center"><img src="UVCPlatformTinyUSB_8h__incl.png" border="0" usemap="#asrc_2TinyUVC_2platform_2UVCPlatformTinyUSB_8h" alt=""/></div>
+<map name="asrc_2TinyUVC_2platform_2UVCPlatformTinyUSB_8h" id="asrc_2TinyUVC_2platform_2UVCPlatformTinyUSB_8h">
+<area shape="rect" title="The generic TinyUSB platform layer, for every board that uses the Adafruit TinyUSB Library (Adafruit_..." alt="" coords="164,5,340,50"/>
 <area shape="rect" title=" " alt="" coords="5,98,89,126"/>
-<area shape="poly" title=" " alt="" coords="242,53,105,96,102,91,245,48"/>
-<area shape="rect" title=" " alt="" coords="112,98,216,126"/>
-<area shape="poly" title=" " alt="" coords="273,53,203,92,200,88,277,49"/>
-<area shape="rect" title=" " alt="" coords="241,98,301,126"/>
-<area shape="poly" title=" " alt="" coords="305,48,288,85,283,82,302,53"/>
-<area shape="rect" title=" " alt="" coords="326,98,395,126"/>
-<area shape="poly" title=" " alt="" coords="327,48,348,84,343,84,326,53"/>
-<area shape="rect" title=" " alt="" coords="419,98,467,126"/>
-<area shape="poly" title=" " alt="" coords="349,48,412,89,407,90,349,53"/>
-<area shape="rect" href="UVCDevice_8h.html" title="The USB Video Class device: descriptors, probe/commit negotiation and streaming of frames...." alt="" coords="492,98,610,126"/>
-<area shape="poly" title=" " alt="" coords="377,48,502,92,497,94,378,53"/>
-<area shape="rect" title=" " alt="" coords="314,174,380,201"/>
-<area shape="poly" title=" " alt="" coords="512,128,396,171,394,167,517,125"/>
-<area shape="rect" title=" " alt="" coords="404,174,514,201"/>
-<area shape="poly" title=" " alt="" coords="537,125,488,166,485,162,532,128"/>
-<area shape="rect" href="UVCDescriptor_8h.html" title="Builds the USB descriptors of a UVC 1.1 camera function: an Interface Association,..." alt="" coords="433,249,560,277"/>
-<area shape="poly" title=" " alt="" coords="550,124,528,202,512,237,508,234,523,200,546,128"/>
-<area shape="rect" href="UVCLogger_8h.html" title="Minimal printf&#45;style logger. On Arduino it writes to a Print (default: Serial), on the desktop to std..." alt="" coords="770,174,874,201"/>
-<area shape="poly" title=" " alt="" coords="599,124,761,169,756,170,599,129"/>
-<area shape="rect" href="UVCPayload_8h.html" title="Splits one video frame into UVC payloads (payload header + data)." alt="" coords="588,174,700,201"/>
-<area shape="poly" title=" " alt="" coords="568,124,619,164,613,164,567,129"/>
-<area shape="rect" href="UVCDefs_8h.html" title="USB Video Class 1.1 constants and the basic TinyUVC data types." alt="" coords="552,325,643,353"/>
-<area shape="poly" title=" " alt="" coords="515,275,570,316,565,315,514,280"/>
-<area shape="rect" title=" " alt="" coords="446,401,520,428"/>
-<area shape="poly" title=" " alt="" coords="580,352,517,395,515,390,575,354"/>
-<area shape="rect" title=" " alt="" coords="544,401,614,428"/>
-<area shape="poly" title=" " alt="" coords="596,352,588,387,584,383,592,355"/>
-<area shape="rect" title=" " alt="" coords="638,401,709,428"/>
-<area shape="poly" title=" " alt="" coords="612,351,652,391,647,389,610,356"/>
-<area shape="rect" href="UVCConfig_8h.html" title="Compile&#45;time limits and defaults of TinyUVC. Every value can be overridden with a build flag (&#45;DTINYU..." alt="" coords="733,401,836,428"/>
-<area shape="poly" title=" " alt="" coords="632,351,740,395,735,395,631,356"/>
-<area shape="poly" title=" " alt="" coords="821,200,812,250,790,387,786,384,807,249,817,204"/>
-<area shape="rect" title=" " alt="" coords="822,249,896,277"/>
-<area shape="poly" title=" " alt="" coords="830,199,848,237,843,235,827,204"/>
-<area shape="rect" title=" " alt="" coords="920,249,985,277"/>
-<area shape="poly" title=" " alt="" coords="846,199,919,242,913,241,845,205"/>
-<area shape="poly" title=" " alt="" coords="642,200,626,250,607,312,603,308,620,249,638,204"/>
-<area shape="rect" href="UVCConvert_8h.html" title="Conversion of raw pixel formats to YUY2 (YUV 4:2:2, Y0 U Y1 V), pixel pair by pixel pair,..." alt="" coords="635,249,747,277"/>
-<area shape="poly" title=" " alt="" coords="654,199,677,237,672,236,652,204"/>
-<area shape="poly" title=" " alt="" coords="677,277,627,318,625,313,672,279"/>
+<area shape="poly" title=" " alt="" coords="196,53,95,94,92,90,199,48"/>
+<area shape="rect" title=" " alt="" coords="113,98,261,126"/>
+<area shape="poly" title=" " alt="" coords="234,53,209,87,205,84,237,48"/>
+<area shape="rect" title=" " alt="" coords="284,98,354,126"/>
+<area shape="poly" title=" " alt="" coords="270,48,301,85,296,86,270,53"/>
+<area shape="rect" href="UVCDevice_8h.html" title="The USB Video Class device: descriptors, probe/commit negotiation and streaming of frames...." alt="" coords="377,98,496,126"/>
+<area shape="poly" title=" " alt="" coords="301,48,395,90,390,92,301,53"/>
+<area shape="rect" title=" " alt="" coords="199,174,266,201"/>
+<area shape="poly" title=" " alt="" coords="398,128,282,171,279,167,402,125"/>
+<area shape="rect" title=" " alt="" coords="290,174,399,201"/>
+<area shape="poly" title=" " alt="" coords="422,125,374,166,371,162,418,128"/>
+<area shape="rect" href="UVCDescriptor_8h.html" title="Builds the USB descriptors of a UVC 1.1 camera function: an Interface Association,..." alt="" coords="318,249,445,277"/>
+<area shape="poly" title=" " alt="" coords="435,124,414,202,398,237,394,234,408,200,432,128"/>
+<area shape="rect" href="UVCLogger_8h.html" title="Minimal printf&#45;style logger. On Arduino it writes to a Print (default: Serial), on the desktop to std..." alt="" coords="655,174,759,201"/>
+<area shape="poly" title=" " alt="" coords="485,124,647,168,642,170,485,129"/>
+<area shape="rect" href="UVCPayload_8h.html" title="Splits one video frame into UVC payloads (payload header + data)." alt="" coords="474,174,586,201"/>
+<area shape="poly" title=" " alt="" coords="453,124,504,164,499,164,453,129"/>
+<area shape="rect" href="UVCDefs_8h.html" title="USB Video Class 1.1 constants and the basic TinyUVC data types." alt="" coords="437,325,529,353"/>
+<area shape="poly" title=" " alt="" coords="400,275,455,316,450,316,399,280"/>
+<area shape="rect" title=" " alt="" coords="332,401,405,428"/>
+<area shape="poly" title=" " alt="" coords="465,352,402,395,400,390,460,354"/>
+<area shape="rect" title=" " alt="" coords="429,401,500,428"/>
+<area shape="poly" title=" " alt="" coords="482,352,473,387,470,383,478,355"/>
+<area shape="rect" title=" " alt="" coords="524,401,594,428"/>
+<area shape="poly" title=" " alt="" coords="498,351,537,391,532,389,496,356"/>
+<area shape="rect" href="UVCConfig_8h.html" title="Compile&#45;time limits and defaults of TinyUVC. Every value can be overridden with a build flag (&#45;DTINYU..." alt="" coords="618,401,721,428"/>
+<area shape="poly" title=" " alt="" coords="517,351,625,395,620,395,516,356"/>
+<area shape="poly" title=" " alt="" coords="706,200,698,250,676,387,671,384,692,249,702,204"/>
+<area shape="rect" title=" " alt="" coords="707,249,782,277"/>
+<area shape="poly" title=" " alt="" coords="715,199,733,237,728,235,713,204"/>
+<area shape="rect" title=" " alt="" coords="805,249,870,277"/>
+<area shape="poly" title=" " alt="" coords="731,199,804,242,799,241,730,205"/>
+<area shape="poly" title=" " alt="" coords="527,200,511,250,492,312,488,308,506,249,523,204"/>
+<area shape="rect" href="UVCConvert_8h.html" title="Conversion of raw pixel formats to YUY2 (YUV 4:2:2, Y0 U Y1 V), pixel pair by pixel pair,..." alt="" coords="520,249,632,277"/>
+<area shape="poly" title=" " alt="" coords="539,199,563,237,557,236,537,204"/>
+<area shape="poly" title=" " alt="" coords="562,276,513,318,510,313,557,279"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="UVCPlatformTinyUSB_8h__dep__incl.png" border="0" usemap="#asrc_2TinyUVC_2platform_2UVCPlatformTinyUSB_8hdep" alt=""/></div>
+<map name="asrc_2TinyUVC_2platform_2UVCPlatformTinyUSB_8hdep" id="asrc_2TinyUVC_2platform_2UVCPlatformTinyUSB_8hdep">
+<area shape="rect" title="The generic TinyUSB platform layer, for every board that uses the Adafruit TinyUSB Library (Adafruit_..." alt="" coords="107,5,283,50"/>
+<area shape="rect" href="TinyUVC_8h.html" title="TinyUVC: header&#45;only USB Video Class (UVC) device &#45; turns a microcontroller into a USB webcam." alt="" coords="139,98,251,126"/>
+<area shape="poly" title=" " alt="" coords="197,64,198,98,193,96,194,68"/>
+<area shape="rect" href="TinyUVCAudioTools_8h.html" title="Integration with the video classes of arduino&#45;audio&#45;tools (https://github.com/pschatzmann/arduino&#45;aud..." alt="" coords="5,174,188,201"/>
+<area shape="poly" title=" " alt="" coords="168,134,115,176,113,171,163,136"/>
+<area shape="rect" href="TinyUVCCamera_8h.html" title="Streams a camera of the TinyCamera library (https://github.com/pschatzmann/TinyCamera) as USB webcam:..." alt="" coords="212,174,376,201"/>
+<area shape="poly" title=" " alt="" coords="226,133,279,173,274,173,224,138"/>
 </map>
 </div>
 </div>
-<p><a href="UVCPlatformPico_8h_source.html">Go to the source code of this file.</a></p>
+<p><a href="UVCPlatformTinyUSB_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtinyuvc_1_1platform_1_1PicoState.html">tinyuvc::platform::PicoState</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1platform_1_1UVCTinyUSBInterface.html">tinyuvc::platform::UVCTinyUSBInterface</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The camera as interface of Adafruit_USBD_Device.  <a href="classtinyuvc_1_1platform_1_1UVCTinyUSBInterface.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -157,13 +166,11 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a458b6e766cbfca867ecf3934c686bdca" id="r_a458b6e766cbfca867ecf3934c686bdca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtinyuvc_1_1platform_1_1PicoState.html">PicoState</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc_1_1platform.html#a458b6e766cbfca867ecf3934c686bdca">tinyuvc::platform::picoState</a> ()</td></tr>
-<tr class="separator:a458b6e766cbfca867ecf3934c686bdca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61b09aa4644d980e7c3b9122a69c1df9" id="r_a61b09aa4644d980e7c3b9122a69c1df9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc_1_1platform.html#a61b09aa4644d980e7c3b9122a69c1df9">tinyuvc::platform::maxPacketSize</a> ()</td></tr>
 <tr class="memdesc:a61b09aa4644d980e7c3b9122a69c1df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max packet size of the bulk endpoint (64 full speed, 512 high speed)  <br /></td></tr>
 <tr class="separator:a61b09aa4644d980e7c3b9122a69c1df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea5750fbd7f36fe1d028de57df10d92a" id="r_aea5750fbd7f36fe1d028de57df10d92a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc_1_1platform.html#aea5750fbd7f36fe1d028de57df10d92a">tinyuvc::platform::picoDescriptor</a> (int itf, uint8_t *dst, int len, void *param)</td></tr>
-<tr class="separator:aea5750fbd7f36fe1d028de57df10d92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af14f1770b90cac06d8b96967bb82792a" id="r_af14f1770b90cac06d8b96967bb82792a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1platform_1_1UVCTinyUSBInterface.html">UVCTinyUSBInterface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc_1_1platform.html#af14f1770b90cac06d8b96967bb82792a">tinyuvc::platform::tinyusbInterface</a> ()</td></tr>
+<tr class="separator:af14f1770b90cac06d8b96967bb82792a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a262d632abe407f4b62ed7c946abff2c4" id="r_a262d632abe407f4b62ed7c946abff2c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc_1_1platform.html#a262d632abe407f4b62ed7c946abff2c4">tinyuvc::platform::begin</a> (<a class="el" href="classtinyuvc_1_1UVCDevice.html">UVCDevice</a> &amp;dev)</td></tr>
 <tr class="memdesc:a262d632abe407f4b62ed7c946abff2c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the UVC function with the USB stack (and starts it if needed)  <br /></td></tr>
 <tr class="separator:a262d632abe407f4b62ed7c946abff2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,7 +191,7 @@ Functions</h2></td></tr>
 <tr class="separator:a218ec6d0c42678a89e1c721c5bb05e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>RP2040/RP2350 with arduino-pico and its default USB stack (Tools &gt; USB Stack &gt; "Pico SDK"). The camera is added as an additional interface of the core's USB class, next to the USB serial port. </p>
+<div class="textblock"><p>The generic TinyUSB platform layer, for every board that uses the Adafruit TinyUSB Library (Adafruit_USBD_Device): RP2040/RP2350 with Tools &gt; USB Stack &gt; "Adafruit TinyUSB", STM32 (OTG_FS, e.g. F4/F7/H7), SAMD, nRF52 - and optionally the ESP32 (TINYUVC_USE_ADAFRUIT_TINYUSB). The camera is added as an additional interface next to the other interfaces of the device (e.g. the USB serial port). </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

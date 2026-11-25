@@ -88,25 +88,21 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtinyuvc_1_1platform_1_1AppLock.html">AppLock</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtinyuvc_1_1platform_1_1PicoState.html">PicoState</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1platform_1_1UVCAdafruitInterface.html">UVCAdafruitInterface</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The camera as interface of Adafruit_USBD_Device.  <a href="classtinyuvc_1_1platform_1_1UVCAdafruitInterface.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1platform_1_1UVCTinyUSBInterface.html">UVCTinyUSBInterface</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The camera as interface of Adafruit_USBD_Device.  <a href="classtinyuvc_1_1platform_1_1UVCTinyUSBInterface.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a61b09aa4644d980e7c3b9122a69c1df9" id="r_a61b09aa4644d980e7c3b9122a69c1df9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc_1_1platform.html#a61b09aa4644d980e7c3b9122a69c1df9">maxPacketSize</a> ()</td></tr>
-<tr class="memdesc:a61b09aa4644d980e7c3b9122a69c1df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max packet size of the bulk endpoint (64 full speed, 512 high speed)  <br /></td></tr>
-<tr class="separator:a61b09aa4644d980e7c3b9122a69c1df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ce1b18971d36c8ffe768ecd9dc64cfa" id="r_a4ce1b18971d36c8ffe768ecd9dc64cfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1platform_1_1UVCAdafruitInterface.html">UVCAdafruitInterface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc_1_1platform.html#a4ce1b18971d36c8ffe768ecd9dc64cfa">adafruitInterface</a> ()</td></tr>
-<tr class="separator:a4ce1b18971d36c8ffe768ecd9dc64cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a262d632abe407f4b62ed7c946abff2c4" id="r_a262d632abe407f4b62ed7c946abff2c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc_1_1platform.html#a262d632abe407f4b62ed7c946abff2c4">begin</a> (<a class="el" href="classtinyuvc_1_1UVCDevice.html">UVCDevice</a> &amp;dev)</td></tr>
 <tr class="memdesc:a262d632abe407f4b62ed7c946abff2c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the UVC function with the USB stack (and starts it if needed)  <br /></td></tr>
 <tr class="separator:a262d632abe407f4b62ed7c946abff2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32f9ff2c586c80a2368c5693e0d824e4" id="r_a32f9ff2c586c80a2368c5693e0d824e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc_1_1platform.html#a32f9ff2c586c80a2368c5693e0d824e4">end</a> (<a class="el" href="classtinyuvc_1_1UVCDevice.html">UVCDevice</a> &amp;dev)</td></tr>
 <tr class="memdesc:a32f9ff2c586c80a2368c5693e0d824e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters the UVC function, where the USB stack supports that.  <br /></td></tr>
 <tr class="separator:a32f9ff2c586c80a2368c5693e0d824e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b09aa4644d980e7c3b9122a69c1df9" id="r_a61b09aa4644d980e7c3b9122a69c1df9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc_1_1platform.html#a61b09aa4644d980e7c3b9122a69c1df9">maxPacketSize</a> ()</td></tr>
+<tr class="memdesc:a61b09aa4644d980e7c3b9122a69c1df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max packet size of the bulk endpoint (64 full speed, 512 high speed)  <br /></td></tr>
+<tr class="separator:a61b09aa4644d980e7c3b9122a69c1df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86167b98971de82d223750a06b0bfed0" id="r_a86167b98971de82d223750a06b0bfed0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc_1_1platform.html#a86167b98971de82d223750a06b0bfed0">idle</a> ()</td></tr>
 <tr class="memdesc:a86167b98971de82d223750a06b0bfed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called while waiting: lets the USB stack make progress.  <br /></td></tr>
 <tr class="separator:a86167b98971de82d223750a06b0bfed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,39 +118,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ae94ad7ce7ae96e10bb906b0536ed3b26" id="r_ae94ad7ce7ae96e10bb906b0536ed3b26"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc_1_1platform.html#ae94ad7ce7ae96e10bb906b0536ed3b26">esp32LoadDescriptor</a> (uint8_t *dst, uint8_t *itf)</td></tr>
 <tr class="memdesc:ae94ad7ce7ae96e10bb906b0536ed3b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descriptor callback of the core (called from USB.begin())  <br /></td></tr>
 <tr class="separator:ae94ad7ce7ae96e10bb906b0536ed3b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a458b6e766cbfca867ecf3934c686bdca" id="r_a458b6e766cbfca867ecf3934c686bdca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtinyuvc_1_1platform_1_1PicoState.html">PicoState</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc_1_1platform.html#a458b6e766cbfca867ecf3934c686bdca">picoState</a> ()</td></tr>
-<tr class="separator:a458b6e766cbfca867ecf3934c686bdca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea5750fbd7f36fe1d028de57df10d92a" id="r_aea5750fbd7f36fe1d028de57df10d92a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc_1_1platform.html#aea5750fbd7f36fe1d028de57df10d92a">picoDescriptor</a> (int itf, uint8_t *dst, int len, void *param)</td></tr>
-<tr class="separator:aea5750fbd7f36fe1d028de57df10d92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af14f1770b90cac06d8b96967bb82792a" id="r_af14f1770b90cac06d8b96967bb82792a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1platform_1_1UVCTinyUSBInterface.html">UVCTinyUSBInterface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc_1_1platform.html#af14f1770b90cac06d8b96967bb82792a">tinyusbInterface</a> ()</td></tr>
+<tr class="separator:af14f1770b90cac06d8b96967bb82792a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Functions every platform layer (platform/UVCPlatform*.h) implements. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a4ce1b18971d36c8ffe768ecd9dc64cfa" name="a4ce1b18971d36c8ffe768ecd9dc64cfa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ce1b18971d36c8ffe768ecd9dc64cfa">&#9670;&#160;</a></span>adafruitInterface()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classtinyuvc_1_1platform_1_1UVCAdafruitInterface.html">UVCAdafruitInterface</a> &amp; tinyuvc::platform::adafruitInterface </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a31ce4ea59b2feceb7d043b29da195cfa" name="a31ce4ea59b2feceb7d043b29da195cfa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a31ce4ea59b2feceb7d043b29da195cfa">&#9670;&#160;</a></span>allocBuffer()</h2>
 
@@ -196,7 +165,7 @@ Functions</h2></td></tr>
           <td class="memname">bool tinyuvc::platform::begin </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classtinyuvc_1_1UVCDevice.html">UVCDevice</a> &amp;&#160;</td>
-          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -407,8 +376,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aea5750fbd7f36fe1d028de57df10d92a" name="aea5750fbd7f36fe1d028de57df10d92a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea5750fbd7f36fe1d028de57df10d92a">&#9670;&#160;</a></span>picoDescriptor()</h2>
+<a id="af14f1770b90cac06d8b96967bb82792a" name="af14f1770b90cac06d8b96967bb82792a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af14f1770b90cac06d8b96967bb82792a">&#9670;&#160;</a></span>tinyusbInterface()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -417,55 +386,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void tinyuvc::platform::picoDescriptor </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>itf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>param</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a458b6e766cbfca867ecf3934c686bdca" name="a458b6e766cbfca867ecf3934c686bdca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a458b6e766cbfca867ecf3934c686bdca">&#9670;&#160;</a></span>picoState()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structtinyuvc_1_1platform_1_1PicoState.html">PicoState</a> &amp; tinyuvc::platform::picoState </td>
+          <td class="memname"><a class="el" href="classtinyuvc_1_1platform_1_1UVCTinyUSBInterface.html">UVCTinyUSBInterface</a> &amp; tinyuvc::platform::tinyusbInterface </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
