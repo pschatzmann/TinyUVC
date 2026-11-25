@@ -10,11 +10,10 @@
  *   CameraFrameSourceTinyCamera) to the webcam.
  *
  * The video classes of arduino-audio-tools use FreeRTOS: on RP2040/RP2350
- * include <FreeRTOS.h>, on STM32 <STM32FreeRTOS.h> (STM32FreeRTOS library)
- * before including this header.
+ * select Tools > Operating System > "FreeRTOS SMP" and include
+ * "AudioTools/Concurrency/RTOS.h" after AudioTools.h, on STM32 install the
+ * STM32FreeRTOS library.
  */
-#include <vector>
-
 #include "AudioToolsConfig.h"
 #include "AudioTools/Video/Video.h"
 #include "TinyUVC.h"
@@ -62,6 +61,9 @@ inline bool addResolution(UVCDevice &uvc, const audio_tools::VideoInfo &info,
  * to a UVCDevice. Two frame buffers are used: one is sent while the next
  * one is written.
  *
+ * The frame buffers grow to the size of the biggest frame and are taken
+ * from PSRAM where the board has it (see setMemoryType(), reserve()).
+ *
  * Writers that deliver one complete frame per write() without calling
  * flush() (e.g. MJPEGEncoder) are supported as well: a complete JPEG
  * written in one call is sent right away, for other formats use
@@ -94,6 +96,29 @@ class UVCVideoOutput : public audio_tools::VideoOutput {
   /// Max frame size: bigger frames are dropped (default 512 KB)
   void setMaxFrameSize(size_t size) { maxFrameSize_ = size; }
 
+  /// Where the two frame buffers are allocated: UVCMemoryType::Auto
+  /// (default: PSRAM if available, else RAM), PSRAM or RAM. Call it before
+  /// the first frame or reserve().
+  void setMemoryType(UVCMemoryType type) {
+    release();
+    for (auto &b : buffers_) b.setMemoryType(type);
+  }
+
+  /// Allocates both frame buffers for frames of up to size bytes now,
+  /// instead of growing them with the first frames. False if there is not
+  /// enough memory.
+  bool reserve(size_t size) {
+    return buffers_[0].reserve(size) && buffers_[1].reserve(size);
+  }
+
+  /// Frees the frame buffers; they are allocated again by the next frame.
+  /// The frame that is still being sent keeps its buffer.
+  void release() {
+    buffers_[fill_].release();
+    if (!uvc_.isSending()) buffers_[1 - fill_].release();
+    overflow_ = false;
+  }
+
   /// flush() waits until the frame interval selected by the host has passed
   /// since the previous frame: plays files (e.g. from DemuxerAVI) at their
   /// frame rate instead of as fast as USB allows. Implies waiting for the
@@ -104,12 +129,14 @@ class UVCVideoOutput : public audio_tools::VideoOutput {
   void setFlushOnWrite(bool flushOnWrite) { flushOnWrite_ = flushOnWrite; }
 
   size_t write(const uint8_t *data, size_t len) override {
-    std::vector<uint8_t> &buf = buffers_[fill_];
+    UVCFrameBuffer &buf = buffers_[fill_];
     const bool complete = flushOnWrite_ || (buf.empty() && isCompleteJpeg(data, len));
-    if (buf.size() + len > maxFrameSize_) {
+    if (overflow_ || buf.size() + len > maxFrameSize_) {
       overflow_ = true;
-    } else {
-      buf.insert(buf.end(), data, data + len);
+    } else if (!buf.append(data, len)) {
+      TINYUVC_LOGW("UVCVideoOutput: out of memory (frame of %u bytes)",
+                   (unsigned)(buf.size() + len));
+      overflow_ = true;
     }
     if (complete) flush();
     return len;
@@ -117,7 +144,7 @@ class UVCVideoOutput : public audio_tools::VideoOutput {
 
   /// Completes the frame and hands it to the UVC device
   void flush() override {
-    std::vector<uint8_t> &buf = buffers_[fill_];
+    UVCFrameBuffer &buf = buffers_[fill_];
     if (buf.empty() && !overflow_) return;  // e.g. flush() after a complete JPEG
     hadOutput_ = false;
     if (buf.empty()) {
@@ -164,7 +191,7 @@ class UVCVideoOutput : public audio_tools::VideoOutput {
  protected:
   UVCDevice &uvc_;
   PixelFormat format_;
-  std::vector<uint8_t> buffers_[2];
+  UVCFrameBuffer buffers_[2];
   int fill_ = 0;
   size_t maxFrameSize_ = 512 * 1024;
   uint32_t timeoutMs_ = 0;

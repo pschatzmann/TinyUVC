@@ -52,6 +52,71 @@ static void testVideoOutputRaw() {
   CHECK(received == expected);
 }
 
+/// Frame buffers: reserve(), release() while a frame is sent, memory
+/// failures and too big frames
+static void testVideoOutputMemory() {
+  UVCDevice uvc;
+  CHECK(uvc.addResolution(UVCFormat::MJPEG, 64, 48, 30, 20000));
+  CHECK(uvc.begin());
+  UVCHostSimulator host;
+  CHECK(host.connect(uvc));
+  std::vector<std::vector<uint8_t>> received;
+  host.onFrame([&](const UVCHostSimulator::Frame &f) {
+    received.emplace_back(f.data, f.data + f.size);
+  });
+  CHECK(host.startStream(UVCFormat::MJPEG, 64, 48));
+
+  auto jpeg = [](size_t len, uint8_t fill) {
+    std::vector<uint8_t> f(len, fill);
+    f[0] = 0xFF; f[1] = 0xD8; f[len - 2] = 0xFF; f[len - 1] = 0xD9;
+    return f;
+  };
+  UVCVideoOutput out(uvc);
+  CHECK(out.reserve(10000));
+  // a frame in chunks, then flush(): sent from the reserved buffer
+  std::vector<uint8_t> a = jpeg(9000, 1);
+  out.write(a.data(), 4000);
+  out.write(a.data() + 4000, a.size() - 4000);
+  out.flush();
+  CHECK(uvc.isSending());
+  // release() while the frame is being sent: the frame stays intact
+  out.release();
+  host.pollAll();
+  CHECK(!uvc.isSending());
+  CHECK_EQ(received.size(), 1u);
+  CHECK(received.size() == 1 && received[0] == a);
+
+  // buffers grow again after release()
+  std::vector<uint8_t> b = jpeg(15000, 2);
+  out.write(b.data(), b.size());
+  CHECK(uvc.waitReady(1000));
+  host.pollAll();
+  CHECK_EQ(received.size(), 2u);
+  CHECK(received.size() == 2 && received[1] == b);
+
+  // too big: dropped, the next frame works
+  out.setMaxFrameSize(12000);
+  const uint32_t dropped = out.dropped();
+  for (int i = 0; i < 3; i++) out.write(b.data() + i * 5000, 5000);
+  out.flush();
+  CHECK_EQ(out.dropped(), dropped + 1);
+  out.write(a.data(), a.size());
+  CHECK(uvc.waitReady(1000));
+  host.pollAll();
+  CHECK_EQ(received.size(), 3u);
+
+  // PSRAM only: no PSRAM on the desktop, so frames are dropped
+  out.setMemoryType(UVCMemoryType::PSRAM);
+  CHECK(!out.reserve(1000));
+  out.write(a.data(), a.size());
+  CHECK_EQ(out.dropped(), dropped + 2);
+  out.setMemoryType(UVCMemoryType::RAM);
+  out.write(a.data(), a.size());
+  CHECK(uvc.waitReady(1000));
+  host.pollAll();
+  CHECK_EQ(received.size(), 4u);
+}
+
 /// A VideoFrameSource of fake JPEG frames
 class FakeJpegSource : public VideoFrameSource {
  public:
@@ -131,6 +196,7 @@ static void testEncoderChain() {
 
 int main() {
   RUN(testVideoOutputRaw);
+  RUN(testVideoOutputMemory);
   RUN(testVideoCopy);
 #if defined(HAS_MJPEG_ENCODER)
   RUN(testEncoderChain);

@@ -62,6 +62,7 @@
 
 // ------------------------------------------------------------ the library
 #include "TinyUVC/UVCDevice.h"
+#include "TinyUVC/UVCMemory.h"
 
 #if defined(TINYUVC_PLATFORM_ESP32)
 #include "TinyUVC/platform/UVCPlatformESP32.h"

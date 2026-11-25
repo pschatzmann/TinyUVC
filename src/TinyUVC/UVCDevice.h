@@ -255,6 +255,10 @@ class UVCDevice {
   /// was completely handed to the USB stack
   bool isReady() const { return streaming_.load() && !framePending_.load(); }
 
+  /// true while the device still reads the data passed to writeFrame():
+  /// the data must not be changed or freed before this is false
+  bool isSending() const { return framePending_.load(); }
+
   /// Format, resolution and frame rate the host selected
   UVCStreamSettings settings() const { return settings_; }
 

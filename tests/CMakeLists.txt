@@ -1,6 +1,6 @@
 # Desktop tests: run with  ctest --test-dir build --output-on-failure
 
-foreach(t convert control streaming)
+foreach(t convert control streaming memory)
     tinyuvc_program(test_${t} SOURCES test_${t}.cpp)
     add_test(NAME ${t} COMMAND test_${t})
 endforeach()
