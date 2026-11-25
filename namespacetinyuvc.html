@@ -79,6 +79,9 @@ $(function() {
   <div class="headertitle"><div class="title">tinyuvc Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>TinyUVC: USB Video Class (UVC) device for Arduino and the desktop.  
+<a href="namespacetinyuvc.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -89,9 +92,10 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespacetinyuvc_1_1platform"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions every platform layer (platform/UVCPlatform*.h) implements. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacetinyuvc_1_1tusb__glue" id="r_namespacetinyuvc_1_1tusb__glue"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc_1_1tusb__glue.html">tusb_glue</a></td></tr>
+<tr class="memdesc:namespacetinyuvc_1_1tusb__glue"><td class="mdescLeft">&#160;</td><td class="mdescRight">TinyUSB class driver callbacks that connect TinyUSB to <a class="el" href="classtinyuvc_1_1UVCDevice.html" title="USB Video Class (UVC 1.1) device - a USB webcam.">UVCDevice</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacetinyuvc_1_1uvc__spec" id="r_namespacetinyuvc_1_1uvc__spec"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc_1_1uvc__spec.html">uvc_spec</a></td></tr>
-<tr class="memdesc:namespacetinyuvc_1_1uvc__spec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants of the USB Video Class specification (UVC 1.1) <br /></td></tr>
+<tr class="memdesc:namespacetinyuvc_1_1uvc__spec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants of the USB Video Class 1.1 specification. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -100,6 +104,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connects a TinyCamera to a <a class="el" href="classtinyuvc_1_1UVCDevice.html" title="USB Video Class (UVC 1.1) device - a USB webcam.">UVCDevice</a>.  <a href="classtinyuvc_1_1UVCCamera.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCConvert.html">UVCConvert</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts raw pixel formats (RGB565, RGB888, BGR888, gray) to YUY2, one pixel pair at a time.  <a href="classtinyuvc_1_1UVCConvert.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCDescriptorBuilder.html">UVCDescriptorBuilder</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the UVC function descriptors (everything that belongs into the configuration descriptor after its 9 byte header).  <a href="classtinyuvc_1_1UVCDescriptorBuilder.html#details">More...</a><br /></td></tr>
@@ -120,6 +125,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One resolution (UVC frame descriptor) with its supported frame rates.  <a href="structtinyuvc_1_1UVCFrameSpec.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCHostSimulator.html">UVCHostSimulator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desktop only: a simulated USB host (modeled on Linux' uvcvideo) that enumerates, negotiates and streams from a <a class="el" href="classtinyuvc_1_1UVCDevice.html" title="USB Video Class (UVC 1.1) device - a USB webcam.">UVCDevice</a>.  <a href="classtinyuvc_1_1UVCHostSimulator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCLoggerClass.html">UVCLoggerClass</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logger used by all TinyUVC classes.  <a href="classtinyuvc_1_1UVCLoggerClass.html#details">More...</a><br /></td></tr>
@@ -222,7 +228,9 @@ Variables</h2></td></tr>
 <tr class="memdesc:af1fd3ef4490bfbda769a66460265a9da"><td class="mdescLeft">&#160;</td><td class="mdescRight">The global logger instance.  <br /></td></tr>
 <tr class="separator:af1fd3ef4490bfbda769a66460265a9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>TinyUVC: USB Video Class (UVC) device for Arduino and the desktop. </p>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a8d16c79adf1bf0fde4634a8cdc7fe6e4" name="a8d16c79adf1bf0fde4634a8cdc7fe6e4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8d16c79adf1bf0fde4634a8cdc7fe6e4">&#9670;&#160;</a></span>PixelFormat</h2>
 

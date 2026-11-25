@@ -12,6 +12,6 @@
 <area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="503,136,576,131,614,128,620,127,576,137,503,141"/>
 <area shape="rect" id="Node000007" href="$classtinyuvc_1_1UVCPayloadEncoder.html" title="Produces the UVC payloads of one frame. Each payload starts with a 2 byte header (6 bytes with a pres..." alt="" coords="281,175,489,203"/>
 <area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="504,180,540,171,575,158,586,148,598,136,620,128,626,127,602,141,590,152,577,163,542,176,505,185"/>
-<area shape="rect" id="Node000008" href="$structtinyuvc_1_1UVCCamera_1_1Size.html" title=" " alt="" coords="600,151,756,195"/>
+<area shape="rect" id="Node000008" href="$structtinyuvc_1_1UVCCamera_1_1Size.html" title="A camera frame size offered to the host." alt="" coords="600,151,756,195"/>
 <area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="772,168,824,163,845,163,850,163,825,169,772,173"/>
 </map>

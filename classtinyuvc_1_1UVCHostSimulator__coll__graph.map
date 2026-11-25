@@ -1,5 +1,5 @@
 <map id="tinyuvc::UVCHostSimulator" name="tinyuvc::UVCHostSimulator">
-<area shape="rect" id="Node000001" title=" " alt="" coords="233,300,431,328"/>
+<area shape="rect" id="Node000001" title="Desktop only: a simulated USB host (modeled on Linux&#39; uvcvideo) that enumerates, negotiates and strea..." alt="" coords="233,300,431,328"/>
 <area shape="rect" id="Node000002" href="$classtinyuvc_1_1UVCDevice.html" title="USB Video Class (UVC 1.1) device &#45; a USB webcam." alt="" coords="257,208,407,235"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="334,249,334,301,330,298,330,252"/>
 <area shape="rect" id="Node000003" href="$structtinyuvc_1_1UVCFormatSpec.html" title="One video format (UVC format descriptor) with its resolutions." alt="" coords="686,98,868,126"/>
@@ -13,6 +13,6 @@
 <area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="150,130,307,206,302,209,149,135"/>
 <area shape="rect" id="Node000007" href="$classtinyuvc_1_1UVCPayloadEncoder.html" title="Produces the UVC payloads of one frame. Each payload starts with a 2 byte header (6 bytes with a pres..." alt="" coords="453,98,662,126"/>
 <area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="518,132,361,210,358,205,513,134"/>
-<area shape="rect" id="Node000008" href="$structusbd__class__driver__t.html" title=" " alt="" coords="431,208,580,235"/>
+<area shape="rect" id="Node000008" href="$structusbd__class__driver__t.html" title="Desktop stand&#45;in for TinyUSB&#39;s class driver table entry." alt="" coords="431,208,580,235"/>
 <area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="469,242,358,302,356,297,464,243"/>
 </map>
