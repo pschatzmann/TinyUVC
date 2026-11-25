@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['datain_0',['DataIn',['../namespacetinyuvc.html#ab72a86a7679861f251479b7b9a820c99a29b3c7cd7f5ff80c935cc9acefb3c868',1,'tinyuvc']]],
-  ['dataout_1',['DataOut',['../namespacetinyuvc.html#ab72a86a7679861f251479b7b9a820c99a3d839097434aecd97cc5c764a5a47772',1,'tinyuvc']]],
-  ['debug_2',['Debug',['../namespacetinyuvc.html#a53a05b8b6bdc9604a668f28de79ba73faa603905470e2a5b8c13e96b579ef0dba',1,'tinyuvc']]],
-  ['device_3',['Device',['../structtinyuvc_1_1UVCRequest.html#a3ddffdd9b97bc70aacd159ceba926251ade0ceb19ce12aae8dfcc75fda24391ac',1,'tinyuvc::UVCRequest']]]
+  ['class_0',['Class',['../structtinyuvc_1_1UVCRequest.html#a4c813cae127d90f79528faa04a2936dca35191343e817d1e1e3030655d424bc4e',1,'tinyuvc::UVCRequest']]],
+  ['control_5fstage_5fack_1',['CONTROL_STAGE_ACK',['../TinyUSBSim_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba18079efec0cdb821f24b437b646b864d',1,'TinyUSBSim.h']]],
+  ['control_5fstage_5fdata_2',['CONTROL_STAGE_DATA',['../TinyUSBSim_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae5d89e21948588e11d6564fdf0e66c0b',1,'TinyUSBSim.h']]],
+  ['control_5fstage_5fidle_3',['CONTROL_STAGE_IDLE',['../TinyUSBSim_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba9df2451beccafc5843e74739158e2204',1,'TinyUSBSim.h']]],
+  ['control_5fstage_5fsetup_4',['CONTROL_STAGE_SETUP',['../TinyUSBSim_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf17ae8688f98708446ce909eb0e83c7c',1,'TinyUSBSim.h']]]
 ];

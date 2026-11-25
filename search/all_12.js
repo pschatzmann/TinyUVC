@@ -35,5 +35,6 @@ var searchData=
   ['tusb_5fcontrol_5frequest_5ft_32',['tusb_control_request_t',['../TinyUSBSim_8h.html#a03d78d31d01ac41406eb6a287740d55b',1,'TinyUSBSim.h']]],
   ['tusb_5fdesc_5fendpoint_5ft_33',['tusb_desc_endpoint_t',['../TinyUSBSim_8h.html#afd066df392cab9baa98d9a70275f4202',1,'TinyUSBSim.h']]],
   ['tusb_5fdesc_5finterface_5ft_34',['tusb_desc_interface_t',['../TinyUSBSim_8h.html#a408eefe73d6a6cb906e5e24af36c3472',1,'TinyUSBSim.h']]],
-  ['type_35',['type',['../structtinyuvc_1_1UVCRequest.html#a758f05b7c223f7f3c2d45fad80680d84',1,'tinyuvc::UVCRequest::type() const'],['../structtinyuvc_1_1UVCRequest.html#a4c813cae127d90f79528faa04a2936dc',1,'tinyuvc::UVCRequest::Type']]]
+  ['type_35',['type',['../structtinyuvc_1_1UVCRequest.html#a4c813cae127d90f79528faa04a2936dc',1,'tinyuvc::UVCRequest::Type'],['../structtinyuvc_1_1UVCRequest.html#a758f05b7c223f7f3c2d45fad80680d84',1,'tinyuvc::UVCRequest::type() const']]],
+  ['type_5f_36',['type_',['../classtinyuvc_1_1UVCFrameBuffer.html#a4158f86a8c02cfb67972dda230fc1490',1,'tinyuvc::UVCFrameBuffer']]]
 ];

@@ -13,7 +13,8 @@ var searchData=
   ['usbtransfercomplete_10',['usbTransferComplete',['../classtinyuvc_1_1UVCDevice.html#a1e5eeed7782694d956599092ffa1c7c3',1,'tinyuvc::UVCDevice']]],
   ['uvccamera_11',['UVCCamera',['../classtinyuvc_1_1UVCCamera.html#a906a9087bf0b862a033c9dec62ff71a5',1,'tinyuvc::UVCCamera']]],
   ['uvcdevice_12',['uvcdevice',['../classtinyuvc_1_1UVCDevice.html#a6f685a55f21d68578bcf9e642253169e',1,'tinyuvc::UVCDevice::UVCDevice(const UVCDevice &amp;)=delete'],['../classtinyuvc_1_1UVCDevice.html#af576909569c2bf718d37812c1e79999f',1,'tinyuvc::UVCDevice::UVCDevice()=default']]],
-  ['uvchostsimulator_13',['UVCHostSimulator',['../classtinyuvc_1_1UVCHostSimulator.html#a198113ca8a4a8816da6683fb54223147',1,'tinyuvc::UVCHostSimulator']]],
-  ['uvcvideocopy_14',['UVCVideoCopy',['../classtinyuvc_1_1UVCVideoCopy.html#a3915ad54064f19d39416538faa363d54',1,'tinyuvc::UVCVideoCopy']]],
-  ['uvcvideooutput_15',['UVCVideoOutput',['../classtinyuvc_1_1UVCVideoOutput.html#a492d71fafe982c90dec9f5ddc159f2e0',1,'tinyuvc::UVCVideoOutput']]]
+  ['uvcframebuffer_13',['uvcframebuffer',['../classtinyuvc_1_1UVCFrameBuffer.html#a1c9735d1e26b6bd0ba5003052c55c053',1,'tinyuvc::UVCFrameBuffer::UVCFrameBuffer()=default'],['../classtinyuvc_1_1UVCFrameBuffer.html#a7e5af269018e8523aa7efe708f5a9e87',1,'tinyuvc::UVCFrameBuffer::UVCFrameBuffer(const UVCFrameBuffer &amp;)=delete']]],
+  ['uvchostsimulator_14',['UVCHostSimulator',['../classtinyuvc_1_1UVCHostSimulator.html#a198113ca8a4a8816da6683fb54223147',1,'tinyuvc::UVCHostSimulator']]],
+  ['uvcvideocopy_15',['UVCVideoCopy',['../classtinyuvc_1_1UVCVideoCopy.html#a3915ad54064f19d39416538faa363d54',1,'tinyuvc::UVCVideoCopy']]],
+  ['uvcvideooutput_16',['UVCVideoOutput',['../classtinyuvc_1_1UVCVideoOutput.html#a492d71fafe982c90dec9f5ddc159f2e0',1,'tinyuvc::UVCVideoOutput']]]
 ];

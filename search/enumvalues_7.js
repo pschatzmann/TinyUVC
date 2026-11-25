@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['mjpeg_0',['mjpeg',['../namespacetinyuvc.html#a5983fcb109cbe2d40956fdce99a6ec54a0a5417ce14732e9bdb402be642ebe9ea',1,'tinyuvc::MJPEG'],['../namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4a0a5417ce14732e9bdb402be642ebe9ea',1,'tinyuvc::MJPEG']]]
+  ['info_0',['Info',['../namespacetinyuvc.html#a53a05b8b6bdc9604a668f28de79ba73fa4059b0251f66a18cb56f544728796875',1,'tinyuvc']]],
+  ['interface_1',['Interface',['../structtinyuvc_1_1UVCRequest.html#a3ddffdd9b97bc70aacd159ceba926251a955e1bb38647a9867e67422057b1e27f',1,'tinyuvc::UVCRequest']]]
 ];

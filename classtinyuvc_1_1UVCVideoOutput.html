@@ -101,11 +101,11 @@ Collaboration diagram for tinyuvc::UVCVideoOutput:</div>
 <div class="dyncontent">
 <div class="center"><img src="classtinyuvc_1_1UVCVideoOutput__coll__graph.png" border="0" usemap="#atinyuvc_1_1UVCVideoOutput_coll__map" alt="Collaboration graph"/></div>
 <map name="atinyuvc_1_1UVCVideoOutput_coll__map" id="atinyuvc_1_1UVCVideoOutput_coll__map">
-<area shape="rect" title="VideoOutput that sends every frame (write() calls up to flush()) to a UVCDevice. Two frame buffers ar..." alt="" coords="867,72,1054,100"/>
+<area shape="rect" title="VideoOutput that sends every frame (write() calls up to flush()) to a UVCDevice. Two frame buffers ar..." alt="" coords="889,99,1076,127"/>
 <area shape="rect" title=" " alt="" coords="600,47,785,75"/>
-<area shape="poly" title=" " alt="" coords="801,69,870,77,864,78,801,74"/>
+<area shape="poly" title=" " alt="" coords="796,75,866,88,912,99,906,99,865,93,796,81"/>
 <area shape="rect" href="classtinyuvc_1_1UVCDevice.html" title="USB Video Class (UVC 1.1) device &#45; a USB webcam." alt="" coords="618,99,768,127"/>
-<area shape="poly" title=" " alt="" coords="783,101,843,95,870,95,864,96,844,101,784,107"/>
+<area shape="poly" title=" " alt="" coords="783,110,892,113,887,113,784,116"/>
 <area shape="rect" href="structtinyuvc_1_1UVCFormatSpec.html" title="One video format (UVC format descriptor) with its resolutions." alt="" coords="294,8,476,36"/>
 <area shape="poly" title=" " alt="" coords="491,27,536,38,578,56,590,70,602,84,628,99,622,98,598,88,586,74,574,60,534,43,491,32"/>
 <area shape="rect" href="structtinyuvc_1_1UVCFrameSpec.html" title="One resolution (UVC frame descriptor) with its supported frame rates." alt="" coords="5,8,183,36"/>
@@ -115,7 +115,9 @@ Collaboration diagram for tinyuvc::UVCVideoOutput:</div>
 <area shape="rect" href="structtinyuvc_1_1UVCStreamSettings.html" title="The format, resolution and frame rate the host selected." alt="" coords="282,123,488,151"/>
 <area shape="poly" title=" " alt="" coords="503,136,576,131,620,128,625,127,576,137,503,141"/>
 <area shape="rect" href="classtinyuvc_1_1UVCPayloadEncoder.html" title="Produces the UVC payloads of one frame. Each payload starts with a 2 byte header (6 bytes with a pres..." alt="" coords="281,175,489,203"/>
-<area shape="poly" title=" " alt="" coords="504,173,575,158,621,142,660,128,665,127,623,147,577,163,505,179"/>
+<area shape="poly" title=" " alt="" coords="504,179,540,171,575,158,586,148,599,137,626,128,631,127,601,142,590,152,577,163,542,176,505,185"/>
+<area shape="rect" href="classtinyuvc_1_1UVCFrameBuffer.html" title="A growing byte buffer for one frame, allocated with UVCMemory (so in PSRAM where available)...." alt="" coords="600,151,785,179"/>
+<area shape="poly" title=" " alt="" coords="794,145,865,133,905,128,910,127,866,138,795,151"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -136,6 +138,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3e33be4010592615bc1b59120de61865" id="r_a3e33be4010592615bc1b59120de61865"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoOutput.html#a3e33be4010592615bc1b59120de61865">setMaxFrameSize</a> (size_t size)</td></tr>
 <tr class="memdesc:a3e33be4010592615bc1b59120de61865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max frame size: bigger frames are dropped (default 512 KB)  <br /></td></tr>
 <tr class="separator:a3e33be4010592615bc1b59120de61865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1524b875f2a9a6b1a1b3a49b53c175f2" id="r_a1524b875f2a9a6b1a1b3a49b53c175f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoOutput.html#a1524b875f2a9a6b1a1b3a49b53c175f2">setMemoryType</a> (<a class="el" href="namespacetinyuvc.html#a1ea61e38c2cac67a3cc89d5840c7bd69">UVCMemoryType</a> type)</td></tr>
+<tr class="separator:a1524b875f2a9a6b1a1b3a49b53c175f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4941531b782c311d7cfd595ae5626d4" id="r_ae4941531b782c311d7cfd595ae5626d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoOutput.html#ae4941531b782c311d7cfd595ae5626d4">reserve</a> (size_t size)</td></tr>
+<tr class="separator:ae4941531b782c311d7cfd595ae5626d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6050bb6df9ea7e8ec18d1e543c129b2e" id="r_a6050bb6df9ea7e8ec18d1e543c129b2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoOutput.html#a6050bb6df9ea7e8ec18d1e543c129b2e">release</a> ()</td></tr>
+<tr class="separator:a6050bb6df9ea7e8ec18d1e543c129b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac5531c66040c56f68dda3d3fd3c3994" id="r_aac5531c66040c56f68dda3d3fd3c3994"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoOutput.html#aac5531c66040c56f68dda3d3fd3c3994">setPacing</a> (bool pacing)</td></tr>
 <tr class="separator:aac5531c66040c56f68dda3d3fd3c3994"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaed959ddaf77aaeb1d8592ea61eda37b" id="r_aaed959ddaf77aaeb1d8592ea61eda37b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoOutput.html#aaed959ddaf77aaeb1d8592ea61eda37b">setFlushOnWrite</a> (bool flushOnWrite)</td></tr>
@@ -163,8 +171,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a329d3d215f11a38ffbdecbd13b2f626f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7458a11bda41de43857b51b5ce94a0fb" id="r_a7458a11bda41de43857b51b5ce94a0fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4">PixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoOutput.html#a7458a11bda41de43857b51b5ce94a0fb">format_</a></td></tr>
 <tr class="separator:a7458a11bda41de43857b51b5ce94a0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af98e0307efd3d895b272c371dbc47be5" id="r_af98e0307efd3d895b272c371dbc47be5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoOutput.html#af98e0307efd3d895b272c371dbc47be5">buffers_</a> [2]</td></tr>
-<tr class="separator:af98e0307efd3d895b272c371dbc47be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ff19418f6e5c5cc12cb6307170c19e4" id="r_a2ff19418f6e5c5cc12cb6307170c19e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCFrameBuffer.html">UVCFrameBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoOutput.html#a2ff19418f6e5c5cc12cb6307170c19e4">buffers_</a> [2]</td></tr>
+<tr class="separator:a2ff19418f6e5c5cc12cb6307170c19e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a177e0da313fcc72cba1e7c604dcd301f" id="r_a177e0da313fcc72cba1e7c604dcd301f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoOutput.html#a177e0da313fcc72cba1e7c604dcd301f">fill_</a> = 0</td></tr>
 <tr class="separator:a177e0da313fcc72cba1e7c604dcd301f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd4197dc678971eb646e4227543080d1" id="r_acd4197dc678971eb646e4227543080d1"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoOutput.html#acd4197dc678971eb646e4227543080d1">maxFrameSize_</a> = 512 * 1024</td></tr>
@@ -190,12 +198,13 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>VideoOutput that sends every frame (<a class="el" href="classtinyuvc_1_1UVCVideoOutput.html#aef012eba7f4f338c089c6e40e2d91687">write()</a> calls up to <a class="el" href="classtinyuvc_1_1UVCVideoOutput.html#a732874d3e4e131876adfc5f388c9cf13" title="Completes the frame and hands it to the UVC device.">flush()</a>) to a <a class="el" href="classtinyuvc_1_1UVCDevice.html" title="USB Video Class (UVC 1.1) device - a USB webcam.">UVCDevice</a>. Two frame buffers are used: one is sent while the next one is written. </p>
+<p>The frame buffers grow to the size of the biggest frame and are taken from PSRAM where the board has it (see <a class="el" href="classtinyuvc_1_1UVCVideoOutput.html#a1524b875f2a9a6b1a1b3a49b53c175f2">setMemoryType()</a>, <a class="el" href="classtinyuvc_1_1UVCVideoOutput.html#ae4941531b782c311d7cfd595ae5626d4">reserve()</a>).</p>
 <p>Writers that deliver one complete frame per <a class="el" href="classtinyuvc_1_1UVCVideoOutput.html#aef012eba7f4f338c089c6e40e2d91687">write()</a> without calling <a class="el" href="classtinyuvc_1_1UVCVideoOutput.html#a732874d3e4e131876adfc5f388c9cf13" title="Completes the frame and hands it to the UVC device.">flush()</a> (e.g. MJPEGEncoder) are supported as well: a complete JPEG written in one call is sent right away, for other formats use setFlushOnWrite(true).</p>
 <div class="fragment"><div class="line"><a class="code hl_class" href="classtinyuvc_1_1UVCDevice.html">UVCDevice</a> uvc;</div>
 <div class="line"><a class="code hl_class" href="classtinyuvc_1_1UVCVideoOutput.html">UVCVideoOutput</a> out(uvc, <a class="code hl_enumvalue" href="namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4a0a5417ce14732e9bdb402be642ebe9ea">PixelFormat::MJPEG</a>);</div>
 <div class="line">MJPEGEncoder encoder(out);   <span class="comment">// RGB565 -&gt; JPEG -&gt; webcam</span></div>
 <div class="ttc" id="aclasstinyuvc_1_1UVCDevice_html"><div class="ttname"><a href="classtinyuvc_1_1UVCDevice.html">tinyuvc::UVCDevice</a></div><div class="ttdoc">USB Video Class (UVC 1.1) device - a USB webcam.</div><div class="ttdef"><b>Definition</b> UVCDevice.h:95</div></div>
-<div class="ttc" id="aclasstinyuvc_1_1UVCVideoOutput_html"><div class="ttname"><a href="classtinyuvc_1_1UVCVideoOutput.html">tinyuvc::UVCVideoOutput</a></div><div class="ttdoc">VideoOutput that sends every frame (write() calls up to flush()) to a UVCDevice. Two frame buffers ar...</div><div class="ttdef"><b>Definition</b> TinyUVCAudioTools.h:76</div></div>
+<div class="ttc" id="aclasstinyuvc_1_1UVCVideoOutput_html"><div class="ttname"><a href="classtinyuvc_1_1UVCVideoOutput.html">tinyuvc::UVCVideoOutput</a></div><div class="ttdoc">VideoOutput that sends every frame (write() calls up to flush()) to a UVCDevice. Two frame buffers ar...</div><div class="ttdef"><b>Definition</b> TinyUVCAudioTools.h:78</div></div>
 <div class="ttc" id="anamespacetinyuvc_html_a8d16c79adf1bf0fde4634a8cdc7fe6e4a0a5417ce14732e9bdb402be642ebe9ea"><div class="ttname"><a href="namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4a0a5417ce14732e9bdb402be642ebe9ea">tinyuvc::PixelFormat::MJPEG</a></div><div class="ttdeci">@ MJPEG</div><div class="ttdoc">one complete JPEG image (for UVCFormat::MJPEG)</div></div>
 </div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a492d71fafe982c90dec9f5ddc159f2e0" name="a492d71fafe982c90dec9f5ddc159f2e0"></a>
@@ -402,6 +411,59 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a6050bb6df9ea7e8ec18d1e543c129b2e" name="a6050bb6df9ea7e8ec18d1e543c129b2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6050bb6df9ea7e8ec18d1e543c129b2e">&#9670;&#160;</a></span>release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tinyuvc::UVCVideoOutput::release </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Frees the frame buffers; they are allocated again by the next frame. The frame that is still being sent keeps its buffer. </p>
+
+</div>
+</div>
+<a id="ae4941531b782c311d7cfd595ae5626d4" name="ae4941531b782c311d7cfd595ae5626d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4941531b782c311d7cfd595ae5626d4">&#9670;&#160;</a></span>reserve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tinyuvc::UVCVideoOutput::reserve </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Allocates both frame buffers for frames of up to size bytes now, instead of growing them with the first frames. False if there is not enough memory. </p>
+
+</div>
+</div>
 <a id="aaed959ddaf77aaeb1d8592ea61eda37b" name="aaed959ddaf77aaeb1d8592ea61eda37b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaed959ddaf77aaeb1d8592ea61eda37b">&#9670;&#160;</a></span>setFlushOnWrite()</h2>
 
@@ -455,6 +517,33 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Max frame size: bigger frames are dropped (default 512 KB) </p>
+
+</div>
+</div>
+<a id="a1524b875f2a9a6b1a1b3a49b53c175f2" name="a1524b875f2a9a6b1a1b3a49b53c175f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1524b875f2a9a6b1a1b3a49b53c175f2">&#9670;&#160;</a></span>setMemoryType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tinyuvc::UVCVideoOutput::setMemoryType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacetinyuvc.html#a1ea61e38c2cac67a3cc89d5840c7bd69">UVCMemoryType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Where the two frame buffers are allocated: <a class="el" href="namespacetinyuvc.html#a1ea61e38c2cac67a3cc89d5840c7bd69a06b9281e396db002010bde1de57262eb" title="PSRAM if the board has it, else RAM.">UVCMemoryType::Auto</a> (default: PSRAM if available, else RAM), PSRAM or RAM. Call it before the first frame or <a class="el" href="classtinyuvc_1_1UVCVideoOutput.html#ae4941531b782c311d7cfd595ae5626d4">reserve()</a>. </p>
 
 </div>
 </div>
@@ -605,8 +694,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="af98e0307efd3d895b272c371dbc47be5" name="af98e0307efd3d895b272c371dbc47be5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af98e0307efd3d895b272c371dbc47be5">&#9670;&#160;</a></span>buffers_</h2>
+<a id="a2ff19418f6e5c5cc12cb6307170c19e4" name="a2ff19418f6e5c5cc12cb6307170c19e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ff19418f6e5c5cc12cb6307170c19e4">&#9670;&#160;</a></span>buffers_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -615,7 +704,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;uint8_t&gt; tinyuvc::UVCVideoOutput::buffers_[2]</td>
+          <td class="memname"><a class="el" href="classtinyuvc_1_1UVCFrameBuffer.html">UVCFrameBuffer</a> tinyuvc::UVCVideoOutput::buffers_[2]</td>
         </tr>
       </table>
   </td>

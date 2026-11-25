@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bgr888_0',['BGR888',['../namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4a7cec9e9c2dffb6982c75cdbf5f2af9ef',1,'tinyuvc']]]
+  ['auto_0',['Auto',['../namespacetinyuvc.html#a1ea61e38c2cac67a3cc89d5840c7bd69a06b9281e396db002010bde1de57262eb',1,'tinyuvc']]]
 ];

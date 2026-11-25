@@ -121,6 +121,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtinyuvc_1_1UVCFormatSpec.html">UVCFormatSpec</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One video format (UVC format descriptor) with its resolutions.  <a href="structtinyuvc_1_1UVCFormatSpec.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCFrameBuffer.html">UVCFrameBuffer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A growing byte buffer for one frame, allocated with <a class="el" href="classtinyuvc_1_1UVCMemory.html" title="Allocates frame sized buffers in PSRAM or RAM (see UVCMemoryType)">UVCMemory</a> (so in PSRAM where available). It grows in steps while a frame is written and keeps its memory when it is cleared, so after the first frames no more allocations happen.  <a href="classtinyuvc_1_1UVCFrameBuffer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtinyuvc_1_1UVCFrameSpec.html">UVCFrameSpec</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One resolution (UVC frame descriptor) with its supported frame rates.  <a href="structtinyuvc_1_1UVCFrameSpec.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,6 +132,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCLoggerClass.html">UVCLoggerClass</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logger used by all TinyUVC classes.  <a href="classtinyuvc_1_1UVCLoggerClass.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCMemory.html">UVCMemory</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates frame sized buffers in PSRAM or RAM (see UVCMemoryType)  <a href="classtinyuvc_1_1UVCMemory.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCPayloadEncoder.html">UVCPayloadEncoder</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Produces the UVC payloads of one frame. Each payload starts with a 2 byte header (6 bytes with a presentation time stamp) that carries the frame id bit (FID, toggled per frame) and, in the last payload of the frame, the end of frame bit (EOF).  <a href="classtinyuvc_1_1UVCPayloadEncoder.html#details">More...</a><br /></td></tr>
@@ -194,6 +200,12 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a53a05b8b6bdc9604a668f28de79ba73f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log levels of UVCLogger.  <a href="namespacetinyuvc.html#a53a05b8b6bdc9604a668f28de79ba73f">More...</a><br /></td></tr>
 <tr class="separator:a53a05b8b6bdc9604a668f28de79ba73f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ea61e38c2cac67a3cc89d5840c7bd69" id="r_a1ea61e38c2cac67a3cc89d5840c7bd69"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc.html#a1ea61e38c2cac67a3cc89d5840c7bd69">UVCMemoryType</a> { <a class="el" href="namespacetinyuvc.html#a1ea61e38c2cac67a3cc89d5840c7bd69a06b9281e396db002010bde1de57262eb">Auto</a>
+, <a class="el" href="namespacetinyuvc.html#a1ea61e38c2cac67a3cc89d5840c7bd69a34ef1bdcaaf8c1e2d63bf8c904b06d52">PSRAM</a>
+, <a class="el" href="namespacetinyuvc.html#a1ea61e38c2cac67a3cc89d5840c7bd69ae53619c1fe611a51eeeb8d148ba6e532">RAM</a>
+ }</td></tr>
+<tr class="memdesc:a1ea61e38c2cac67a3cc89d5840c7bd69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where frame buffers are allocated.  <a href="namespacetinyuvc.html#a1ea61e38c2cac67a3cc89d5840c7bd69">More...</a><br /></td></tr>
+<tr class="separator:a1ea61e38c2cac67a3cc89d5840c7bd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -364,6 +376,38 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a53a05b8b6bdc9604a668f28de79ba73fa0eaadb4fcb48a0a0ed7bc9868be9fbaa" name="a53a05b8b6bdc9604a668f28de79ba73fa0eaadb4fcb48a0a0ed7bc9868be9fbaa"></a>Warning&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a53a05b8b6bdc9604a668f28de79ba73fa4059b0251f66a18cb56f544728796875" name="a53a05b8b6bdc9604a668f28de79ba73fa4059b0251f66a18cb56f544728796875"></a>Info&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a53a05b8b6bdc9604a668f28de79ba73faa603905470e2a5b8c13e96b579ef0dba" name="a53a05b8b6bdc9604a668f28de79ba73faa603905470e2a5b8c13e96b579ef0dba"></a>Debug&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a1ea61e38c2cac67a3cc89d5840c7bd69" name="a1ea61e38c2cac67a3cc89d5840c7bd69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ea61e38c2cac67a3cc89d5840c7bd69">&#9670;&#160;</a></span>UVCMemoryType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespacetinyuvc.html#a1ea61e38c2cac67a3cc89d5840c7bd69">tinyuvc::UVCMemoryType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Where frame buffers are allocated. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1ea61e38c2cac67a3cc89d5840c7bd69a06b9281e396db002010bde1de57262eb" name="a1ea61e38c2cac67a3cc89d5840c7bd69a06b9281e396db002010bde1de57262eb"></a>Auto&#160;</td><td class="fielddoc"><p>PSRAM if the board has it, else RAM. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1ea61e38c2cac67a3cc89d5840c7bd69a34ef1bdcaaf8c1e2d63bf8c904b06d52" name="a1ea61e38c2cac67a3cc89d5840c7bd69a34ef1bdcaaf8c1e2d63bf8c904b06d52"></a>PSRAM&#160;</td><td class="fielddoc"><p>PSRAM only: the allocation fails without PSRAM. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1ea61e38c2cac67a3cc89d5840c7bd69ae53619c1fe611a51eeeb8d148ba6e532" name="a1ea61e38c2cac67a3cc89d5840c7bd69ae53619c1fe611a51eeeb8d148ba6e532"></a>RAM&#160;</td><td class="fielddoc"><p>internal RAM only </p>
+</td></tr>
 </table>
 
 </div>

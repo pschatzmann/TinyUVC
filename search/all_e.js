@@ -7,7 +7,7 @@ var searchData=
   ['openendpoint_4',['openEndpoint',['../structtinyuvc_1_1UVCSimBus.html#a6a3e00482ddc7cd070da864e8a0d372c',1,'tinyuvc::UVCSimBus']]],
   ['openmaxpacketsize_5',['openMaxPacketSize',['../structtinyuvc_1_1UVCSimBus.html#abdd6081ccbfd6ab281e82cc32245efaa',1,'tinyuvc::UVCSimBus']]],
   ['operator_21_3d_6',['operator!=',['../structtinyuvc_1_1UVCStreamSettings.html#a72f72eeaa6b196beff86f03b20fa0389',1,'tinyuvc::UVCStreamSettings']]],
-  ['operator_3d_7',['operator=',['../structtinyuvc_1_1platform_1_1AppLock.html#ac0763a442944307ccdad6ef3b97d0c40',1,'tinyuvc::platform::AppLock::operator=()'],['../classtinyuvc_1_1UVCDevice.html#a3d21e32e3939a5d0bacef2553e8f56dc',1,'tinyuvc::UVCDevice::operator=()']]],
+  ['operator_3d_7',['operator=',['../structtinyuvc_1_1platform_1_1AppLock.html#ac0763a442944307ccdad6ef3b97d0c40',1,'tinyuvc::platform::AppLock::operator=()'],['../classtinyuvc_1_1UVCDevice.html#a3d21e32e3939a5d0bacef2553e8f56dc',1,'tinyuvc::UVCDevice::operator=()'],['../classtinyuvc_1_1UVCFrameBuffer.html#abf1e75e977d1174a717eb8a51a6c11cc',1,'tinyuvc::UVCFrameBuffer::operator=()']]],
   ['operator_3d_3d_8',['operator==',['../structtinyuvc_1_1UVCStreamSettings.html#a86be607b4632865f55d0e474aaf9d624',1,'tinyuvc::UVCStreamSettings']]],
   ['outputlength_9',['outputLength',['../classtinyuvc_1_1UVCPayloadEncoder.html#a8cc3d1ec6161d6d530ae2d7be96e95e4',1,'tinyuvc::UVCPayloadEncoder']]],
   ['overflow_5f_10',['overflow_',['../classtinyuvc_1_1UVCVideoOutput.html#a1511729aef5f08175a3adf307fd35b5a',1,'tinyuvc::UVCVideoOutput']]]

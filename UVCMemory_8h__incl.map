@@ -1,0 +1,9 @@
+<map id="src/TinyUVC/UVCMemory.h" name="src/TinyUVC/UVCMemory.h">
+<area shape="rect" id="Node000001" title="Memory for frame sized buffers, taken from PSRAM where the board has it: ESP32 with PSRAM enabled (To..." alt="" coords="36,5,232,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,81,76,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,33,70,73,67,69,115,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="99,81,168,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="136,32,136,66,131,64,132,36"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="192,81,262,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="151,31,202,71,196,72,150,36"/>
+</map>

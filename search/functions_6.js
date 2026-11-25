@@ -19,5 +19,6 @@ var searchData=
   ['framessent_16',['framesSent',['../classtinyuvc_1_1UVCDevice.html#a431c3f62a85ad34b09859460c0123912',1,'tinyuvc::UVCDevice']]],
   ['frameswitherror_17',['framesWithError',['../classtinyuvc_1_1UVCHostSimulator.html#a843565afe920aacc84a706816c9a0f3f',1,'tinyuvc::UVCHostSimulator']]],
   ['framinginfo_18',['framingInfo',['../structtinyuvc_1_1UVCProbeCommit.html#a4585304502fb690aee9c17563be63375',1,'tinyuvc::UVCProbeCommit']]],
-  ['freebuffer_19',['freeBuffer',['../namespacetinyuvc_1_1platform.html#a218ec6d0c42678a89e1c721c5bb05e22',1,'tinyuvc::platform']]]
+  ['free_19',['free',['../classtinyuvc_1_1UVCMemory.html#af1722af06e7213c6008b21bf9b8399e8',1,'tinyuvc::UVCMemory']]],
+  ['freebuffer_20',['freeBuffer',['../namespacetinyuvc_1_1platform.html#a218ec6d0c42678a89e1c721c5bb05e22',1,'tinyuvc::platform']]]
 ];

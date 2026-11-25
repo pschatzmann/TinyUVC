@@ -21,6 +21,7 @@ var searchData=
   ['isconnected_18',['isConnected',['../classtinyuvc_1_1UVCHostSimulator.html#a24fa8578283f85e8eb50adc42b7fd281',1,'tinyuvc::UVCHostSimulator']]],
   ['isin_19',['isIn',['../structtinyuvc_1_1UVCRequest.html#a3c6fa64b5d84085204ec4f7fdc8eed04',1,'tinyuvc::UVCRequest']]],
   ['isready_20',['isReady',['../classtinyuvc_1_1UVCDevice.html#aea35db4cf1602df165330a5985a951b6',1,'tinyuvc::UVCDevice']]],
-  ['isstreaming_21',['isstreaming',['../classtinyuvc_1_1UVCHostSimulator.html#a7a9ea90dff3ab22765063f54aaa6adff',1,'tinyuvc::UVCHostSimulator::isStreaming()'],['../classtinyuvc_1_1UVCDevice.html#a092cca486773a4e88256a90ad0ac5cd7',1,'tinyuvc::UVCDevice::isStreaming()']]],
-  ['itt_5fcamera_22',['ITT_CAMERA',['../namespacetinyuvc_1_1uvc__spec.html#a65a8da0aea2d2e12482d0f2098cefa8c',1,'tinyuvc::uvc_spec']]]
+  ['issending_21',['isSending',['../classtinyuvc_1_1UVCDevice.html#ac505a88e444379ccf6bab9abcdb43fc5',1,'tinyuvc::UVCDevice']]],
+  ['isstreaming_22',['isstreaming',['../classtinyuvc_1_1UVCHostSimulator.html#a7a9ea90dff3ab22765063f54aaa6adff',1,'tinyuvc::UVCHostSimulator::isStreaming()'],['../classtinyuvc_1_1UVCDevice.html#a092cca486773a4e88256a90ad0ac5cd7',1,'tinyuvc::UVCDevice::isStreaming()']]],
+  ['itt_5fcamera_23',['ITT_CAMERA',['../namespacetinyuvc_1_1uvc__spec.html#a65a8da0aea2d2e12482d0f2098cefa8c',1,'tinyuvc::uvc_spec']]]
 ];

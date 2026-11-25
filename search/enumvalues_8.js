@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['none_0',['None',['../namespacetinyuvc.html#a53a05b8b6bdc9604a668f28de79ba73fa6adf97f83acf6453d4a6a4b1070f3754',1,'tinyuvc']]]
+  ['mjpeg_0',['mjpeg',['../namespacetinyuvc.html#a5983fcb109cbe2d40956fdce99a6ec54a0a5417ce14732e9bdb402be642ebe9ea',1,'tinyuvc::MJPEG'],['../namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4a0a5417ce14732e9bdb402be642ebe9ea',1,'tinyuvc::MJPEG']]]
 ];

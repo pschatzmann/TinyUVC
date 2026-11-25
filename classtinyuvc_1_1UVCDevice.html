@@ -162,6 +162,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a092cca486773a4e88256a90ad0ac5cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea35db4cf1602df165330a5985a951b6" id="r_aea35db4cf1602df165330a5985a951b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCDevice.html#aea35db4cf1602df165330a5985a951b6">isReady</a> () const</td></tr>
 <tr class="separator:aea35db4cf1602df165330a5985a951b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac505a88e444379ccf6bab9abcdb43fc5" id="r_ac505a88e444379ccf6bab9abcdb43fc5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCDevice.html#ac505a88e444379ccf6bab9abcdb43fc5">isSending</a> () const</td></tr>
+<tr class="separator:ac505a88e444379ccf6bab9abcdb43fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a593694978f527ef2c820009dea627b16" id="r_a593694978f527ef2c820009dea627b16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtinyuvc_1_1UVCStreamSettings.html">UVCStreamSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCDevice.html#a593694978f527ef2c820009dea627b16">settings</a> () const</td></tr>
 <tr class="memdesc:a593694978f527ef2c820009dea627b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format, resolution and frame rate the host selected.  <br /></td></tr>
 <tr class="separator:a593694978f527ef2c820009dea627b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -335,7 +337,7 @@ Protected Attributes</h2></td></tr>
 <div class="line">}</div>
 <div class="ttc" id="aclasstinyuvc_1_1UVCDevice_html"><div class="ttname"><a href="classtinyuvc_1_1UVCDevice.html">tinyuvc::UVCDevice</a></div><div class="ttdoc">USB Video Class (UVC 1.1) device - a USB webcam.</div><div class="ttdef"><b>Definition</b> UVCDevice.h:95</div></div>
 <div class="ttc" id="aclasstinyuvc_1_1UVCDevice_html_a722f5256bca1fd026625e580817984e6"><div class="ttname"><a href="classtinyuvc_1_1UVCDevice.html#a722f5256bca1fd026625e580817984e6">tinyuvc::UVCDevice::addResolution</a></div><div class="ttdeci">bool addResolution(UVCFormat format, uint16_t width, uint16_t height, uint8_t fps, uint32_t maxFrameSize=0)</div><div class="ttdef"><b>Definition</b> UVCDevice.h:107</div></div>
-<div class="ttc" id="aclasstinyuvc_1_1UVCDevice_html_a8ff40b9e285d3b7cab949e884ba1944b"><div class="ttname"><a href="classtinyuvc_1_1UVCDevice.html#a8ff40b9e285d3b7cab949e884ba1944b">tinyuvc::UVCDevice::writeFrame</a></div><div class="ttdeci">bool writeFrame(const uint8_t *data, size_t len, PixelFormat fmt)</div><div class="ttdoc">Sends a frame. Returns false (and the frame is not sent) if the device is not ready or the frame does...</div><div class="ttdef"><b>Definition</b> UVCDevice.h:274</div></div>
+<div class="ttc" id="aclasstinyuvc_1_1UVCDevice_html_a8ff40b9e285d3b7cab949e884ba1944b"><div class="ttname"><a href="classtinyuvc_1_1UVCDevice.html#a8ff40b9e285d3b7cab949e884ba1944b">tinyuvc::UVCDevice::writeFrame</a></div><div class="ttdeci">bool writeFrame(const uint8_t *data, size_t len, PixelFormat fmt)</div><div class="ttdoc">Sends a frame. Returns false (and the frame is not sent) if the device is not ready or the frame does...</div><div class="ttdef"><b>Definition</b> UVCDevice.h:278</div></div>
 <div class="ttc" id="aclasstinyuvc_1_1UVCDevice_html_ac6d591ed4ea62a2d224173581267257f"><div class="ttname"><a href="classtinyuvc_1_1UVCDevice.html#ac6d591ed4ea62a2d224173581267257f">tinyuvc::UVCDevice::begin</a></div><div class="ttdeci">bool begin()</div><div class="ttdef"><b>Definition</b> UVCDevice.h:198</div></div>
 <div class="ttc" id="aclasstinyuvc_1_1UVCDevice_html_aea35db4cf1602df165330a5985a951b6"><div class="ttname"><a href="classtinyuvc_1_1UVCDevice.html#aea35db4cf1602df165330a5985a951b6">tinyuvc::UVCDevice::isReady</a></div><div class="ttdeci">bool isReady() const</div><div class="ttdef"><b>Definition</b> UVCDevice.h:256</div></div>
 <div class="ttc" id="anamespacetinyuvc_html_a5983fcb109cbe2d40956fdce99a6ec54a0a5417ce14732e9bdb402be642ebe9ea"><div class="ttname"><a href="namespacetinyuvc.html#a5983fcb109cbe2d40956fdce99a6ec54a0a5417ce14732e9bdb402be642ebe9ea">tinyuvc::UVCFormat::MJPEG</a></div><div class="ttdeci">@ MJPEG</div><div class="ttdoc">Motion JPEG: every frame is a complete JPEG image.</div></div>
@@ -1223,6 +1225,32 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>true if a new frame can be written: streaming and the previous frame was completely handed to the USB stack </p>
+
+</div>
+</div>
+<a id="ac505a88e444379ccf6bab9abcdb43fc5" name="ac505a88e444379ccf6bab9abcdb43fc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac505a88e444379ccf6bab9abcdb43fc5">&#9670;&#160;</a></span>isSending()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tinyuvc::UVCDevice::isSending </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>true while the device still reads the data passed to <a class="el" href="classtinyuvc_1_1UVCDevice.html#a8ff40b9e285d3b7cab949e884ba1944b" title="Sends a frame. Returns false (and the frame is not sent) if the device is not ready or the frame does...">writeFrame()</a>: the data must not be changed or freed before this is false </p>
 
 </div>
 </div>

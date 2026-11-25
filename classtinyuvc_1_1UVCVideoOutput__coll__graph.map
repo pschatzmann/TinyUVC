@@ -1,9 +1,9 @@
 <map id="tinyuvc::UVCVideoOutput" name="tinyuvc::UVCVideoOutput">
-<area shape="rect" id="Node000001" title="VideoOutput that sends every frame (write() calls up to flush()) to a UVCDevice. Two frame buffers ar..." alt="" coords="867,72,1054,100"/>
+<area shape="rect" id="Node000001" title="VideoOutput that sends every frame (write() calls up to flush()) to a UVCDevice. Two frame buffers ar..." alt="" coords="889,99,1076,127"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="600,47,785,75"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="801,69,870,77,864,78,801,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="796,75,866,88,912,99,906,99,865,93,796,81"/>
 <area shape="rect" id="Node000003" href="$classtinyuvc_1_1UVCDevice.html" title="USB Video Class (UVC 1.1) device &#45; a USB webcam." alt="" coords="618,99,768,127"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="783,101,843,95,870,95,864,96,844,101,784,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="783,110,892,113,887,113,784,116"/>
 <area shape="rect" id="Node000004" href="$structtinyuvc_1_1UVCFormatSpec.html" title="One video format (UVC format descriptor) with its resolutions." alt="" coords="294,8,476,36"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="491,27,536,38,578,56,590,70,602,84,628,99,622,98,598,88,586,74,574,60,534,43,491,32"/>
 <area shape="rect" id="Node000005" href="$structtinyuvc_1_1UVCFrameSpec.html" title="One resolution (UVC frame descriptor) with its supported frame rates." alt="" coords="5,8,183,36"/>
@@ -13,5 +13,7 @@
 <area shape="rect" id="Node000007" href="$structtinyuvc_1_1UVCStreamSettings.html" title="The format, resolution and frame rate the host selected." alt="" coords="282,123,488,151"/>
 <area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="503,136,576,131,620,128,625,127,576,137,503,141"/>
 <area shape="rect" id="Node000008" href="$classtinyuvc_1_1UVCPayloadEncoder.html" title="Produces the UVC payloads of one frame. Each payload starts with a 2 byte header (6 bytes with a pres..." alt="" coords="281,175,489,203"/>
-<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="504,173,575,158,621,142,660,128,665,127,623,147,577,163,505,179"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="504,179,540,171,575,158,586,148,599,137,626,128,631,127,601,142,590,152,577,163,542,176,505,185"/>
+<area shape="rect" id="Node000009" href="$classtinyuvc_1_1UVCFrameBuffer.html" title="A growing byte buffer for one frame, allocated with UVCMemory (so in PSRAM where available)...." alt="" coords="600,151,785,179"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="794,145,865,133,905,128,910,127,866,138,795,151"/>
 </map>

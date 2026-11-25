@@ -13,9 +13,10 @@ var searchData=
   ['pollall_10',['pollAll',['../classtinyuvc_1_1UVCHostSimulator.html#af451e45f27f7f0e97024715de28507bf',1,'tinyuvc::UVCHostSimulator']]],
   ['probe_5f_11',['probe_',['../classtinyuvc_1_1UVCDevice.html#a803be90d566587e01eebc2afadb3feda',1,'tinyuvc::UVCDevice']]],
   ['probe_5fcommit_5fsize_12',['PROBE_COMMIT_SIZE',['../namespacetinyuvc_1_1uvc__spec.html#a9e8714476469df24e7a2201e97489f50',1,'tinyuvc::uvc_spec']]],
-  ['pts_13',['pts',['../structtinyuvc_1_1UVCHostSimulator_1_1Frame.html#ae569a272005d4d2413af990e51a6e37b',1,'tinyuvc::UVCHostSimulator::Frame']]],
-  ['pump_14',['pump',['../structtinyuvc_1_1UVCSimBus.html#a137da2e846b87674a65a7bcaba9c0aed',1,'tinyuvc::UVCSimBus']]],
-  ['pumpref_15',['pumpRef',['../structtinyuvc_1_1UVCSimBus.html#aec27b9b344b713c35a05af02a7720342',1,'tinyuvc::UVCSimBus']]],
-  ['put16_16',['put16',['../namespacetinyuvc_1_1le.html#addd5eba2cdebc604a789588c76279145',1,'tinyuvc::le']]],
-  ['put32_17',['put32',['../namespacetinyuvc_1_1le.html#a4f252b8cfda085b95f4478eb680a6d7a',1,'tinyuvc::le']]]
+  ['psram_13',['PSRAM',['../namespacetinyuvc.html#a1ea61e38c2cac67a3cc89d5840c7bd69a34ef1bdcaaf8c1e2d63bf8c904b06d52',1,'tinyuvc']]],
+  ['pts_14',['pts',['../structtinyuvc_1_1UVCHostSimulator_1_1Frame.html#ae569a272005d4d2413af990e51a6e37b',1,'tinyuvc::UVCHostSimulator::Frame']]],
+  ['pump_15',['pump',['../structtinyuvc_1_1UVCSimBus.html#a137da2e846b87674a65a7bcaba9c0aed',1,'tinyuvc::UVCSimBus']]],
+  ['pumpref_16',['pumpRef',['../structtinyuvc_1_1UVCSimBus.html#aec27b9b344b713c35a05af02a7720342',1,'tinyuvc::UVCSimBus']]],
+  ['put16_17',['put16',['../namespacetinyuvc_1_1le.html#addd5eba2cdebc604a789588c76279145',1,'tinyuvc::le']]],
+  ['put32_18',['put32',['../namespacetinyuvc_1_1le.html#a4f252b8cfda085b95f4478eb680a6d7a',1,'tinyuvc::le']]]
 ];

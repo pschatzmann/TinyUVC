@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['info_0',['Info',['../namespacetinyuvc.html#a53a05b8b6bdc9604a668f28de79ba73fa4059b0251f66a18cb56f544728796875',1,'tinyuvc']]],
-  ['interface_1',['Interface',['../structtinyuvc_1_1UVCRequest.html#a3ddffdd9b97bc70aacd159ceba926251a955e1bb38647a9867e67422057b1e27f',1,'tinyuvc::UVCRequest']]]
+  ['handled_0',['Handled',['../namespacetinyuvc.html#ab72a86a7679861f251479b7b9a820c99a827211270de454ea3e0df8f57995efed',1,'tinyuvc']]]
 ];

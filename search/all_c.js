@@ -11,10 +11,11 @@ var searchData=
   ['maxpayloadtransfersize_8',['maxPayloadTransferSize',['../structtinyuvc_1_1UVCProbeCommit.html#a11e5f5da3f0cff702c76dcd1648f4aab',1,'tinyuvc::UVCProbeCommit']]],
   ['maxvideoframesize_9',['maxVideoFrameSize',['../structtinyuvc_1_1UVCProbeCommit.html#adcdcbb8bb9dcf9150b5396a338016ec1',1,'tinyuvc::UVCProbeCommit']]],
   ['maxvideoframesize_5f_10',['maxVideoFrameSize_',['../classtinyuvc_1_1UVCHostSimulator.html#a1ae9ed715fd19a58ef71dc51f218abfa',1,'tinyuvc::UVCHostSimulator']]],
-  ['micros_11',['micros',['../namespacetinyuvc_1_1platform.html#ac2f740b2485be28dce9f42df2aa29314',1,'tinyuvc::platform']]],
-  ['millis_12',['millis',['../namespacetinyuvc_1_1platform.html#a7af840edbb6a2636995528974f13df6d',1,'tinyuvc::platform']]],
-  ['mininterval_13',['minInterval',['../structtinyuvc_1_1UVCFrameSpec.html#a499b0bd5f5ca5f99070495b8b8660953',1,'tinyuvc::UVCFrameSpec']]],
-  ['mjpeg_14',['mjpeg',['../namespacetinyuvc.html#a5983fcb109cbe2d40956fdce99a6ec54a0a5417ce14732e9bdb402be642ebe9ea',1,'tinyuvc::MJPEG'],['../namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4a0a5417ce14732e9bdb402be642ebe9ea',1,'tinyuvc::MJPEG']]],
-  ['mjpeg_5f_15',['mjpeg_',['../classtinyuvc_1_1UVCCamera.html#a26d2d0e010f0d1ae96612ed9fb133e08',1,'tinyuvc::UVCCamera']]],
-  ['mps_5f_16',['mps_',['../classtinyuvc_1_1UVCHostSimulator.html#a834dcb899fe7b39e7b71c5d583453bf9',1,'tinyuvc::UVCHostSimulator']]]
+  ['memorytype_11',['memoryType',['../classtinyuvc_1_1UVCFrameBuffer.html#a83e64872eecbb0963899f8228dbf3105',1,'tinyuvc::UVCFrameBuffer']]],
+  ['micros_12',['micros',['../namespacetinyuvc_1_1platform.html#ac2f740b2485be28dce9f42df2aa29314',1,'tinyuvc::platform']]],
+  ['millis_13',['millis',['../namespacetinyuvc_1_1platform.html#a7af840edbb6a2636995528974f13df6d',1,'tinyuvc::platform']]],
+  ['mininterval_14',['minInterval',['../structtinyuvc_1_1UVCFrameSpec.html#a499b0bd5f5ca5f99070495b8b8660953',1,'tinyuvc::UVCFrameSpec']]],
+  ['mjpeg_15',['mjpeg',['../namespacetinyuvc.html#a5983fcb109cbe2d40956fdce99a6ec54a0a5417ce14732e9bdb402be642ebe9ea',1,'tinyuvc::MJPEG'],['../namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4a0a5417ce14732e9bdb402be642ebe9ea',1,'tinyuvc::MJPEG']]],
+  ['mjpeg_5f_16',['mjpeg_',['../classtinyuvc_1_1UVCCamera.html#a26d2d0e010f0d1ae96612ed9fb133e08',1,'tinyuvc::UVCCamera']]],
+  ['mps_5f_17',['mps_',['../classtinyuvc_1_1UVCHostSimulator.html#a834dcb899fe7b39e7b71c5d583453bf9',1,'tinyuvc::UVCHostSimulator']]]
 ];

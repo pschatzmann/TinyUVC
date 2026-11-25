@@ -5,6 +5,6 @@ var searchData=
   ['bmrequesttype_2',['bmRequestType',['../structtinyuvc_1_1UVCRequest.html#a816ea44307cddefc4551bec8d702852e',1,'tinyuvc::UVCRequest']]],
   ['brequest_3',['bRequest',['../structtinyuvc_1_1UVCRequest.html#a0cc0a58c4af2b7ca97c12a0dcb2bc1a2',1,'tinyuvc::UVCRequest']]],
   ['buffer_5f_4',['buffer_',['../classtinyuvc_1_1UVCDevice.html#a8ae1cda3b80f11c1077c352226a4aabf',1,'tinyuvc::UVCDevice']]],
-  ['buffers_5f_5',['buffers_',['../classtinyuvc_1_1UVCVideoOutput.html#af98e0307efd3d895b272c371dbc47be5',1,'tinyuvc::UVCVideoOutput']]],
+  ['buffers_5f_5',['buffers_',['../classtinyuvc_1_1UVCVideoOutput.html#a2ff19418f6e5c5cc12cb6307170c19e4',1,'tinyuvc::UVCVideoOutput']]],
   ['busy_6',['busy',['../structtinyuvc_1_1UVCSimBus.html#a1d633d9f0cff2ad42ab0e9f6fe21f992',1,'tinyuvc::UVCSimBus']]]
 ];

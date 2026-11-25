@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['xfer_5fresult_5ffailed_0',['XFER_RESULT_FAILED',['../TinyUSBSim_8h.html#a6a3b3a4d6801fd9b02feb0510c84e5f9a25a26f92e6369131560cb95863c145a7',1,'TinyUSBSim.h']]],
-  ['xfer_5fresult_5finvalid_1',['XFER_RESULT_INVALID',['../TinyUSBSim_8h.html#a6a3b3a4d6801fd9b02feb0510c84e5f9a9063bdc6069f0ac35a6803eb22d1a67d',1,'TinyUSBSim.h']]],
-  ['xfer_5fresult_5fstalled_2',['XFER_RESULT_STALLED',['../TinyUSBSim_8h.html#a6a3b3a4d6801fd9b02feb0510c84e5f9afd15857b96b2f33fd3139cce70c61a09',1,'TinyUSBSim.h']]],
-  ['xfer_5fresult_5fsuccess_3',['XFER_RESULT_SUCCESS',['../TinyUSBSim_8h.html#a6a3b3a4d6801fd9b02feb0510c84e5f9a442f7408d9ab328c0899341a70f2a972',1,'TinyUSBSim.h']]],
-  ['xfer_5fresult_5ftimeout_4',['XFER_RESULT_TIMEOUT',['../TinyUSBSim_8h.html#a6a3b3a4d6801fd9b02feb0510c84e5f9a1b1134b0b6c468c1469a510b74b2e3d5',1,'TinyUSBSim.h']]]
+  ['vendor_0',['Vendor',['../structtinyuvc_1_1UVCRequest.html#a4c813cae127d90f79528faa04a2936dca39e69e8672456f034c83ecf9d9b11f48',1,'tinyuvc::UVCRequest']]]
 ];
