@@ -1,0 +1,5 @@
+<map id="tinyuvc::UVCHostSimulator::Frame" name="tinyuvc::UVCHostSimulator::Frame">
+<area shape="rect" id="Node000001" title="A frame received from the device." alt="" coords="9,98,207,143"/>
+<area shape="rect" id="Node000002" href="$structtinyuvc_1_1UVCStreamSettings.html" title="The format, resolution and frame rate the host selected." alt="" coords="5,5,211,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,47,111,98,105,97,106,50"/>
+</map>

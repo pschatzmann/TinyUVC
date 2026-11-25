@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['r_0',['r',['../structtinyuvc_1_1UVCConvert_1_1Rgb.html#a3738a2794428919ea4f7af15ad1e5cc9',1,'tinyuvc::UVCConvert::Rgb']]],
+  ['raw_1',['raw',['../structtinyuvc_1_1UVCProbeCommit.html#a7c7f1f31967902f4fdc947a17e844d7e',1,'tinyuvc::UVCProbeCommit']]],
+  ['raw_5f_2',['raw_',['../classtinyuvc_1_1UVCCamera.html#a5f383ed7f84e074f52723271eff8aa40',1,'tinyuvc::UVCCamera']]],
+  ['rawframesize_3',['rawFrameSize',['../structtinyuvc_1_1UVCStreamSettings.html#a160d8c11e22df8bf912b1831250fb2ea',1,'tinyuvc::UVCStreamSettings']]],
+  ['readme_2emd_4',['README.md',['../README_8md.html',1,'']]],
+  ['recipient_5',['recipient',['../structtinyuvc_1_1UVCRequest.html#a8cf06a8e281ef5a4a0c334bec9cba3f8',1,'tinyuvc::UVCRequest::recipient() const'],['../structtinyuvc_1_1UVCRequest.html#a3ddffdd9b97bc70aacd159ceba926251',1,'tinyuvc::UVCRequest::Recipient']]],
+  ['reply_6',['reply',['../classtinyuvc_1_1UVCDevice.html#af4122d15ac7a8296de896046170334c1',1,'tinyuvc::UVCDevice']]],
+  ['replyprobe_7',['replyProbe',['../classtinyuvc_1_1UVCDevice.html#aa3c4888186a9f2fff166291ad8bd39f6',1,'tinyuvc::UVCDevice']]],
+  ['requesterrorcode_8',['requestErrorCode',['../classtinyuvc_1_1UVCHostSimulator.html#a100355bb26bded309dc030604049e0e1',1,'tinyuvc::UVCHostSimulator']]],
+  ['reset_9',['reset',['../structusbd__class__driver__t.html#a524a155b8be5729391233f20efc8979e',1,'usbd_class_driver_t']]],
+  ['resetcontrol_10',['resetControl',['../structtinyuvc_1_1UVCSimBus.html#a8cdb054eeeddd374fb2b4ae68b417100',1,'tinyuvc::UVCSimBus']]],
+  ['resetendpoint_11',['resetEndpoint',['../structtinyuvc_1_1UVCSimBus.html#a4a57d009c795505dbde60919c6460ef9',1,'tinyuvc::UVCSimBus']]],
+  ['resetpayload_12',['resetPayload',['../classtinyuvc_1_1UVCHostSimulator.html#a4e2721e0d437d0de82d477100a03cf0e',1,'tinyuvc::UVCHostSimulator']]],
+  ['rgb_13',['Rgb',['../structtinyuvc_1_1UVCConvert_1_1Rgb.html',1,'tinyuvc::UVCConvert']]],
+  ['rgb565_14',['rgb565',['../classtinyuvc_1_1UVCConvert.html#a8489f88799672074b70341b870e77a1d',1,'tinyuvc::UVCConvert']]],
+  ['rgb565_5fbe_15',['RGB565_BE',['../namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4afc8362a0a82a21aa11f6202f57b3750a',1,'tinyuvc']]],
+  ['rgb565_5fle_16',['RGB565_LE',['../namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4a5dd25ae49ce5f4afd5c666c1a061246f',1,'tinyuvc']]],
+  ['rgb565be_5f_17',['rgb565BE_',['../classtinyuvc_1_1UVCCamera.html#ad34bb9b71a8b023acd0593304d945a31',1,'tinyuvc::UVCCamera']]],
+  ['rgb888_18',['RGB888',['../namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4a30ff380a3be74628024063a99fba10f0',1,'tinyuvc']]],
+  ['rhport_19',['rhport',['../namespacetinyuvc_1_1tusb__glue.html#a42f0fb93cc55461315b36fdae4c6d816',1,'tinyuvc::tusb_glue']]],
+  ['rp2040camerawebcam_2eino_20',['RP2040CameraWebcam.ino',['../RP2040CameraWebcam_8ino.html',1,'']]],
+  ['running_21',['Running',['../md_docs_2Desktop.html#autotoc_md17',1,'']]]
+];

@@ -1,0 +1,15 @@
+<map id="src/TinyUVC/desktop/TinyUSBSim.h" name="src/TinyUVC/desktop/TinyUSBSim.h">
+<area shape="rect" id="Node000001" title="Desktop stand&#45;in for the parts of the TinyUSB device API that UVCTinyUSB.h uses. The calls are record..." alt="" coords="320,5,476,50"/>
+<area shape="rect" id="Node000002" href="$UVCTinyUSB_8h.html" title="Connects UVCDevice to TinyUSB as an application class driver (usbd_app_driver_get_cb())...." alt="" coords="96,106,295,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="333,58,226,108,223,104,338,55"/>
+<area shape="rect" id="Node000006" href="$UVCHostSimulator_8h.html" title="Desktop only: plays the USB host (and the TinyUSB core) for a UVCDevice, so the complete device side ..." alt="" coords="319,98,476,143"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="399,63,400,99,395,97,396,68"/>
+<area shape="rect" id="Node000007" href="$UVCPlatformDesktop_8h.html" title="Desktop platform: there is no USB device controller, the device is driven by UVCHostSimulator (deskto..." alt="" coords="501,98,676,143"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="457,54,546,97,541,98,457,60"/>
+<area shape="rect" id="Node000003" href="$TinyUVC_8h.html" title="TinyUVC: header&#45;only USB Video Class (UVC) device &#45; turns a microcontroller into a USB webcam." alt="" coords="139,191,251,218"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="197,148,198,191,193,189,194,152"/>
+<area shape="rect" id="Node000004" href="$TinyUVCAudioTools_8h.html" title="Integration with the video classes of arduino&#45;audio&#45;tools (https://github.com/pschatzmann/arduino&#45;aud..." alt="" coords="5,266,188,294"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="168,227,115,268,113,264,163,228"/>
+<area shape="rect" id="Node000005" href="$TinyUVCCamera_8h.html" title="Streams a camera of the TinyCamera library (https://github.com/pschatzmann/TinyCamera) as USB webcam:..." alt="" coords="212,266,376,294"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="226,225,279,266,274,266,224,230"/>
+</map>

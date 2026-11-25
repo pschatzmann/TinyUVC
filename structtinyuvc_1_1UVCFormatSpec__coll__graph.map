@@ -1,0 +1,5 @@
+<map id="tinyuvc::UVCFormatSpec" name="tinyuvc::UVCFormatSpec">
+<area shape="rect" id="Node000001" title="One video format (UVC format descriptor) with its resolutions." alt="" coords="5,98,188,126"/>
+<area shape="rect" id="Node000002" href="$structtinyuvc_1_1UVCFrameSpec.html" title="One resolution (UVC frame descriptor) with its supported frame rates." alt="" coords="8,5,185,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,47,99,98,94,97,94,50"/>
+</map>

@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['id_0',['id',['../structtinyuvc_1_1platform_1_1PicoState.html#a01e0c8145c08be54008247caf2a476db',1,'tinyuvc::platform::PicoState']]],
+  ['id_5fcamera_5fterminal_1',['ID_CAMERA_TERMINAL',['../namespacetinyuvc_1_1uvc__spec.html#af9de6accc51f8559bde24c04b0da49dd',1,'tinyuvc::uvc_spec']]],
+  ['id_5foutput_5fterminal_2',['ID_OUTPUT_TERMINAL',['../namespacetinyuvc_1_1uvc__spec.html#ad15d43fec091fc2b9daa6821c0e61245',1,'tinyuvc::uvc_spec']]],
+  ['idle_3',['idle',['../namespacetinyuvc_1_1platform.html#a86167b98971de82d223750a06b0bfed0',1,'tinyuvc::platform']]],
+  ['in_20your_20own_20cmake_20project_4',['Using TinyUVC in your own CMake project',['../md_docs_2Desktop.html#autotoc_md18',1,'']]],
+  ['index_5',['index',['../structtinyuvc_1_1UVCHostSimulator_1_1Frame.html#a8bd70e1c60798e60b82233bf5dc94d08',1,'tinyuvc::UVCHostSimulator::Frame::index'],['../structtinyuvc_1_1UVCHostSimulator_1_1HostFrame.html#aa14e8caa6e4751d8b91e5ea6f129f810',1,'tinyuvc::UVCHostSimulator::HostFrame::index'],['../structtinyuvc_1_1UVCHostSimulator_1_1HostFormat.html#ad2f71ecf3d21b6d1c2aaad4dcf2418f6',1,'tinyuvc::UVCHostSimulator::HostFormat::index']]],
+  ['inflight_5f_6',['inFlight_',['../classtinyuvc_1_1UVCDevice.html#a3b6b86270933cea3f543be415e6ab176',1,'tinyuvc::UVCDevice']]],
+  ['info_7',['Info',['../namespacetinyuvc.html#a53a05b8b6bdc9604a668f28de79ba73fa4059b0251f66a18cb56f544728796875',1,'tinyuvc']]],
+  ['init_8',['init',['../structusbd__class__driver__t.html#a826cfe798a778a64819bb8f650e340a8',1,'usbd_class_driver_t']]],
+  ['installation_9',['Installation',['../index.html#autotoc_md14',1,'']]],
+  ['instance_10',['instance',['../classtinyuvc_1_1UVCDevice.html#a0d63b8209e40b2acf28d6fc8d38cb435',1,'tinyuvc::UVCDevice']]],
+  ['interface_11',['Interface',['../structtinyuvc_1_1UVCRequest.html#a3ddffdd9b97bc70aacd159ceba926251a955e1bb38647a9867e67422057b1e27f',1,'tinyuvc::UVCRequest']]],
+  ['interval_12',['interval',['../structtinyuvc_1_1UVCStreamSettings.html#af6ec6c113c3e7b6d7f93274f0f7ba8bc',1,'tinyuvc::UVCStreamSettings']]],
+  ['intervalcount_13',['intervalCount',['../structtinyuvc_1_1UVCFrameSpec.html#af7f8d34d20579cc54fa81a4d4402343d',1,'tinyuvc::UVCFrameSpec']]],
+  ['intervals_14',['intervals',['../structtinyuvc_1_1UVCFrameSpec.html#a0536808afa4dc2cbc08857cf42034c5d',1,'tinyuvc::UVCFrameSpec::intervals'],['../structtinyuvc_1_1UVCHostSimulator_1_1HostFrame.html#ac7d11c3d75204cf06e8038aca8dd30be',1,'tinyuvc::UVCHostSimulator::HostFrame::intervals']]],
+  ['intervaltofps_15',['intervalToFps',['../namespacetinyuvc.html#a832178a541dcb70e8f6ff794e19ee8f0',1,'tinyuvc']]],
+  ['isactive_16',['isactive',['../classtinyuvc_1_1UVCLoggerClass.html#ae0f1b125900208822ed0d3f99b728d88',1,'tinyuvc::UVCLoggerClass::isActive()'],['../classtinyuvc_1_1UVCDevice.html#a4f5716e5a0a26f18b76467b9607e1f14',1,'tinyuvc::UVCDevice::isActive()']]],
+  ['iscompletejpeg_17',['isCompleteJpeg',['../classtinyuvc_1_1UVCVideoOutput.html#a5540371d7776969b2feda7bfe9e77e95',1,'tinyuvc::UVCVideoOutput']]],
+  ['isconnected_18',['isConnected',['../classtinyuvc_1_1UVCHostSimulator.html#a24fa8578283f85e8eb50adc42b7fd281',1,'tinyuvc::UVCHostSimulator']]],
+  ['isin_19',['isIn',['../structtinyuvc_1_1UVCRequest.html#a3c6fa64b5d84085204ec4f7fdc8eed04',1,'tinyuvc::UVCRequest']]],
+  ['isready_20',['isReady',['../classtinyuvc_1_1UVCDevice.html#aea35db4cf1602df165330a5985a951b6',1,'tinyuvc::UVCDevice']]],
+  ['isstreaming_21',['isstreaming',['../classtinyuvc_1_1UVCHostSimulator.html#a7a9ea90dff3ab22765063f54aaa6adff',1,'tinyuvc::UVCHostSimulator::isStreaming()'],['../classtinyuvc_1_1UVCDevice.html#a092cca486773a4e88256a90ad0ac5cd7',1,'tinyuvc::UVCDevice::isStreaming()']]],
+  ['it_22',['Using it',['../index.html#autotoc_md5',1,'']]],
+  ['itt_5fcamera_23',['ITT_CAMERA',['../namespacetinyuvc_1_1uvc__spec.html#a65a8da0aea2d2e12482d0f2098cefa8c',1,'tinyuvc::uvc_spec']]]
+];

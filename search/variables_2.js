@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['camera_5f_0',['camera_',['../classtinyuvc_1_1UVCCamera.html#a58dc531640cdadec23ac33a45cf2415a',1,'tinyuvc::UVCCamera']]],
+  ['cc_5fvideo_1',['CC_VIDEO',['../namespacetinyuvc_1_1uvc__spec.html#a58da4113f0065423ad91a29edff3a669',1,'tinyuvc::uvc_spec']]],
+  ['claimed_2',['claimed',['../structtinyuvc_1_1UVCSimBus.html#a4b860c00a81c08fb31d6e7e5050a51f5',1,'tinyuvc::UVCSimBus']]],
+  ['commit_5f_3',['commit_',['../classtinyuvc_1_1UVCDevice.html#aff36f7b80d2f4b65acf4568219a91002',1,'tinyuvc::UVCDevice']]],
+  ['config_5f_4',['config_',['../classtinyuvc_1_1UVCHostSimulator.html#a67184b976069862f02343bf5f3f38aed',1,'tinyuvc::UVCHostSimulator::config_'],['../classtinyuvc_1_1UVCCamera.html#a9f822ebe2cfce3aac9203ddb0b572fcf',1,'tinyuvc::UVCCamera::config_']]],
+  ['configured_5f_5',['configured_',['../classtinyuvc_1_1UVCCamera.html#a68a56ffcdffdc196c7d80cae1ed0d1f8',1,'tinyuvc::UVCCamera']]],
+  ['connected_5f_6',['connected_',['../classtinyuvc_1_1UVCHostSimulator.html#a0f2c4007101e5e13ad9c37808ee7b892',1,'tinyuvc::UVCHostSimulator']]],
+  ['control_5fxfer_5fcb_7',['control_xfer_cb',['../structusbd__class__driver__t.html#abfa5205fc6fe9d3d85928283f8e041d9',1,'usbd_class_driver_t']]],
+  ['controlinterface_8',['controlInterface',['../structtinyuvc_1_1UVCDescriptorParams.html#a6a6dd7829905adcb7935677f08b7a3a6',1,'tinyuvc::UVCDescriptorParams']]],
+  ['controlitf_5f_9',['controlItf_',['../classtinyuvc_1_1UVCDevice.html#a256356e1dfd065d4d2dcf408437467ff',1,'tinyuvc::UVCDevice']]],
+  ['cs_5finterface_10',['CS_INTERFACE',['../namespacetinyuvc_1_1uvc__spec.html#acdf3bedd23df9f0875e9df8e0fae2e5c',1,'tinyuvc::uvc_spec']]],
+  ['ctrlbuf_11',['ctrlBuf',['../structtinyuvc_1_1UVCSimBus.html#a9b0ee1271f0a19a403f198c97e113e41',1,'tinyuvc::UVCSimBus']]],
+  ['ctrlbuf_5f_12',['ctrlBuf_',['../classtinyuvc_1_1UVCDevice.html#acdf1c7f294e2b5df5f84d293c1547ab6',1,'tinyuvc::UVCDevice']]],
+  ['ctrllen_13',['ctrlLen',['../structtinyuvc_1_1UVCSimBus.html#a9f41cd6fbcb3a6525e4b1fd36b7834ec',1,'tinyuvc::UVCSimBus']]],
+  ['ctrlstatus_14',['ctrlStatus',['../structtinyuvc_1_1UVCSimBus.html#adc6df77a9de5bb4b70003fe5b0a534aa',1,'tinyuvc::UVCSimBus']]],
+  ['ctrlxfer_15',['ctrlXfer',['../structtinyuvc_1_1UVCSimBus.html#aa8096223cf44f2f45977670ad13185bb',1,'tinyuvc::UVCSimBus']]],
+  ['curformat_5f_16',['curFormat_',['../classtinyuvc_1_1UVCCamera.html#ae13781626cdb4c6b0e58fb8b50fb1291',1,'tinyuvc::UVCCamera']]],
+  ['cursize_5f_17',['curSize_',['../classtinyuvc_1_1UVCCamera.html#ab2a20ceb5a327d551d1c939081e8ac08',1,'tinyuvc::UVCCamera']]]
+];

@@ -1,0 +1,42 @@
+<map id="src/TinyUVC/platform/UVCPlatformESP32.h" name="src/TinyUVC/platform/UVCPlatformESP32.h">
+<area shape="rect" id="Node000001" title="ESP32&#45;S2/S3/P4 with the TinyUSB stack of the arduino&#45;esp32 core (Tools &gt; USB Mode &gt; &quot;USB&#45;OTG (TinyUSB..." alt="" coords="182,5,344,50"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,98,89,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,53,97,94,94,90,207,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="113,98,173,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="230,53,177,91,173,87,233,48"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="197,98,329,126"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="264,48,266,83,260,82,262,53"/>
+<area shape="rect" id="Node000005" href="$UVCDevice_8h.html" title="The USB Video Class device: descriptors, probe/commit negotiation and streaming of frames...." alt="" coords="353,98,472,126"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="303,48,378,90,373,91,303,53"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="496,98,646,126"/>
+<area shape="poly" id="edge21_Node000001_Node000019" title=" " alt="" coords="344,48,509,92,504,95,345,53"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="175,174,242,201"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="374,128,258,171,255,167,378,125"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="266,174,375,201"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="398,125,350,166,347,162,394,128"/>
+<area shape="rect" id="Node000008" href="$UVCDescriptor_8h.html" title="Builds the USB descriptors of a UVC 1.1 camera function: an Interface Association,..." alt="" coords="294,249,421,277"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="411,124,390,202,374,237,370,234,384,200,408,128"/>
+<area shape="rect" id="Node000014" href="$UVCLogger_8h.html" title="Minimal printf&#45;style logger. On Arduino it writes to a Print (default: Serial), on the desktop to std..." alt="" coords="631,174,735,201"/>
+<area shape="poly" id="edge13_Node000005_Node000014" title=" " alt="" coords="461,124,623,168,618,170,461,129"/>
+<area shape="rect" id="Node000017" href="$UVCPayload_8h.html" title="Splits one video frame into UVC payloads (payload header + data)." alt="" coords="450,174,562,201"/>
+<area shape="poly" id="edge17_Node000005_Node000017" title=" " alt="" coords="429,124,480,164,475,164,429,129"/>
+<area shape="rect" id="Node000009" href="$UVCDefs_8h.html" title="USB Video Class 1.1 constants and the basic TinyUVC data types." alt="" coords="413,325,505,353"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="376,275,431,316,426,316,375,280"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="308,401,381,428"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="441,352,378,395,376,390,436,354"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="405,401,476,428"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="458,352,449,387,446,383,454,355"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="500,401,570,428"/>
+<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="474,351,513,391,508,389,472,356"/>
+<area shape="rect" id="Node000013" href="$UVCConfig_8h.html" title="Compile&#45;time limits and defaults of TinyUVC. Every value can be overridden with a build flag (&#45;DTINYU..." alt="" coords="594,401,697,428"/>
+<area shape="poly" id="edge12_Node000009_Node000013" title=" " alt="" coords="493,351,601,395,596,395,492,356"/>
+<area shape="poly" id="edge16_Node000014_Node000013" title=" " alt="" coords="682,200,674,250,652,387,647,384,668,249,678,204"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="683,249,758,277"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="691,199,709,237,704,235,689,204"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="781,249,846,277"/>
+<area shape="poly" id="edge15_Node000014_Node000016" title=" " alt="" coords="707,199,780,242,775,241,706,205"/>
+<area shape="poly" id="edge20_Node000017_Node000009" title=" " alt="" coords="503,200,487,250,468,312,464,308,482,249,499,204"/>
+<area shape="rect" id="Node000018" href="$UVCConvert_8h.html" title="Conversion of raw pixel formats to YUY2 (YUV 4:2:2, Y0 U Y1 V), pixel pair by pixel pair,..." alt="" coords="496,249,608,277"/>
+<area shape="poly" id="edge18_Node000017_Node000018" title=" " alt="" coords="515,199,539,237,533,236,513,204"/>
+<area shape="poly" id="edge19_Node000018_Node000009" title=" " alt="" coords="538,276,489,318,486,313,533,279"/>
+</map>

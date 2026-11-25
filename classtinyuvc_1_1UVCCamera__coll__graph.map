@@ -1,0 +1,17 @@
+<map id="tinyuvc::UVCCamera" name="tinyuvc::UVCCamera">
+<area shape="rect" id="Node000001" title="Connects a TinyCamera to a UVCDevice." alt="" coords="848,135,1005,163"/>
+<area shape="rect" id="Node000002" href="$classtinyuvc_1_1UVCDevice.html" title="USB Video Class (UVC 1.1) device &#45; a USB webcam." alt="" coords="603,99,753,127"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="769,123,851,138,845,138,769,129"/>
+<area shape="rect" id="Node000003" href="$structtinyuvc_1_1UVCFormatSpec.html" title="One video format (UVC format descriptor) with its resolutions." alt="" coords="294,8,476,36"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="491,34,577,56,620,75,658,99,652,98,618,80,575,61,491,39"/>
+<area shape="rect" id="Node000004" href="$structtinyuvc_1_1UVCFrameSpec.html" title="One resolution (UVC frame descriptor) with its supported frame rates." alt="" coords="5,8,183,36"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="197,20,296,21,291,24,199,25"/>
+<area shape="rect" id="Node000005" href="$structtinyuvc_1_1UVCProbeCommit.html" title="Video probe and commit control (UVC 1.1, 34 bytes). Kept as a byte array in USB (little endian) layou..." alt="" coords="288,71,482,99"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="497,93,605,106,600,106,497,98"/>
+<area shape="rect" id="Node000006" href="$structtinyuvc_1_1UVCStreamSettings.html" title="The format, resolution and frame rate the host selected." alt="" coords="282,123,488,151"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="503,136,576,131,614,128,620,127,576,137,503,141"/>
+<area shape="rect" id="Node000007" href="$classtinyuvc_1_1UVCPayloadEncoder.html" title="Produces the UVC payloads of one frame. Each payload starts with a 2 byte header (6 bytes with a pres..." alt="" coords="281,175,489,203"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="504,180,540,171,575,158,586,148,598,136,620,128,626,127,602,141,590,152,577,163,542,176,505,185"/>
+<area shape="rect" id="Node000008" href="$structtinyuvc_1_1UVCCamera_1_1Size.html" title=" " alt="" coords="600,151,756,195"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="772,168,824,163,845,163,850,163,825,169,772,173"/>
+</map>

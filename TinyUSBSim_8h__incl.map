@@ -1,0 +1,7 @@
+<map id="src/TinyUVC/desktop/TinyUSBSim.h" name="src/TinyUVC/desktop/TinyUSBSim.h">
+<area shape="rect" id="Node000001" title="Desktop stand&#45;in for the parts of the TinyUSB device API that UVCTinyUSB.h uses. The calls are record..." alt="" coords="9,5,165,50"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,98,76,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,49,58,86,53,83,73,52"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="100,98,170,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="101,48,122,84,117,84,99,53"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="src/TinyUVC/UVCLogger.h" name="src/TinyUVC/UVCLogger.h">
+<area shape="rect" id="Node000001" title="Minimal printf&#45;style logger. On Arduino it writes to a Print (default: Serial), on the desktop to std..." alt="" coords="42,5,230,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,81,80,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,33,72,73,69,69,117,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="103,81,168,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,32,138,66,133,64,134,36"/>
+<area shape="rect" id="Node000004" href="$UVCConfig_8h.html" title="Compile&#45;time limits and defaults of TinyUVC. Every value can be overridden with a build flag (&#45;DTINYU..." alt="" coords="193,81,295,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="156,31,215,72,210,72,154,36"/>
+</map>

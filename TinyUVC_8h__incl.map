@@ -1,0 +1,51 @@
+<map id="src/TinyUVC.h" name="src/TinyUVC.h">
+<area shape="rect" id="Node000001" title="TinyUVC: header&#45;only USB Video Class (UVC) device &#45; turns a microcontroller into a USB webcam." alt="" coords="336,5,448,33"/>
+<area shape="rect" id="Node000002" href="$UVCConfig_8h.html" title="Compile&#45;time limits and defaults of TinyUVC. Every value can be overridden with a build flag (&#45;DTINYU..." alt="" coords="5,476,168,504"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="333,23,244,33,193,43,143,57,98,78,61,106,47,123,37,142,30,163,28,186,28,340,32,374,43,407,71,463,66,464,38,409,27,375,23,340,23,186,25,162,32,140,43,120,57,102,95,74,141,52,191,37,243,27,337,20"/>
+<area shape="rect" id="Node000003" href="$UVCDevice_8h.html" title="The USB Video Class device: descriptors, probe/commit negotiation and streaming of frames...." alt="" coords="434,174,600,201"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="403,31,445,79,503,161,497,161,440,83,403,36"/>
+<area shape="rect" id="Node000016" href="$UVCPlatformAdafruit_8h.html" title="Boards that use the Adafruit TinyUSB Library: RP2040/RP2350 with Tools &gt; USB Stack &gt; &quot;Adafruit TinyUS..." alt="" coords="204,81,430,126"/>
+<area shape="poly" id="edge19_Node000001_Node000016" title=" " alt="" coords="378,36,349,71,345,68,382,32"/>
+<area shape="rect" id="Node000020" href="$UVCTinyUSB_8h.html" title="Connects UVCDevice to TinyUSB as an application class driver (usbd_app_driver_get_cb())...." alt="" coords="505,90,681,117"/>
+<area shape="poly" id="edge24_Node000001_Node000020" title=" " alt="" coords="424,31,549,82,544,84,424,36"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="237,249,304,277"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="471,203,320,250,318,245,475,200"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="328,249,437,277"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="491,203,421,244,418,240,495,201"/>
+<area shape="rect" id="Node000006" href="$UVCDescriptor_8h.html" title="Builds the USB descriptors of a UVC 1.1 camera function: an Interface Association,..." alt="" coords="547,325,674,353"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="538,199,564,221,587,248,601,279,609,311,604,309,596,280,583,251,560,224,537,205"/>
+<area shape="rect" id="Node000011" href="$UVCLogger_8h.html" title="Minimal printf&#45;style logger. On Arduino it writes to a Print (default: Serial), on the desktop to std..." alt="" coords="109,249,213,277"/>
+<area shape="poly" id="edge11_Node000003_Node000011" title=" " alt="" coords="451,204,229,251,228,245,455,200"/>
+<area shape="rect" id="Node000014" href="$UVCPayload_8h.html" title="Splits one video frame into UVC payloads (payload header + data)." alt="" coords="461,249,573,277"/>
+<area shape="poly" id="edge15_Node000003_Node000014" title=" " alt="" coords="519,200,520,235,515,232,516,204"/>
+<area shape="rect" id="Node000007" href="$UVCDefs_8h.html" title="USB Video Class 1.1 constants and the basic TinyUVC data types." alt="" coords="421,401,512,428"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="587,352,507,396,505,391,582,354"/>
+<area shape="poly" id="edge10_Node000007_Node000002" title=" " alt="" coords="421,427,170,475,169,470,420,422"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="411,476,484,504"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="465,427,457,463,453,459,461,431"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="509,476,579,504"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="481,426,522,466,517,465,479,431"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="603,476,674,504"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="498,426,597,470,591,470,497,431"/>
+<area shape="poly" id="edge14_Node000011_Node000002" title=" " alt="" coords="145,280,130,300,114,326,102,361,95,397,89,461,84,460,89,396,97,360,109,324,126,297,149,275"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="124,325,198,353"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="162,275,164,310,159,309,160,280"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="222,325,287,353"/>
+<area shape="poly" id="edge13_Node000011_Node000013" title=" " alt="" coords="178,275,229,315,224,316,178,280"/>
+<area shape="poly" id="edge18_Node000014_Node000007" title=" " alt="" coords="467,276,429,298,413,311,401,326,397,343,403,360,416,376,434,392,429,391,413,379,398,362,391,343,396,324,410,307,426,294,462,279"/>
+<area shape="rect" id="Node000015" href="$UVCConvert_8h.html" title="Conversion of raw pixel formats to YUY2 (YUV 4:2:2, Y0 U Y1 V), pixel pair by pixel pair,..." alt="" coords="410,325,523,353"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="510,276,486,314,482,310,506,279"/>
+<area shape="poly" id="edge17_Node000015_Node000007" title=" " alt="" coords="468,351,469,386,464,383,465,355"/>
+<area shape="poly" id="edge23_Node000016_Node000003" title=" " alt="" coords="370,124,474,167,469,168,370,129"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="326,174,410,201"/>
+<area shape="poly" id="edge20_Node000016_Node000017" title=" " alt="" coords="331,123,354,160,349,160,330,129"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="62,174,210,201"/>
+<area shape="poly" id="edge21_Node000016_Node000018" title=" " alt="" coords="267,128,180,169,177,165,271,124"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="233,174,302,201"/>
+<area shape="poly" id="edge22_Node000016_Node000019" title=" " alt="" coords="306,124,286,162,281,159,303,128"/>
+<area shape="poly" id="edge25_Node000020_Node000003" title=" " alt="" coords="583,116,541,164,538,160,579,119"/>
+<area shape="rect" id="Node000021" href="$TinyUSBSim_8h.html" title="Desktop stand&#45;in for the parts of the TinyUSB device API that UVCTinyUSB.h uses. The calls are record..." alt="" coords="554,401,723,428"/>
+<area shape="poly" id="edge26_Node000020_Node000021" title=" " alt="" coords="602,115,647,201,671,261,689,324,692,339,689,354,679,374,665,392,662,387,674,371,684,352,686,339,684,326,666,263,642,203,600,120"/>
+<area shape="poly" id="edge27_Node000021_Node000009" title=" " alt="" coords="624,428,574,469,571,464,619,430"/>
+<area shape="poly" id="edge28_Node000021_Node000010" title=" " alt="" coords="640,427,641,462,636,459,637,431"/>
+</map>

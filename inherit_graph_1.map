@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,191,33"/>
+<area shape="rect" id="Node000001" href="$classtinyuvc_1_1UVCVideoOutput.html" title="VideoOutput that sends every frame (write() calls up to flush()) to a UVCDevice. Two frame buffers ar..." alt="" coords="239,5,425,33"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="206,17,241,19,236,19,206,22"/>
+</map>

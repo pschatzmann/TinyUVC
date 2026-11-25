@@ -1,0 +1,25 @@
+<map id="src/TinyUVC/UVCPayload.h" name="src/TinyUVC/UVCPayload.h">
+<area shape="rect" id="Node000001" title="Splits one video frame into UVC payloads (payload header + data)." alt="" coords="490,5,685,33"/>
+<area shape="rect" id="Node000002" href="$UVCDevice_8h.html" title="The USB Video Class device: descriptors, probe/commit negotiation and streaming of frames...." alt="" coords="492,81,682,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="589,47,589,82,585,79,586,51"/>
+<area shape="rect" id="Node000003" href="$TinyUVC_8h.html" title="TinyUVC: header&#45;only USB Video Class (UVC) device &#45; turns a microcontroller into a USB webcam." alt="" coords="139,249,251,277"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="474,103,360,112,237,124,136,140,103,149,85,159,79,168,77,178,85,200,98,215,113,228,150,248,145,250,110,233,94,219,81,203,72,178,74,167,81,155,101,144,135,134,237,119,359,107,479,101"/>
+<area shape="rect" id="Node000006" href="$UVCTinyUSB_8h.html" title="Connects UVCDevice to TinyUSB as an application class driver (usbd_app_driver_get_cb())...." alt="" coords="96,165,295,193"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="508,114,259,167,257,162,511,110"/>
+<area shape="rect" id="Node000007" href="$UVCHostSimulator_8h.html" title="Desktop only: plays the USB host (and the TinyUSB core) for a UVCDevice, so the complete device side ..." alt="" coords="319,157,476,201"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="540,116,449,158,447,154,545,114"/>
+<area shape="rect" id="Node000008" href="$UVCPlatformAdafruit_8h.html" title="Boards that use the Adafruit TinyUSB Library: RP2040/RP2350 with Tools &gt; USB Stack &gt; &quot;Adafruit TinyUS..." alt="" coords="500,157,674,201"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="589,122,589,157,585,155,586,127"/>
+<area shape="rect" id="Node000009" href="$UVCPlatformDesktop_8h.html" title="Desktop platform: there is no USB device controller, the device is driven by UVCHostSimulator (deskto..." alt="" coords="698,157,874,201"/>
+<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="633,112,736,156,730,156,633,118"/>
+<area shape="rect" id="Node000010" href="$UVCPlatformESP32_8h.html" title="ESP32&#45;S2/S3/P4 with the TinyUSB stack of the arduino&#45;esp32 core (Tools &gt; USB Mode &gt; &quot;USB&#45;OTG (TinyUSB..." alt="" coords="897,157,1058,201"/>
+<area shape="poly" id="edge11_Node000002_Node000010" title=" " alt="" coords="669,110,886,154,899,159,894,159,885,159,669,115"/>
+<area shape="rect" id="Node000011" href="$UVCPlatformPico_8h.html" title="RP2040/RP2350 with arduino&#45;pico and its default USB stack (Tools &gt; USB Stack &gt; &quot;Pico SDK&quot;)...." alt="" coords="1083,157,1243,201"/>
+<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="697,104,873,124,1072,154,1085,159,1080,159,1071,159,873,130,697,109"/>
+<area shape="rect" id="Node000004" href="$TinyUVCAudioTools_8h.html" title="Integration with the video classes of arduino&#45;audio&#45;tools (https://github.com/pschatzmann/arduino&#45;aud..." alt="" coords="5,325,188,353"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="168,286,115,327,113,322,163,287"/>
+<area shape="rect" id="Node000005" href="$TinyUVCCamera_8h.html" title="Streams a camera of the TinyCamera library (https://github.com/pschatzmann/TinyCamera) as USB webcam:..." alt="" coords="212,325,376,353"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="226,284,279,325,274,324,224,289"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="197,207,198,250,193,248,194,211"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="483,204,253,253,251,248,487,200"/>
+</map>

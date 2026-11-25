@@ -1,0 +1,17 @@
+<map id="tinyuvc::UVCVideoOutput" name="tinyuvc::UVCVideoOutput">
+<area shape="rect" id="Node000001" title="VideoOutput that sends every frame (write() calls up to flush()) to a UVCDevice. Two frame buffers ar..." alt="" coords="867,72,1054,100"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="600,47,785,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="801,69,870,77,864,78,801,74"/>
+<area shape="rect" id="Node000003" href="$classtinyuvc_1_1UVCDevice.html" title="USB Video Class (UVC 1.1) device &#45; a USB webcam." alt="" coords="618,99,768,127"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="783,101,843,95,870,95,864,96,844,101,784,107"/>
+<area shape="rect" id="Node000004" href="$structtinyuvc_1_1UVCFormatSpec.html" title="One video format (UVC format descriptor) with its resolutions." alt="" coords="294,8,476,36"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="491,27,536,38,578,56,590,70,602,84,628,99,622,98,598,88,586,74,574,60,534,43,491,32"/>
+<area shape="rect" id="Node000005" href="$structtinyuvc_1_1UVCFrameSpec.html" title="One resolution (UVC frame descriptor) with its supported frame rates." alt="" coords="5,8,183,36"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="197,20,296,21,291,24,199,25"/>
+<area shape="rect" id="Node000006" href="$structtinyuvc_1_1UVCProbeCommit.html" title="Video probe and commit control (UVC 1.1, 34 bytes). Kept as a byte array in USB (little endian) layou..." alt="" coords="288,71,482,99"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="497,93,620,106,614,106,497,98"/>
+<area shape="rect" id="Node000007" href="$structtinyuvc_1_1UVCStreamSettings.html" title="The format, resolution and frame rate the host selected." alt="" coords="282,123,488,151"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="503,136,576,131,620,128,625,127,576,137,503,141"/>
+<area shape="rect" id="Node000008" href="$classtinyuvc_1_1UVCPayloadEncoder.html" title="Produces the UVC payloads of one frame. Each payload starts with a 2 byte header (6 bytes with a pres..." alt="" coords="281,175,489,203"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="504,173,575,158,621,142,660,128,665,127,623,147,577,163,505,179"/>
+</map>

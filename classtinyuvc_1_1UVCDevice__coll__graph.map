@@ -1,0 +1,13 @@
+<map id="tinyuvc::UVCDevice" name="tinyuvc::UVCDevice">
+<area shape="rect" id="Node000001" title="USB Video Class (UVC 1.1) device &#45; a USB webcam." alt="" coords="600,99,750,127"/>
+<area shape="rect" id="Node000002" href="$structtinyuvc_1_1UVCFormatSpec.html" title="One video format (UVC format descriptor) with its resolutions." alt="" coords="294,8,476,36"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="492,33,577,56,619,75,655,99,650,98,616,80,575,61,491,39"/>
+<area shape="rect" id="Node000003" href="$structtinyuvc_1_1UVCFrameSpec.html" title="One resolution (UVC frame descriptor) with its supported frame rates." alt="" coords="5,8,183,36"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="197,20,296,21,291,24,199,25"/>
+<area shape="rect" id="Node000004" href="$structtinyuvc_1_1UVCProbeCommit.html" title="Video probe and commit control (UVC 1.1, 34 bytes). Kept as a byte array in USB (little endian) layou..." alt="" coords="288,71,482,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="497,93,602,106,597,106,497,98"/>
+<area shape="rect" id="Node000005" href="$structtinyuvc_1_1UVCStreamSettings.html" title="The format, resolution and frame rate the host selected." alt="" coords="282,123,488,151"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="503,136,576,131,613,128,618,127,576,137,503,141"/>
+<area shape="rect" id="Node000006" href="$classtinyuvc_1_1UVCPayloadEncoder.html" title="Produces the UVC payloads of one frame. Each payload starts with a 2 byte header (6 bytes with a pres..." alt="" coords="281,175,489,203"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="504,174,575,158,614,143,647,128,652,127,617,147,577,163,505,180"/>
+</map>

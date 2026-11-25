@@ -1,0 +1,9 @@
+<map id="src/TinyUVC/UVCTinyUSB.h" name="src/TinyUVC/UVCTinyUSB.h">
+<area shape="rect" id="Node000001" title="Connects UVCDevice to TinyUSB as an application class driver (usbd_app_driver_get_cb())...." alt="" coords="96,5,295,33"/>
+<area shape="rect" id="Node000002" href="$TinyUVC_8h.html" title="TinyUVC: header&#45;only USB Video Class (UVC) device &#45; turns a microcontroller into a USB webcam." alt="" coords="139,81,251,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,47,198,82,193,79,194,51"/>
+<area shape="rect" id="Node000003" href="$TinyUVCAudioTools_8h.html" title="Integration with the video classes of arduino&#45;audio&#45;tools (https://github.com/pschatzmann/arduino&#45;aud..." alt="" coords="5,157,188,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="168,117,115,159,113,154,163,119"/>
+<area shape="rect" id="Node000004" href="$TinyUVCCamera_8h.html" title="Streams a camera of the TinyCamera library (https://github.com/pschatzmann/TinyCamera) as USB webcam:..." alt="" coords="212,157,376,184"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="226,116,279,156,274,156,224,121"/>
+</map>

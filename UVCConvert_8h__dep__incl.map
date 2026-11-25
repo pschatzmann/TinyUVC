@@ -1,0 +1,27 @@
+<map id="src/TinyUVC/UVCConvert.h" name="src/TinyUVC/UVCConvert.h">
+<area shape="rect" id="Node000001" title="Conversion of raw pixel formats to YUY2 (YUV 4:2:2, Y0 U Y1 V), pixel pair by pixel pair,..." alt="" coords="490,5,685,33"/>
+<area shape="rect" id="Node000002" href="$UVCPayload_8h.html" title="Splits one video frame into UVC payloads (payload header + data)." alt="" coords="490,81,685,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="589,47,590,82,585,79,586,51"/>
+<area shape="rect" id="Node000003" href="$UVCDevice_8h.html" title="The USB Video Class device: descriptors, probe/commit negotiation and streaming of frames...." alt="" coords="492,157,682,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="589,122,589,158,585,155,586,127"/>
+<area shape="rect" id="Node000004" href="$TinyUVC_8h.html" title="TinyUVC: header&#45;only USB Video Class (UVC) device &#45; turns a microcontroller into a USB webcam." alt="" coords="139,325,251,353"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="474,179,360,188,237,200,136,215,103,224,85,234,79,244,77,254,85,276,98,291,113,304,150,324,145,325,110,308,94,295,81,278,72,254,74,242,81,230,101,220,135,210,237,194,359,183,479,176"/>
+<area shape="rect" id="Node000007" href="$UVCTinyUSB_8h.html" title="Connects UVCDevice to TinyUSB as an application class driver (usbd_app_driver_get_cb())...." alt="" coords="96,241,295,268"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="508,190,259,243,257,238,511,186"/>
+<area shape="rect" id="Node000008" href="$UVCHostSimulator_8h.html" title="Desktop only: plays the USB host (and the TinyUSB core) for a UVCDevice, so the complete device side ..." alt="" coords="319,232,476,277"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="540,192,449,234,447,229,545,190"/>
+<area shape="rect" id="Node000009" href="$UVCPlatformAdafruit_8h.html" title="Boards that use the Adafruit TinyUSB Library: RP2040/RP2350 with Tools &gt; USB Stack &gt; &quot;Adafruit TinyUS..." alt="" coords="500,232,674,277"/>
+<area shape="poly" id="edge9_Node000003_Node000009" title=" " alt="" coords="589,198,589,233,585,230,586,202"/>
+<area shape="rect" id="Node000010" href="$UVCPlatformDesktop_8h.html" title="Desktop platform: there is no USB device controller, the device is driven by UVCHostSimulator (deskto..." alt="" coords="698,232,874,277"/>
+<area shape="poly" id="edge11_Node000003_Node000010" title=" " alt="" coords="633,188,736,232,730,232,633,193"/>
+<area shape="rect" id="Node000011" href="$UVCPlatformESP32_8h.html" title="ESP32&#45;S2/S3/P4 with the TinyUSB stack of the arduino&#45;esp32 core (Tools &gt; USB Mode &gt; &quot;USB&#45;OTG (TinyUSB..." alt="" coords="897,232,1058,277"/>
+<area shape="poly" id="edge12_Node000003_Node000011" title=" " alt="" coords="669,185,886,230,899,235,894,235,885,235,669,191"/>
+<area shape="rect" id="Node000012" href="$UVCPlatformPico_8h.html" title="RP2040/RP2350 with arduino&#45;pico and its default USB stack (Tools &gt; USB Stack &gt; &quot;Pico SDK&quot;)...." alt="" coords="1083,232,1243,277"/>
+<area shape="poly" id="edge13_Node000003_Node000012" title=" " alt="" coords="697,180,873,200,1072,230,1085,234,1080,234,1071,235,873,205,697,185"/>
+<area shape="rect" id="Node000005" href="$TinyUVCAudioTools_8h.html" title="Integration with the video classes of arduino&#45;audio&#45;tools (https://github.com/pschatzmann/arduino&#45;aud..." alt="" coords="5,401,188,428"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="168,361,115,403,113,398,163,363"/>
+<area shape="rect" id="Node000006" href="$TinyUVCCamera_8h.html" title="Streams a camera of the TinyCamera library (https://github.com/pschatzmann/TinyCamera) as USB webcam:..." alt="" coords="212,401,376,428"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="226,360,279,400,274,400,224,365"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="197,282,198,326,193,324,194,287"/>
+<area shape="poly" id="edge10_Node000009_Node000004" title=" " alt="" coords="483,280,253,328,251,323,487,276"/>
+</map>
