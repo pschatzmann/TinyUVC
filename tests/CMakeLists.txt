@@ -1,0 +1,25 @@
+# Desktop tests: run with  ctest --test-dir build --output-on-failure
+
+foreach(t convert control streaming)
+    tinyuvc_program(test_${t} SOURCES test_${t}.cpp)
+    add_test(NAME ${t} COMMAND test_${t})
+endforeach()
+
+# TinyUVC.h in two .cpp files (TINYUVC_NO_APP_DRIVER in the second one)
+tinyuvc_program(test_multi_tu SOURCES test_multi_tu.cpp test_multi_tu_b.cpp)
+add_test(NAME multi_tu COMMAND test_multi_tu)
+
+# UVCCamera with TinyCamera's desktop backend (deterministic test pattern)
+if(TARGET TinyCamera)
+    tinyuvc_program(test_camera SOURCES test_camera.cpp LIBS TinyCamera)
+    add_test(NAME camera COMMAND test_camera)
+endif()
+
+# UVCVideoOutput / UVCVideoCopy with arduino-audio-tools (its minimal desktop
+# emulation, no main())
+if(TARGET arduino-audio-tools)
+    tinyuvc_program(test_audiotools SOURCES test_audiotools.cpp
+                    LIBS arduino-audio-tools $<TARGET_NAME_IF_EXISTS:TinyJPEG>)
+    target_compile_definitions(test_audiotools PRIVATE IS_MIN_DESKTOP NO_MAIN)
+    add_test(NAME audiotools COMMAND test_audiotools)
+endif()
