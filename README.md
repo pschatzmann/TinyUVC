@@ -20,6 +20,8 @@ driver.
   resolutions and frame rates. The host picks, your sketch is told.
 - Frames in RGB565, RGB888, BGR888 or grayscale are converted to YUY2 while
   they are sent: no second frame buffer.
+- PSRAM: frame buffers are taken from PSRAM where the board has it (ESP32,
+  RP2350).
 - [TinyCamera](https://github.com/pschatzmann/TinyCamera) integration: ESP32,
   ESP32-P4, RP2040 and STM32 camera sensors become webcams in a few lines.
 - [arduino-audio-tools](https://github.com/pschatzmann/arduino-audio-tools)
