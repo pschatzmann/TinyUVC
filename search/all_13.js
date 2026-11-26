@@ -68,5 +68,6 @@ var searchData=
   ['streamgeneration_65',['streamGeneration',['../classtinyuvc_1_1UVCDevice.html#afc49b6951cdc9815f24382a1c2620bc3',1,'tinyuvc::UVCDevice']]],
   ['streaming_5f_66',['streaming_',['../classtinyuvc_1_1UVCDevice.html#a30c4b06bb6906de807e5a357409d452e',1,'tinyuvc::UVCDevice::streaming_'],['../classtinyuvc_1_1UVCHostSimulator.html#af7906bdbc1fe129dd102db6ab27707b5',1,'tinyuvc::UVCHostSimulator::streaming_']]],
   ['streaminginterface_67',['streamingInterface',['../classtinyuvc_1_1UVCDevice.html#ac85fb1df175664428dfe56aab58bf78f',1,'tinyuvc::UVCDevice']]],
-  ['stringindex_68',['stringIndex',['../structtinyuvc_1_1UVCDescriptorParams.html#a46bda885594b0e67ca2523be39893f19',1,'tinyuvc::UVCDescriptorParams']]]
+  ['stringindex_68',['stringIndex',['../structtinyuvc_1_1UVCDescriptorParams.html#a46bda885594b0e67ca2523be39893f19',1,'tinyuvc::UVCDescriptorParams']]],
+  ['swap_5f_69',['swap_',['../classtinyuvc_1_1UVCDisplayDriver.html#a2aa06ee95e0607b3628d4937310e7102',1,'tinyuvc::UVCDisplayDriver']]]
 ];

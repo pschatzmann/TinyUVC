@@ -104,11 +104,11 @@ Collaboration diagram for tinyuvc::UVCDisplayDriver&lt; RGB_T &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classtinyuvc_1_1UVCDisplayDriver__coll__graph.png" border="0" usemap="#atinyuvc_1_1UVCDisplayDriver_3_01RGB__T_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="atinyuvc_1_1UVCDisplayDriver_3_01RGB__T_01_4_coll__map" id="atinyuvc_1_1UVCDisplayDriver_3_01RGB__T_01_4_coll__map">
-<area shape="rect" title="TinyGPU DisplayDriver that sends the written surfaces as webcam frames to the USB host: uncompressed ..." alt="" coords="889,84,1084,129"/>
+<area shape="rect" title="TinyGPU DisplayDriver that sends the written surfaces as webcam frames to the USB host: uncompressed ..." alt="" coords="889,79,1084,123"/>
 <area shape="rect" title=" " alt="" coords="609,31,776,75"/>
-<area shape="poly" title=" " alt="" coords="792,68,892,89,886,89,792,74"/>
+<area shape="poly" title=" " alt="" coords="792,66,892,85,886,85,792,72"/>
 <area shape="rect" href="classtinyuvc_1_1UVCDevice.html" title="USB Video Class (UVC 1.1) device &#45; a USB webcam." alt="" coords="618,99,768,127"/>
-<area shape="poly" title=" " alt="" coords="783,108,892,108,886,109,783,114"/>
+<area shape="poly" title=" " alt="" coords="783,107,892,105,886,105,783,112"/>
 <area shape="rect" href="structtinyuvc_1_1UVCFormatSpec.html" title="One video format (UVC format descriptor) with its resolutions." alt="" coords="294,8,476,36"/>
 <area shape="poly" title=" " alt="" coords="491,26,536,37,577,56,586,64,590,71,602,86,624,99,619,98,598,90,586,74,582,67,575,61,534,42,491,32"/>
 <area shape="rect" href="structtinyuvc_1_1UVCFrameSpec.html" title="One resolution (UVC frame descriptor) with its supported frame rates." alt="" coords="5,8,183,36"/>
@@ -118,9 +118,9 @@ Collaboration diagram for tinyuvc::UVCDisplayDriver&lt; RGB_T &gt;:</div>
 <area shape="rect" href="structtinyuvc_1_1UVCStreamSettings.html" title="The format, resolution and frame rate the host selected." alt="" coords="282,123,488,151"/>
 <area shape="poly" title=" " alt="" coords="503,136,576,131,620,128,625,127,576,137,503,141"/>
 <area shape="rect" href="classtinyuvc_1_1UVCPayloadEncoder.html" title="Produces the UVC payloads of one frame. Each payload starts with a 2 byte header (6 bytes with a pres..." alt="" coords="281,175,489,203"/>
-<area shape="poly" title=" " alt="" coords="504,176,575,158,599,144,644,128,649,127,601,149,577,163,505,181"/>
-<area shape="rect" href="classtinyuvc_1_1UVCFrameBuffer.html" title="A growing byte buffer for one frame, allocated with UVCMemory (so in PSRAM where available)...." alt="" coords="600,158,785,186"/>
-<area shape="poly" title=" " alt="" coords="800,159,865,147,927,130,932,129,866,152,801,164"/>
+<area shape="poly" title=" " alt="" coords="504,173,575,158,621,142,660,128,665,127,623,147,577,163,505,179"/>
+<area shape="rect" href="classtinyuvc_1_1UVCFrameBuffer.html" title="A growing byte buffer for one frame, allocated with UVCMemory (so in PSRAM where available)...." alt="" coords="600,168,785,196"/>
+<area shape="poly" title=" " alt="" coords="800,175,865,161,909,143,948,124,953,123,912,148,866,167,801,180"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -232,8 +232,14 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a9a2b08b8fe174a00fb700b49d4c27b31" id="r_a9a2b08b8fe174a00fb700b49d4c27b31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html#a9a2b08b8fe174a00fb700b49d4c27b31">next_</a> = 0</td></tr>
 <tr class="separator:a9a2b08b8fe174a00fb700b49d4c27b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fb1d986a676460bb632f34de040e06c" id="r_a9fb1d986a676460bb632f34de040e06c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCFrameBuffer.html">UVCFrameBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html#a9fb1d986a676460bb632f34de040e06c">work_</a></td></tr>
-<tr class="memdesc:a9fb1d986a676460bb632f34de040e06c"><td class="mdescLeft">&#160;</td><td class="mdescRight">RGB565 in TinyJPEG's byte order, or frames composed by partial writes.  <br /></td></tr>
+<tr class="memdesc:a9fb1d986a676460bb632f34de040e06c"><td class="mdescLeft">&#160;</td><td class="mdescRight">frames composed by partial writes  <br /></td></tr>
 <tr class="separator:a9fb1d986a676460bb632f34de040e06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2830298f31acb1db261353949d070f1f" id="r_a2830298f31acb1db261353949d070f1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html#a2830298f31acb1db261353949d070f1f">workBytes_</a> = 0</td></tr>
+<tr class="memdesc:a2830298f31acb1db261353949d070f1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of the frame in work_ (0: none)  <br /></td></tr>
+<tr class="separator:a2830298f31acb1db261353949d070f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aa06ee95e0607b3628d4937310e7102" id="r_a2aa06ee95e0607b3628d4937310e7102"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCFrameBuffer.html">UVCFrameBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html#a2aa06ee95e0607b3628d4937310e7102">swap_</a></td></tr>
+<tr class="memdesc:a2aa06ee95e0607b3628d4937310e7102"><td class="mdescLeft">&#160;</td><td class="mdescRight">RGB565 in TinyJPEG's byte order.  <br /></td></tr>
+<tr class="separator:a2aa06ee95e0607b3628d4937310e7102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad840a4fe077b15bad4d6c18ea22d4cf" id="r_aad840a4fe077b15bad4d6c18ea22d4cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html#aad840a4fe077b15bad4d6c18ea22d4cf">quality_</a> = 80</td></tr>
 <tr class="separator:aad840a4fe077b15bad4d6c18ea22d4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb65cf66258226005e24563f1566f2df" id="r_adb65cf66258226005e24563f1566f2df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html#adb65cf66258226005e24563f1566f2df">pacing_</a> = <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">true</a></td></tr>
@@ -1645,6 +1651,32 @@ template&lt;<a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">typename<
 
 </div>
 </div>
+<a id="a2aa06ee95e0607b3628d4937310e7102" name="a2aa06ee95e0607b3628d4937310e7102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aa06ee95e0607b3628d4937310e7102">&#9670;&#160;</a></span>swap_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">typename</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">RGB_T</a>  = tinygpu::RGB565&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtinyuvc_1_1UVCFrameBuffer.html">UVCFrameBuffer</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">tinyuvc::UVCDisplayDriver</a>&lt; <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">RGB_T</a> &gt;::swap_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>RGB565 in TinyJPEG's byte order. </p>
+
+</div>
+</div>
 <a id="a77c8982160e5e628453024feec67f88d" name="a77c8982160e5e628453024feec67f88d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a77c8982160e5e628453024feec67f88d">&#9670;&#160;</a></span>timeoutMs_</h2>
 
@@ -1715,7 +1747,33 @@ template&lt;<a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">typename<
 </table>
 </div><div class="memdoc">
 
-<p>RGB565 in TinyJPEG's byte order, or frames composed by partial writes. </p>
+<p>frames composed by partial writes </p>
+
+</div>
+</div>
+<a id="a2830298f31acb1db261353949d070f1f" name="a2830298f31acb1db261353949d070f1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2830298f31acb1db261353949d070f1f">&#9670;&#160;</a></span>workBytes_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">typename</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">RGB_T</a>  = tinygpu::RGB565&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">size_t</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">tinyuvc::UVCDisplayDriver</a>&lt; <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">RGB_T</a> &gt;::workBytes_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>size of the frame in work_ (0: none) </p>
 
 </div>
 </div>

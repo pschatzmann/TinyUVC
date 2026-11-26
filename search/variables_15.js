@@ -6,5 +6,6 @@ var searchData=
   ['withpts_5f_3',['withPts_',['../classtinyuvc_1_1UVCDevice.html#aa6213c1ab798c0d3efaf2d0067645b56',1,'tinyuvc::UVCDevice']]],
   ['wlength_4',['wLength',['../structtinyuvc_1_1UVCRequest.html#a4d9118c2d9ed991299ab9c2cce87d7b6',1,'tinyuvc::UVCRequest']]],
   ['work_5f_5',['work_',['../classtinyuvc_1_1UVCDisplayDriver.html#a9fb1d986a676460bb632f34de040e06c',1,'tinyuvc::UVCDisplayDriver']]],
-  ['wvalue_6',['wValue',['../structtinyuvc_1_1UVCRequest.html#a61251b827a0de9f352b284b3016a9114',1,'tinyuvc::UVCRequest']]]
+  ['workbytes_5f_6',['workBytes_',['../classtinyuvc_1_1UVCDisplayDriver.html#a2830298f31acb1db261353949d070f1f',1,'tinyuvc::UVCDisplayDriver']]],
+  ['wvalue_7',['wValue',['../structtinyuvc_1_1UVCRequest.html#a61251b827a0de9f352b284b3016a9114',1,'tinyuvc::UVCRequest']]]
 ];

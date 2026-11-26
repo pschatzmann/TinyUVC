@@ -19,5 +19,6 @@ var searchData=
   ['streamcb_5f_16',['streamCb_',['../classtinyuvc_1_1UVCDevice.html#a7fbe298855d192d1eaa414edbe2a4612',1,'tinyuvc::UVCDevice']]],
   ['streamcbref_5f_17',['streamCbRef_',['../classtinyuvc_1_1UVCDevice.html#a20d34dc791d0145f749bce35dafb70b0',1,'tinyuvc::UVCDevice']]],
   ['streaming_5f_18',['streaming_',['../classtinyuvc_1_1UVCHostSimulator.html#af7906bdbc1fe129dd102db6ab27707b5',1,'tinyuvc::UVCHostSimulator::streaming_'],['../classtinyuvc_1_1UVCDevice.html#a30c4b06bb6906de807e5a357409d452e',1,'tinyuvc::UVCDevice::streaming_']]],
-  ['stringindex_19',['stringIndex',['../structtinyuvc_1_1UVCDescriptorParams.html#a46bda885594b0e67ca2523be39893f19',1,'tinyuvc::UVCDescriptorParams']]]
+  ['stringindex_19',['stringIndex',['../structtinyuvc_1_1UVCDescriptorParams.html#a46bda885594b0e67ca2523be39893f19',1,'tinyuvc::UVCDescriptorParams']]],
+  ['swap_5f_20',['swap_',['../classtinyuvc_1_1UVCDisplayDriver.html#a2aa06ee95e0607b3628d4937310e7102',1,'tinyuvc::UVCDisplayDriver']]]
 ];

@@ -274,6 +274,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a42e8435d183a1534217f49cfa4b9f7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ae1cda3b80f11c1077c352226a4aabf" id="r_a8ae1cda3b80f11c1077c352226a4aabf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint8_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCDevice.html#a8ae1cda3b80f11c1077c352226a4aabf">buffer_</a> = <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">nullptr</a></td></tr>
 <tr class="separator:a8ae1cda3b80f11c1077c352226a4aabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a014ce7ba98cfeaf31917724dff5d875d" id="r_a014ce7ba98cfeaf31917724dff5d875d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCDevice.html#a014ce7ba98cfeaf31917724dff5d875d">bufferSize_</a> = 0</td></tr>
+<tr class="separator:a014ce7ba98cfeaf31917724dff5d875d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81e4aa665f4f46353a5ad13498dcd1bb" id="r_a81e4aa665f4f46353a5ad13498dcd1bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCDevice.html#ad8323915b11464fa4fdbb2a7ae637f66">XferFn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCDevice.html#a81e4aa665f4f46353a5ad13498dcd1bb">xfer_</a> = <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">nullptr</a></td></tr>
 <tr class="separator:a81e4aa665f4f46353a5ad13498dcd1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a256356e1dfd065d4d2dcf408437467ff" id="r_a256356e1dfd065d4d2dcf408437467ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCDevice.html#a256356e1dfd065d4d2dcf408437467ff">controlItf_</a> = 0</td></tr>
@@ -337,8 +339,8 @@ Protected Attributes</h2></td></tr>
 <div class="line">}</div>
 <div class="ttc" id="aclasstinyuvc_1_1UVCDevice_html"><div class="ttname"><a href="classtinyuvc_1_1UVCDevice.html">tinyuvc::UVCDevice</a></div><div class="ttdoc">USB Video Class (UVC 1.1) device - a USB webcam.</div><div class="ttdef"><b>Definition</b> UVCDevice.h:95</div></div>
 <div class="ttc" id="aclasstinyuvc_1_1UVCDisplayDriver_html"><div class="ttname"><a href="classtinyuvc_1_1UVCDisplayDriver.html">tinyuvc::UVCDisplayDriver</a></div><div class="ttdoc">TinyGPU DisplayDriver that sends the written surfaces as webcam frames to the USB host: uncompressed ...</div><div class="ttdef"><b>Definition</b> TinyGPU.h:110</div></div>
-<div class="ttc" id="aclasstinyuvc_1_1UVCDisplayDriver_html_a80aa184990e6fbec2669ddd6ba2c5bc9"><div class="ttname"><a href="classtinyuvc_1_1UVCDisplayDriver.html#a80aa184990e6fbec2669ddd6ba2c5bc9">tinyuvc::UVCDisplayDriver::begin</a></div><div class="ttdeci">bool begin() override</div><div class="ttdoc">Starts the UVC device (if it is not running yet)</div><div class="ttdef"><b>Definition</b> TinyGPU.h:157</div></div>
-<div class="ttc" id="aclasstinyuvc_1_1UVCDisplayDriver_html_aa6c1feea0f5bf554d46dddc846a23fce"><div class="ttname"><a href="classtinyuvc_1_1UVCDisplayDriver.html#aa6c1feea0f5bf554d46dddc846a23fce">tinyuvc::UVCDisplayDriver::addResolution</a></div><div class="ttdeci">bool addResolution(UVCFormat format, uint16_t width, uint16_t height, std::initializer_list&lt; uint8_t &gt; fps, uint32_t maxJpegSize=0)</div><div class="ttdef"><b>Definition</b> TinyGPU.h:125</div></div>
+<div class="ttc" id="aclasstinyuvc_1_1UVCDisplayDriver_html_a80aa184990e6fbec2669ddd6ba2c5bc9"><div class="ttname"><a href="classtinyuvc_1_1UVCDisplayDriver.html#a80aa184990e6fbec2669ddd6ba2c5bc9">tinyuvc::UVCDisplayDriver::begin</a></div><div class="ttdeci">bool begin() override</div><div class="ttdoc">Starts the UVC device (if it is not running yet)</div><div class="ttdef"><b>Definition</b> TinyGPU.h:159</div></div>
+<div class="ttc" id="aclasstinyuvc_1_1UVCDisplayDriver_html_aa6c1feea0f5bf554d46dddc846a23fce"><div class="ttname"><a href="classtinyuvc_1_1UVCDisplayDriver.html#aa6c1feea0f5bf554d46dddc846a23fce">tinyuvc::UVCDisplayDriver::addResolution</a></div><div class="ttdeci">bool addResolution(UVCFormat format, uint16_t width, uint16_t height, std::initializer_list&lt; uint8_t &gt; fps, uint32_t maxJpegSize=0)</div><div class="ttdef"><b>Definition</b> TinyGPU.h:127</div></div>
 <div class="ttc" id="anamespacetinyuvc_html_a5983fcb109cbe2d40956fdce99a6ec54a0a5417ce14732e9bdb402be642ebe9ea"><div class="ttname"><a href="namespacetinyuvc.html#a5983fcb109cbe2d40956fdce99a6ec54a0a5417ce14732e9bdb402be642ebe9ea">tinyuvc::UVCFormat::MJPEG</a></div><div class="ttdeci">@ MJPEG</div><div class="ttdoc">Motion JPEG: every frame is a complete JPEG image.</div></div>
 <div class="ttc" id="anamespacetinyuvc_html_a8d16c79adf1bf0fde4634a8cdc7fe6e4a0a5417ce14732e9bdb402be642ebe9ea"><div class="ttname"><a href="namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4a0a5417ce14732e9bdb402be642ebe9ea">tinyuvc::PixelFormat::MJPEG</a></div><div class="ttdeci">@ MJPEG</div><div class="ttdoc">one complete JPEG image (for UVCFormat::MJPEG)</div></div>
 </div><!-- fragment --><p>The frame data must stay valid until <a class="el" href="classtinyuvc_1_1UVCDevice.html#aea35db4cf1602df165330a5985a951b6">isReady()</a> is true again (it is copied payload by payload into the transfer buffer while it is sent). Frames are sent over a bulk endpoint, which all major operating systems support (Linux, Windows, macOS).</p>
@@ -2046,6 +2048,28 @@ Protected Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint8_t</a>* tinyuvc::UVCDevice::buffer_ = <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">nullptr</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a014ce7ba98cfeaf31917724dff5d875d" name="a014ce7ba98cfeaf31917724dff5d875d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a014ce7ba98cfeaf31917724dff5d875d">&#9670;&#160;</a></span>bufferSize_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint32_t</a> tinyuvc::UVCDevice::bufferSize_ = 0</td>
         </tr>
       </table>
   </td>
