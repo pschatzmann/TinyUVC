@@ -208,7 +208,12 @@ class UVCDevice {
     }
     maxPacketSize_ = platform::maxPacketSize();
     payloadSize_ = effectivePayloadSize(payloadSizeCfg_, maxPacketSize_);
-    buffer_ = platform::allocBuffer(payloadSize_);
+    // end() keeps the buffer if a transfer was still in flight: reuse it
+    if (buffer_ == nullptr || bufferSize_ < payloadSize_) {
+      if (buffer_ != nullptr && !inFlight_.load()) platform::freeBuffer(buffer_);
+      buffer_ = platform::allocBuffer(payloadSize_);
+      bufferSize_ = buffer_ != nullptr ? payloadSize_ : 0;
+    }
     if (buffer_ == nullptr) {
       TINYUVC_LOGE("begin(): could not allocate %u bytes", (unsigned)payloadSize_);
       return false;
@@ -223,6 +228,7 @@ class UVCDevice {
       inst = nullptr;
       platform::freeBuffer(buffer_);
       buffer_ = nullptr;
+      bufferSize_ = 0;
       return false;
     }
     TINYUVC_LOGI("UVC device started: %d format(s), payload %u, packet %u",
@@ -237,9 +243,12 @@ class UVCDevice {
     platform::end(*this);
     active_ = false;
     if (instance() == this) instance() = nullptr;
+    // a transfer in flight still reads the buffer: then it is kept and
+    // reused by the next begin()
     if (!inFlight_.load()) {
       platform::freeBuffer(buffer_);
       buffer_ = nullptr;
+      bufferSize_ = 0;
     }
   }
 
@@ -507,6 +516,7 @@ class UVCDevice {
   bool withPts_ = false;
   bool active_ = false;
   uint8_t *buffer_ = nullptr;
+  uint32_t bufferSize_ = 0;
   XferFn xfer_ = nullptr;
 
   uint8_t controlItf_ = 0;

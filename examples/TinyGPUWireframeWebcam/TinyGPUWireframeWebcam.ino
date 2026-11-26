@@ -7,10 +7,14 @@
  * camera with e.g. guvcview, Cheese, VLC or `ffplay /dev/video0`.
  *
  * The host chooses the resolution and the framebuffer follows its choice.
- * - ESP32-S3 with PSRAM: MJPEG 640x480 and 320x240 (compressed with
- *   https://github.com/pschatzmann/TinyJPEG), YUY2 160x120
- * - RP2040: YUY2 160x120 and 176x144 (264 KB RAM: framebuffer, its copy and
- *   the depth buffer of WireFrame3D need 8 bytes per pixel)
+ * - ESP32-S3 with PSRAM: MJPEG 640x480 and 320x240 (compressed with the
+ *   JPEG encoder of the arduino-esp32 core), YUY2 160x120
+ * - RP2350 with PSRAM: the same, compressed with
+ *   https://github.com/pschatzmann/TinyJPEG
+ * - RP2040: YUY2 160x120 and 176x144 (264 KB RAM: the framebuffer (2), the
+ *   two frame buffers of UVCDisplayDriver (2 x 2) and the depth buffer of
+ *   WireFrame3D (4) need 10 bytes per pixel; when the second frame buffer
+ *   does not fit, frames are sent one after the other)
  *
  * Board settings: see TestPatternWebcam; ESP32-S3: PSRAM > "OPI PSRAM" (or
  * "QSPI PSRAM", depending on your board).
@@ -73,10 +77,11 @@ void loop() {
       delay(1000);
       return;
     }
-    // new viewport: resize the depth buffer (begin()) and the projection
+    // new viewport: projection and depth buffer. Newer TinyGPU versions do
+    // this in renderWireframe(); begin() is needed for TinyGPU <= 0.4.1,
+    // where setViewport() did not resize the depth buffer.
     wireframe.setViewport(display.width(), display.height());
     wireframe.begin();
-    wireframe.setPerspective(60.0f, 0.1f, 100.0f);
     LOG.printf("%s %dx%d\n", display.isJpeg() ? "MJPEG" : "YUY2",
                (int)display.width(), (int)display.height());
   }

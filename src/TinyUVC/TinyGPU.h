@@ -111,10 +111,12 @@ class UVCDisplayDriver : public tinygpu::DisplayDriver<RGB_T> {
  public:
   explicit UVCDisplayDriver(UVCDevice &uvc) : uvc_(uvc) {}
   ~UVCDisplayDriver() override {
+    // the device may still read a frame buffer
+    waitSent(timeoutMs_);
 #if TINYUVC_JPEG_TINYJPEG
     if (encoder_ != nullptr) {
       encoder_->~TinyJPEGEncoder();
-      ::free(encoder_);
+      UVCMemory::free(encoder_);
     }
 #endif
   }
@@ -157,9 +159,13 @@ class UVCDisplayDriver : public tinygpu::DisplayDriver<RGB_T> {
   bool begin() override { return uvc_.begin(); }
 
   void end() override {
-    waitSent(1000);
-    for (auto &b : buffers_) b.release();
+    // the frame that is still being sent keeps its buffer
+    const bool idle = waitSent(1000);
+    buffers_[next_].release();
+    if (idle) buffers_[1 - next_].release();
     work_.release();
+    swap_.release();
+    workBytes_ = 0;
   }
 
   /// Wait for the frame interval the host selected (default true)
@@ -176,6 +182,7 @@ class UVCDisplayDriver : public tinygpu::DisplayDriver<RGB_T> {
     end();
     for (auto &b : buffers_) b.setMemoryType(type);
     work_.setMemoryType(type);
+    swap_.setMemoryType(type);
   }
 
   /// Sends the surface as the next frame. Returns false if it was not
@@ -200,7 +207,12 @@ class UVCDisplayDriver : public tinygpu::DisplayDriver<RGB_T> {
   bool writeData(tinygpu::ISurface<RGB_T> &surface, size_t x,
                  size_t y) override {
     if (!uvc_.isStreaming() || x >= width() || y >= height()) return false;
-    if (!work_.reserve(rawBytes())) return false;
+    if (workBytes_ != rawBytes()) {
+      // new resolution: the old content has a different layout
+      if (!work_.reserve(rawBytes())) return false;
+      memset(work_.data(), 0, rawBytes());
+      workBytes_ = rawBytes();
+    }
     const size_t bpp = UVCTinyGPUPixel<RGB_T>::bytes;
     const size_t w = std::min(surface.width(), width() - x);
     const size_t h = std::min(surface.height(), height() - y);
@@ -215,7 +227,8 @@ class UVCDisplayDriver : public tinygpu::DisplayDriver<RGB_T> {
 
   /// Sends the frame composed with writeData(surface, x, y)
   bool flush() {
-    if (!dirty_ || !uvc_.isStreaming()) return false;
+    if (!dirty_ || !uvc_.isStreaming() || workBytes_ != rawBytes())
+      return false;
     dirty_ = false;
     if (isJpeg()) return sendJpeg(work_.data());
     UVCFrameBuffer *buf = nextBuffer(rawBytes());
@@ -263,8 +276,12 @@ class UVCDisplayDriver : public tinygpu::DisplayDriver<RGB_T> {
   /// frames handed to the device: one is sent while the next is prepared
   UVCFrameBuffer buffers_[2];
   int next_ = 0;
-  /// RGB565 in TinyJPEG's byte order, or frames composed by partial writes
+  /// frames composed by partial writes
   UVCFrameBuffer work_;
+  /// size of the frame in work_ (0: none)
+  size_t workBytes_ = 0;
+  /// RGB565 in TinyJPEG's byte order
+  UVCFrameBuffer swap_;
 #if TINYUVC_JPEG_TINYJPEG
   tinyjpeg::TinyJPEGEncoder *encoder_ = nullptr;  // allocated when needed
 #endif
@@ -342,16 +359,22 @@ class UVCDisplayDriver : public tinygpu::DisplayDriver<RGB_T> {
   /// previous one is done, so at most the other buffer is still being sent.
   UVCFrameBuffer *nextBuffer(size_t bytes) {
     UVCFrameBuffer &buf = buffers_[next_];
-    if (buf.capacity() < bytes) {
-      buf.release();  // no copy of the old content needed
-      if (!buf.reserve(bytes)) {
-        TINYUVC_LOGE("UVCDisplayDriver: no memory for %u bytes",
-                     (unsigned)bytes);
-        dropped_++;
-        return nullptr;
+    if (buf.capacity() >= bytes) return &buf;
+    buf.release();  // no copy of the old content needed
+    if (buf.reserve(bytes)) return &buf;
+    // no memory for a second frame: wait for the other buffer and reuse it
+    // (frames are then rendered and sent one after the other)
+    UVCFrameBuffer &other = buffers_[1 - next_];
+    if (waitSent(timeoutMs_)) {
+      if (other.capacity() < bytes) other.release();
+      if (other.reserve(bytes)) {
+        next_ = 1 - next_;
+        return &other;
       }
     }
-    return &buf;
+    TINYUVC_LOGE("UVCDisplayDriver: no memory for %u bytes", (unsigned)bytes);
+    dropped_++;
+    return nullptr;
   }
 
   bool sendJpeg(const uint8_t *pixels) {
@@ -379,14 +402,13 @@ class UVCDisplayDriver : public tinygpu::DisplayDriver<RGB_T> {
     JEPixelFormat format = JE_FMT_RGB888;
     if (UVCTinyGPUPixel<RGB_T>::bytes == 2) {
       // TinyGPU's RGB565 is byte-swapped, TinyJPEG reads native order
+      // (into swap_: work_ must keep the frame composed by partial writes)
       const size_t bytes = (size_t)w * h * 2;
-      if (pixels != work_.data()) {
-        if (!work_.reserve(bytes)) {
-          dropped_++;
-          return false;
-        }
+      if (!swap_.reserve(bytes)) {
+        dropped_++;
+        return false;
       }
-      uint8_t *dst = work_.data();
+      uint8_t *dst = swap_.data();
       for (size_t i = 0; i < bytes; i += 2) {
         const uint8_t hi = pixels[i];
         dst[i] = pixels[i + 1];
