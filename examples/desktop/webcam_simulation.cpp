@@ -18,7 +18,7 @@
 #include <cstring>
 #include <string>
 
-#include "TinyUVCCamera.h"
+#include "TinyUVC/TinyCamera.h"
 
 using namespace tiny_camera;
 

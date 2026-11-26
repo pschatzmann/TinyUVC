@@ -9,8 +9,8 @@ static void testMemory() {
   uint8_t *p = UVCMemory::alloc(1000);  // Auto: falls back to RAM
   CHECK(p != nullptr);
   UVCMemory::free(p);
-  CHECK(UVCMemory::alloc(1000, UVCMemoryType::PSRAM) == nullptr);
-  p = UVCMemory::alloc(1000, UVCMemoryType::RAM);
+  CHECK(UVCMemory::alloc(1000, UVCMemoryType::PSRAMOnly) == nullptr);
+  p = UVCMemory::alloc(1000, UVCMemoryType::RAMOnly);
   CHECK(p != nullptr);
   UVCMemory::free(p);
   CHECK(UVCMemory::alloc(0) == nullptr);
@@ -51,7 +51,7 @@ static void testFrameBuffer() {
   CHECK_EQ(r.capacity(), 0u);
   // PSRAM only: fails on the desktop, the buffer stays usable
   UVCFrameBuffer ps;
-  ps.setMemoryType(UVCMemoryType::PSRAM);
+  ps.setMemoryType(UVCMemoryType::PSRAMOnly);
   CHECK(!ps.append(expected.data(), 10));
   CHECK(ps.empty());
   CHECK(!ps.reserve(10));

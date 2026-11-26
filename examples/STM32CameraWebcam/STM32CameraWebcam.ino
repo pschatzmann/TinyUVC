@@ -9,7 +9,7 @@
  * "None" (TinyUSB drives the USB port).
  */
 #include "TinyCameraPins.h"
-#include "TinyUVCCamera.h"
+#include "TinyUVC/TinyCamera.h"
 
 using namespace tiny_camera;
 

@@ -17,8 +17,9 @@
  * functions (see UVCDevice.h).
  *
  * Integrations (include separately):
- * - TinyUVCCamera.h: stream a TinyCamera (esp32-camera, RP2040, STM32 DCMI)
- * - TinyUVCAudioTools.h: VideoOutput / VideoFrameSource of arduino-audio-tools
+ * - TinyUVC/TinyCamera.h: stream a TinyCamera (esp32-camera, RP2040, STM32 DCMI)
+ * - TinyUVC/AudioTools.h: VideoOutput / VideoFrameSource of arduino-audio-tools
+ * - TinyUVC/TinyGPU.h: TinyGPU DisplayDriver that renders to the webcam
  */
 
 /// @namespace tinyuvc

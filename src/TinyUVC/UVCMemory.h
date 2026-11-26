@@ -24,11 +24,12 @@
 
 namespace tinyuvc {
 
-/// Where frame buffers are allocated
+/// Where frame buffers are allocated (not named PSRAM/RAM: arduino-pico
+/// defines a PSRAM macro)
 enum class UVCMemoryType {
-  Auto,   ///< PSRAM if the board has it, else RAM
-  PSRAM,  ///< PSRAM only: the allocation fails without PSRAM
-  RAM     ///< internal RAM only
+  Auto,       ///< PSRAM if the board has it, else RAM
+  PSRAMOnly,  ///< PSRAM only: the allocation fails without PSRAM
+  RAMOnly     ///< internal RAM only
 };
 
 /// @brief Allocates frame sized buffers in PSRAM or RAM (see UVCMemoryType)
@@ -49,9 +50,9 @@ class UVCMemory {
   /// UVCMemory::free().
   static uint8_t *alloc(size_t size, UVCMemoryType type = UVCMemoryType::Auto) {
     if (size == 0) return nullptr;
-    if (type != UVCMemoryType::RAM) {
+    if (type != UVCMemoryType::RAMOnly) {
       uint8_t *p = allocPSRAM(size);
-      if (p != nullptr || type == UVCMemoryType::PSRAM) return p;
+      if (p != nullptr || type == UVCMemoryType::PSRAMOnly) return p;
     }
     return allocRAM(size);
   }

@@ -24,8 +24,9 @@ endif()
 
 option(TINYUVC_BUILD_TESTS "Build and register the desktop tests (tests/)" ${TINYUVC_IS_TOP_LEVEL})
 option(TINYUVC_BUILD_EXAMPLES "Build the desktop examples (examples/desktop/)" ${TINYUVC_IS_TOP_LEVEL})
-option(TINYUVC_WITH_TINYCAMERA "Build the TinyCamera integration (TinyUVCCamera.h)" ON)
+option(TINYUVC_WITH_TINYCAMERA "Build the TinyCamera integration (TinyUVC/TinyCamera.h)" ON)
 option(TINYUVC_WITH_AUDIO_TOOLS "Build the arduino-audio-tools integration" ON)
+option(TINYUVC_WITH_TINYGPU "Build the TinyGPU integration (TinyUVC/TinyGPU.h)" ON)
 option(TINYUVC_SANITIZE "Build tests and examples with address/undefined sanitizers" OFF)
 
 include(FetchContent)
@@ -45,6 +46,7 @@ target_compile_definitions(TinyUVC INTERFACE TINYUVC_DESKTOP)
 # downloaded.
 set(TINYUVC_TINYCAMERA_DIR "" CACHE PATH "Local TinyCamera checkout")
 set(TINYUVC_AUDIO_TOOLS_DIR "" CACHE PATH "Local arduino-audio-tools checkout")
+set(TINYUVC_TINYGPU_DIR "" CACHE PATH "Local TinyGPU checkout")
 
 function(tinyuvc_dependency name dir repo)
     if(TARGET ${name})
@@ -83,6 +85,12 @@ if(TINYUVC_WITH_AUDIO_TOOLS AND NOT TARGET arduino-audio-tools)
     set(ADD_PORTAUDIO OFF CACHE BOOL "" FORCE)
     tinyuvc_dependency(arduino-audio-tools "${TINYUVC_AUDIO_TOOLS_DIR}"
                        https://github.com/pschatzmann/arduino-audio-tools.git)
+endif()
+
+if(TINYUVC_WITH_TINYGPU)
+    set(TGPU_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+    tinyuvc_dependency(TinyGPU "${TINYUVC_TINYGPU_DIR}"
+                       https://github.com/pschatzmann/TinyGPU.git)
 endif()
 
 if(TINYUVC_SANITIZE)

@@ -23,3 +23,10 @@ if(TARGET arduino-audio-tools)
     target_compile_definitions(test_audiotools PRIVATE IS_MIN_DESKTOP NO_MAIN)
     add_test(NAME audiotools COMMAND test_audiotools)
 endif()
+
+# UVCDisplayDriver: TinyGPU surfaces as YUY2 and (with TinyJPEG) MJPEG frames
+if(TARGET TinyGPU)
+    tinyuvc_program(test_tinygpu SOURCES test_tinygpu.cpp
+                    LIBS TinyGPU $<TARGET_NAME_IF_EXISTS:TinyJPEG>)
+    add_test(NAME tinygpu COMMAND test_tinygpu)
+endif()

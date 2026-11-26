@@ -1,6 +1,6 @@
 #pragma once
 /**
- * @file TinyUVCAudioTools.h
+ * @file TinyUVC/AudioTools.h
  * @brief Integration with the video classes of arduino-audio-tools
  * (https://github.com/pschatzmann/arduino-audio-tools):
  * - UVCVideoOutput: a VideoOutput, so everything that writes frames to a
@@ -14,9 +14,10 @@
  * "AudioTools/Concurrency/RTOS.h" after AudioTools.h, on STM32 install the
  * STM32FreeRTOS library.
  */
-#include "AudioToolsConfig.h"
-#include "AudioTools/Video/Video.h"
-#include "TinyUVC.h"
+#include <AudioToolsConfig.h>
+#include <AudioTools/Video/Video.h>
+
+#include "../TinyUVC.h"
 
 namespace tinyuvc {
 
@@ -97,7 +98,7 @@ class UVCVideoOutput : public audio_tools::VideoOutput {
   void setMaxFrameSize(size_t size) { maxFrameSize_ = size; }
 
   /// Where the two frame buffers are allocated: UVCMemoryType::Auto
-  /// (default: PSRAM if available, else RAM), PSRAM or RAM. Call it before
+  /// (default: PSRAM if available, else RAM), PSRAMOnly or RAMOnly. Call it before
   /// the first frame or reserve().
   void setMemoryType(UVCMemoryType type) {
     release();

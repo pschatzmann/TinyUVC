@@ -12,7 +12,7 @@
 #
 # Requires arduino-cli with the cores esp32:esp32, rp2040:rp2040 and
 # STMicroelectronics:stm32, and the libraries TinyCamera, arduino-audio-tools,
-# TinyJPEG and Adafruit TinyUSB Library (STM32).
+# TinyJPEG, TinyGPU and Adafruit TinyUSB Library (STM32).
 
 set -uo pipefail
 
@@ -25,12 +25,14 @@ BOARDS=(
   "esp32s3|esp32:esp32:esp32s3:USBMode=default,CDCOnBoot=default,PSRAM=opi"
   "rp2040|rp2040:rp2040:rpipico:usbstack=tinyusb"
   "rp2350|rp2040:rp2040:rpipico2:usbstack=tinyusb"
+  "rp2350psram|rp2040:rp2040:adafruit_feather_rp2350_hstx:usbstack=tinyusb"
   "rp2040rtos|rp2040:rp2040:rpipico:usbstack=tinyusb,os=freertos"
   "rp2350rtos|rp2040:rp2040:rpipico2:usbstack=tinyusb,os=freertos"
   "stm32f4|STMicroelectronics:stm32:GenF4:pnum=BLACKPILL_F411CE,usb=none"
   "stm32h7|STMicroelectronics:stm32:GenH7:pnum=WeActMiniH750VBTX,usb=none"
 )
 
+# rp2350psram: a RP2350 board with PSRAM (RP2350_PSRAM_CS), for UVCMemory.
 # board specific examples. The video classes of arduino-audio-tools need
 # FreeRTOS (RP2040: Tools > Operating System > FreeRTOS SMP); the rtos rows
 # only build those examples.
@@ -38,7 +40,8 @@ declare -A ONLY
 ONLY["ESP32CameraWebcam"]="esp32s3"
 ONLY["RP2040CameraWebcam"]="rp2040 rp2350"
 ONLY["STM32CameraWebcam"]="stm32h7"
-ONLY["TestPatternWebcam"]="esp32s3 rp2040 rp2350 stm32f4 stm32h7"
+ONLY["TestPatternWebcam"]="esp32s3 rp2040 rp2350 rp2350psram stm32f4 stm32h7"
+ONLY["TinyGPUWireframeWebcam"]="esp32s3 rp2040 rp2350 rp2350psram"
 ONLY["AudioToolsJpegWebcam"]="esp32s3 rp2040rtos rp2350rtos"
 ONLY["AudioToolsAviWebcam"]="esp32s3 rp2040rtos rp2350rtos"
 

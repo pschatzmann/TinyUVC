@@ -1,13 +1,15 @@
 #pragma once
 /**
- * @file TinyUVCCamera.h
+ * @file TinyUVC/TinyCamera.h
  * @brief Streams a camera of the TinyCamera library
  * (https://github.com/pschatzmann/TinyCamera) as USB webcam: esp32-camera
  * sensors (OV2640, OV3660, OV5640, ...), ESP32-P4 MIPI-CSI, RP2040
  * (PicoCamera), STM32 DCMI and the desktop (webcam or test pattern).
  */
-#include "TinyCamera.h"
-#include "TinyUVC.h"
+// angle brackets: "TinyCamera.h" would be this file
+#include <TinyCamera.h>
+
+#include "../TinyUVC.h"
 
 namespace tinyuvc {
 

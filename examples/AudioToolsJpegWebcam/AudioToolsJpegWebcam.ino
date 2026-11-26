@@ -15,7 +15,7 @@
 // Tools > Operating System > FreeRTOS, on STM32 install STM32FreeRTOS
 #include "AudioTools/Concurrency/RTOS.h"
 #include "AudioTools/Video/CodecJPEG.h"
-#include "TinyUVCAudioTools.h"
+#include "TinyUVC/AudioTools.h"
 
 #if defined(ARDUINO_ARCH_ESP32)
 USBCDC USBSerial;  // USB serial port in addition to the camera

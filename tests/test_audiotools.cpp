@@ -3,7 +3,7 @@
 #include <vector>
 
 #include "TestUtils.h"
-#include "TinyUVCAudioTools.h"
+#include "TinyUVC/AudioTools.h"
 #if __has_include(<TinyJPEGEncoder.h>)
 #include "AudioTools/Video/CodecJPEG.h"
 #define HAS_MJPEG_ENCODER 1
@@ -106,11 +106,11 @@ static void testVideoOutputMemory() {
   CHECK_EQ(received.size(), 3u);
 
   // PSRAM only: no PSRAM on the desktop, so frames are dropped
-  out.setMemoryType(UVCMemoryType::PSRAM);
+  out.setMemoryType(UVCMemoryType::PSRAMOnly);
   CHECK(!out.reserve(1000));
   out.write(a.data(), a.size());
   CHECK_EQ(out.dropped(), dropped + 2);
-  out.setMemoryType(UVCMemoryType::RAM);
+  out.setMemoryType(UVCMemoryType::RAMOnly);
   out.write(a.data(), a.size());
   CHECK(uvc.waitReady(1000));
   host.pollAll();

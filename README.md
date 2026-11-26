@@ -27,6 +27,9 @@ driver.
 - [arduino-audio-tools](https://github.com/pschatzmann/arduino-audio-tools)
   integration: video encoders, decoders and demuxers (e.g. `MJPEGEncoder`,
   `DemuxerAVI`) feed the webcam.
+- [TinyGPU](https://github.com/pschatzmann/TinyGPU) integration: the webcam
+  as TinyGPU display, so 2D graphics, text, sprites and 3D wireframes are
+  sent as video (YUY2 or MJPEG).
 - Desktop build with CMake: the device code runs against a simulated USB host
   that behaves like Linux' `uvcvideo` driver.
 
@@ -66,7 +69,8 @@ git clone https://github.com/pschatzmann/TinyUVC.git
 I recommend to use git because you can easily update to the latest version just by executing the ```git pull``` command in the project folder.
 
 Optional: [TinyCamera](https://github.com/pschatzmann/TinyCamera),
-[arduino-audio-tools](https://github.com/pschatzmann/arduino-audio-tools) and
+[arduino-audio-tools](https://github.com/pschatzmann/arduino-audio-tools),
+[TinyGPU](https://github.com/pschatzmann/TinyGPU) and
 [TinyJPEG](https://github.com/pschatzmann/TinyJPEG); for STM32 the
 [Adafruit TinyUSB Library](https://github.com/adafruit/Adafruit_TinyUSB_Arduino).
 

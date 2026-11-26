@@ -19,7 +19,7 @@
 // Tools > Operating System > FreeRTOS, on STM32 install STM32FreeRTOS
 #include "AudioTools/Concurrency/RTOS.h"
 #include "AudioTools/AudioCodecs/ContainerAVI.h"
-#include "TinyUVCAudioTools.h"
+#include "TinyUVC/AudioTools.h"
 
 #if defined(ARDUINO_ARCH_ESP32)
 #include <SD_MMC.h>

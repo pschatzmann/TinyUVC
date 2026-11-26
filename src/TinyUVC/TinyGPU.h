@@ -1,6 +1,6 @@
 #pragma once
 /**
- * @file TinyUVCTinyGPU.h
+ * @file TinyUVC/TinyGPU.h
  * @brief Integration with TinyGPU (https://github.com/pschatzmann/TinyGPU):
  * UVCDisplayDriver is a TinyGPU DisplayDriver whose "display" is the
  * webcam. Everything that is rendered into a TinyGPU surface (2D drawing,
@@ -47,8 +47,10 @@
 #endif
 #include <new>
 
-#include "TinyGPU.h"
-#include "TinyUVC.h"
+// angle brackets: "TinyGPU.h" would be this file
+#include <TinyGPU.h>
+
+#include "../TinyUVC.h"
 
 #if !defined(TINYUVC_NO_JPEG) && defined(ARDUINO_ARCH_ESP32) && \
     __has_include("img_converters.h")

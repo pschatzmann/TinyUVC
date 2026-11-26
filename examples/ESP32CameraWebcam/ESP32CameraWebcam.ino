@@ -14,7 +14,7 @@
  * (setPinsXiaoEsp32S3, setPinsM5StackCamS3Unit, setPinsEsp32S3CamLcd, ...).
  */
 #include "TinyCameraPins.h"
-#include "TinyUVCCamera.h"
+#include "TinyUVC/TinyCamera.h"
 
 using namespace tiny_camera;
 
