@@ -1,15 +1,12 @@
 var searchData=
 [
-  ['rawframesize_0',['rawFrameSize',['../structtinyuvc_1_1UVCStreamSettings.html#a160d8c11e22df8bf912b1831250fb2ea',1,'tinyuvc::UVCStreamSettings']]],
-  ['recipient_1',['recipient',['../structtinyuvc_1_1UVCRequest.html#a8cf06a8e281ef5a4a0c334bec9cba3f8',1,'tinyuvc::UVCRequest']]],
-  ['release_2',['release',['../classtinyuvc_1_1UVCFrameBuffer.html#a65863d90df401dea243849f0884f5789',1,'tinyuvc::UVCFrameBuffer::release()'],['../classtinyuvc_1_1UVCVideoOutput.html#a6050bb6df9ea7e8ec18d1e543c129b2e',1,'tinyuvc::UVCVideoOutput::release()']]],
-  ['reply_3',['reply',['../classtinyuvc_1_1UVCDevice.html#af4122d15ac7a8296de896046170334c1',1,'tinyuvc::UVCDevice']]],
-  ['replyprobe_4',['replyProbe',['../classtinyuvc_1_1UVCDevice.html#aa3c4888186a9f2fff166291ad8bd39f6',1,'tinyuvc::UVCDevice']]],
-  ['requesterrorcode_5',['requestErrorCode',['../classtinyuvc_1_1UVCHostSimulator.html#a100355bb26bded309dc030604049e0e1',1,'tinyuvc::UVCHostSimulator']]],
-  ['reserve_6',['reserve',['../classtinyuvc_1_1UVCFrameBuffer.html#a20b01eb29893bb1a0ddc3007b3713b9d',1,'tinyuvc::UVCFrameBuffer::reserve()'],['../classtinyuvc_1_1UVCVideoOutput.html#ae4941531b782c311d7cfd595ae5626d4',1,'tinyuvc::UVCVideoOutput::reserve()']]],
-  ['resetcontrol_7',['resetControl',['../structtinyuvc_1_1UVCSimBus.html#a8cdb054eeeddd374fb2b4ae68b417100',1,'tinyuvc::UVCSimBus']]],
-  ['resetendpoint_8',['resetEndpoint',['../structtinyuvc_1_1UVCSimBus.html#a4a57d009c795505dbde60919c6460ef9',1,'tinyuvc::UVCSimBus']]],
-  ['resetpayload_9',['resetPayload',['../classtinyuvc_1_1UVCHostSimulator.html#a4e2721e0d437d0de82d477100a03cf0e',1,'tinyuvc::UVCHostSimulator']]],
-  ['rgb565_10',['rgb565',['../classtinyuvc_1_1UVCConvert.html#a8489f88799672074b70341b870e77a1d',1,'tinyuvc::UVCConvert']]],
-  ['rhport_11',['rhport',['../namespacetinyuvc_1_1tusb__glue.html#a42f0fb93cc55461315b36fdae4c6d816',1,'tinyuvc::tusb_glue']]]
+  ['packet_0',['packet',['../classtinyuvc_1_1UVCHostSimulator.html#ada19e558bf001b51483f99df79ed5dd0',1,'tinyuvc::UVCHostSimulator']]],
+  ['parseconfiguration_1',['parseConfiguration',['../classtinyuvc_1_1UVCHostSimulator.html#a76fa94b278cc177a0f6fd94436568fc9',1,'tinyuvc::UVCHostSimulator']]],
+  ['payloads_2',['payloads',['../classtinyuvc_1_1UVCHostSimulator.html#a896390aab00ea00184e37a237fff8803',1,'tinyuvc::UVCHostSimulator']]],
+  ['payloadsize_3',['payloadSize',['../classtinyuvc_1_1UVCDevice.html#a6b12a9b2a284cace9f5971e2a88a5e75',1,'tinyuvc::UVCDevice']]],
+  ['pixelformat_4',['pixelFormat',['../classtinyuvc_1_1UVCVideoOutput.html#a7347ccf195d7ab468d2519466a1343c7',1,'tinyuvc::UVCVideoOutput']]],
+  ['poll_5',['poll',['../classtinyuvc_1_1UVCHostSimulator.html#abd86d0ae46159107426e408c72d5bb2a',1,'tinyuvc::UVCHostSimulator']]],
+  ['pollall_6',['pollAll',['../classtinyuvc_1_1UVCHostSimulator.html#af451e45f27f7f0e97024715de28507bf',1,'tinyuvc::UVCHostSimulator']]],
+  ['put16_7',['put16',['../namespacetinyuvc_1_1le.html#addd5eba2cdebc604a789588c76279145',1,'tinyuvc::le']]],
+  ['put32_8',['put32',['../namespacetinyuvc_1_1le.html#a4f252b8cfda085b95f4478eb680a6d7a',1,'tinyuvc::le']]]
 ];

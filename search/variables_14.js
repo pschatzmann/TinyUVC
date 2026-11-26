@@ -1,9 +1,16 @@
 var searchData=
 [
-  ['width_0',['width',['../structtinyuvc_1_1UVCHostSimulator_1_1HostFrame.html#ad392bf969a2dee999a25aee43628d858',1,'tinyuvc::UVCHostSimulator::HostFrame::width'],['../structtinyuvc_1_1UVCFrameSpec.html#a12b47aabac773cee652c6be37952d59f',1,'tinyuvc::UVCFrameSpec::width'],['../structtinyuvc_1_1UVCStreamSettings.html#a802322f7542ff9ce348e7e9ae6dfded1',1,'tinyuvc::UVCStreamSettings::width'],['../structtinyuvc_1_1UVCCamera_1_1Size.html#a00d77a3bdb8698c1a63293042d51cf7e',1,'tinyuvc::UVCCamera::Size::width']]],
-  ['windex_1',['wIndex',['../structtinyuvc_1_1UVCRequest.html#a6706edf2f7fec1852b44c59cad1ea44a',1,'tinyuvc::UVCRequest']]],
-  ['withcdc_5f_2',['withCdc_',['../classtinyuvc_1_1UVCHostSimulator.html#af4255f0e52b706cfc72edcf1d2d217a5',1,'tinyuvc::UVCHostSimulator']]],
-  ['withpts_5f_3',['withPts_',['../classtinyuvc_1_1UVCDevice.html#aa6213c1ab798c0d3efaf2d0067645b56',1,'tinyuvc::UVCDevice']]],
-  ['wlength_4',['wLength',['../structtinyuvc_1_1UVCRequest.html#a4d9118c2d9ed991299ab9c2cce87d7b6',1,'tinyuvc::UVCRequest']]],
-  ['wvalue_5',['wValue',['../structtinyuvc_1_1UVCRequest.html#a61251b827a0de9f352b284b3016a9114',1,'tinyuvc::UVCRequest']]]
+  ['vc_5fheader_0',['VC_HEADER',['../namespacetinyuvc_1_1uvc__spec.html#ab7dc01543ad14333617d710832ec4457',1,'tinyuvc::uvc_spec']]],
+  ['vc_5finput_5fterminal_1',['VC_INPUT_TERMINAL',['../namespacetinyuvc_1_1uvc__spec.html#aa2b34d276e043b8689fb08fe45296b78',1,'tinyuvc::uvc_spec']]],
+  ['vc_5foutput_5fterminal_2',['VC_OUTPUT_TERMINAL',['../namespacetinyuvc_1_1uvc__spec.html#ac7fbdeb3a0fe8b45d8e9b9353f63972e',1,'tinyuvc::uvc_spec']]],
+  ['vc_5frequest_5ferror_5fcode_5fcontrol_3',['VC_REQUEST_ERROR_CODE_CONTROL',['../namespacetinyuvc_1_1uvc__spec.html#a179bae46ab6bb49cf6f4674a5d589cab',1,'tinyuvc::uvc_spec']]],
+  ['vcitf_5f_4',['vcItf_',['../classtinyuvc_1_1UVCHostSimulator.html#a6799eab3630fcfe8dca9f8c5846ae1d1',1,'tinyuvc::UVCHostSimulator']]],
+  ['vs_5fcolorformat_5',['VS_COLORFORMAT',['../namespacetinyuvc_1_1uvc__spec.html#a81e6fdebe0251e65eedba6890756c693',1,'tinyuvc::uvc_spec']]],
+  ['vs_5fcommit_5fcontrol_6',['VS_COMMIT_CONTROL',['../namespacetinyuvc_1_1uvc__spec.html#a1e2fcea0d03810ceaad9e992485c635d',1,'tinyuvc::uvc_spec']]],
+  ['vs_5fformat_5fmjpeg_7',['VS_FORMAT_MJPEG',['../namespacetinyuvc_1_1uvc__spec.html#a1351224f5fd7075deb16777413ffec02',1,'tinyuvc::uvc_spec']]],
+  ['vs_5fformat_5funcompressed_8',['VS_FORMAT_UNCOMPRESSED',['../namespacetinyuvc_1_1uvc__spec.html#a821845c267191f26e24faee969171911',1,'tinyuvc::uvc_spec']]],
+  ['vs_5fframe_5fmjpeg_9',['VS_FRAME_MJPEG',['../namespacetinyuvc_1_1uvc__spec.html#a2c7df39cf462b8036916afc8d3604c20',1,'tinyuvc::uvc_spec']]],
+  ['vs_5fframe_5funcompressed_10',['VS_FRAME_UNCOMPRESSED',['../namespacetinyuvc_1_1uvc__spec.html#a0ff623aac318c42865a524761b6c66fc',1,'tinyuvc::uvc_spec']]],
+  ['vs_5finput_5fheader_11',['VS_INPUT_HEADER',['../namespacetinyuvc_1_1uvc__spec.html#a7438b9e72dbfb1209dddcdc1123fc193',1,'tinyuvc::uvc_spec']]],
+  ['vs_5fprobe_5fcontrol_12',['VS_PROBE_CONTROL',['../namespacetinyuvc_1_1uvc__spec.html#ac6bfab23ce3ee69f356e536dca3dd1d6',1,'tinyuvc::uvc_spec']]]
 ];

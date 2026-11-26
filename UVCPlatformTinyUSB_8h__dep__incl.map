@@ -1,9 +1,13 @@
 <map id="src/TinyUVC/platform/UVCPlatformTinyUSB.h" name="src/TinyUVC/platform/UVCPlatformTinyUSB.h">
-<area shape="rect" id="Node000001" title="The generic TinyUSB platform layer, for every board that uses the Adafruit TinyUSB Library (Adafruit_..." alt="" coords="107,5,283,50"/>
-<area shape="rect" id="Node000002" href="$TinyUVC_8h.html" title="TinyUVC: header&#45;only USB Video Class (UVC) device &#45; turns a microcontroller into a USB webcam." alt="" coords="139,98,251,126"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,64,198,98,193,96,194,68"/>
-<area shape="rect" id="Node000003" href="$TinyUVCAudioTools_8h.html" title="Integration with the video classes of arduino&#45;audio&#45;tools (https://github.com/pschatzmann/arduino&#45;aud..." alt="" coords="5,174,188,201"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="168,134,115,176,113,171,163,136"/>
-<area shape="rect" id="Node000004" href="$TinyUVCCamera_8h.html" title="Streams a camera of the TinyCamera library (https://github.com/pschatzmann/TinyCamera) as USB webcam:..." alt="" coords="212,174,376,201"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="226,133,279,173,274,173,224,138"/>
+<area shape="rect" id="Node000001" title="The generic TinyUSB platform layer, for every board that uses the Adafruit TinyUSB Library (Adafruit_..." alt="" coords="225,5,401,50"/>
+<area shape="rect" id="Node000002" href="$TinyUVC_8h.html" title="TinyUVC: header&#45;only USB Video Class (UVC) device &#45; turns a microcontroller into a USB webcam." alt="" coords="257,98,369,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="315,64,315,99,311,96,312,68"/>
+<area shape="rect" id="Node000003" href="$AudioTools_8h.html" title="Integration with the video classes of arduino&#45;audio&#45;tools (https://github.com/pschatzmann/arduino&#45;aud..." alt="" coords="5,174,192,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="263,132,138,176,136,171,258,130"/>
+<area shape="rect" id="Node000004" href="$TinyCamera_8h.html" title="Streams a camera of the TinyCamera library (https://github.com/pschatzmann/TinyCamera) as USB webcam:..." alt="" coords="216,174,411,201"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="315,140,315,175,311,172,311,143"/>
+<area shape="rect" id="Node000005" href="$TinyGPU_8h.html" title="Integration with TinyGPU (https://github.com/pschatzmann/TinyGPU): UVCDisplayDriver is a TinyGPU Disp..." alt="" coords="459,174,631,201"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="370,128,506,173,501,173,369,133"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="426,176,434,181,437,188,430,198,411,203,411,198,427,193,432,187,430,184,425,181"/>
+<area shape="poly" id="edge6_Node000005_Node000005" title=" " alt="" coords="648,176,658,187,650,198,632,203,632,198,647,194,653,188,646,181"/>
 </map>

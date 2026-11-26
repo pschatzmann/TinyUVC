@@ -1,7 +1,7 @@
 var searchData=
 [
   ['g_0',['g',['../structtinyuvc_1_1UVCConvert_1_1Rgb.html#abea9e53bc627141fffa2e3a2c635ae51',1,'tinyuvc::UVCConvert::Rgb']]],
-  ['generation_5f_1',['generation_',['../classtinyuvc_1_1UVCDevice.html#ae6f3d249ca5757ac082bff8a5e956e4b',1,'tinyuvc::UVCDevice::generation_'],['../classtinyuvc_1_1UVCCamera.html#ab96f030fa4f937ac46a80f1b261319dd',1,'tinyuvc::UVCCamera::generation_']]],
+  ['generation_5f_1',['generation_',['../classtinyuvc_1_1UVCCamera.html#ab96f030fa4f937ac46a80f1b261319dd',1,'tinyuvc::UVCCamera::generation_'],['../classtinyuvc_1_1UVCDevice.html#ae6f3d249ca5757ac082bff8a5e956e4b',1,'tinyuvc::UVCDevice::generation_']]],
   ['get16_2',['get16',['../namespacetinyuvc_1_1le.html#a7eacbce225a358b1ff1bc16f71ef7bdd',1,'tinyuvc::le']]],
   ['get32_3',['get32',['../namespacetinyuvc_1_1le.html#abb5aa18b55e3f46fd399141de17f6b98',1,'tinyuvc::le']]],
   ['get_5fcur_4',['GET_CUR',['../namespacetinyuvc_1_1uvc__spec.html#a0452ca5985e1a769c82ccce3f0b6d274',1,'tinyuvc::uvc_spec']]],

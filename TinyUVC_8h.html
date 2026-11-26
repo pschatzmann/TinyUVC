@@ -154,11 +154,15 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="TinyUVC_8h__dep__incl.png" border="0" usemap="#asrc_2TinyUVC_8hdep" alt=""/></div>
 <map name="asrc_2TinyUVC_8hdep" id="asrc_2TinyUVC_8hdep">
-<area shape="rect" title="TinyUVC: header&#45;only USB Video Class (UVC) device &#45; turns a microcontroller into a USB webcam." alt="" coords="139,5,251,33"/>
-<area shape="rect" href="TinyUVCAudioTools_8h.html" title="Integration with the video classes of arduino&#45;audio&#45;tools (https://github.com/pschatzmann/arduino&#45;aud..." alt="" coords="5,81,188,109"/>
-<area shape="poly" title=" " alt="" coords="168,42,115,83,113,78,163,43"/>
-<area shape="rect" href="TinyUVCCamera_8h.html" title="Streams a camera of the TinyCamera library (https://github.com/pschatzmann/TinyCamera) as USB webcam:..." alt="" coords="212,81,376,109"/>
-<area shape="poly" title=" " alt="" coords="226,40,279,81,274,80,224,45"/>
+<area shape="rect" title="TinyUVC: header&#45;only USB Video Class (UVC) device &#45; turns a microcontroller into a USB webcam." alt="" coords="257,5,369,33"/>
+<area shape="rect" href="AudioTools_8h.html" title="Integration with the video classes of arduino&#45;audio&#45;tools (https://github.com/pschatzmann/arduino&#45;aud..." alt="" coords="5,81,192,109"/>
+<area shape="poly" title=" " alt="" coords="263,39,138,83,136,78,258,38"/>
+<area shape="rect" href="TinyCamera_8h.html" title="Streams a camera of the TinyCamera library (https://github.com/pschatzmann/TinyCamera) as USB webcam:..." alt="" coords="216,81,411,109"/>
+<area shape="poly" title=" " alt="" coords="315,47,315,82,311,79,311,51"/>
+<area shape="rect" href="TinyGPU_8h.html" title="Integration with TinyGPU (https://github.com/pschatzmann/TinyGPU): UVCDisplayDriver is a TinyGPU Disp..." alt="" coords="459,81,631,109"/>
+<area shape="poly" title=" " alt="" coords="370,36,506,80,501,81,369,41"/>
+<area shape="poly" title=" " alt="" coords="426,83,434,88,437,95,430,105,411,110,411,105,427,101,432,95,430,91,425,88"/>
+<area shape="poly" title=" " alt="" coords="648,83,658,95,650,105,632,111,632,105,647,101,653,95,646,88"/>
 </map>
 </div>
 </div>
@@ -191,8 +195,9 @@ Macros</h2></td></tr>
 </table>
 <p>Override with -DTINYUVC_PLATFORM_ESP32 / _TINYUSB / _DESKTOP, or with TINYUVC_PLATFORM_CUSTOM to provide your own <a class="el" href="namespacetinyuvc_1_1platform.html" title="Functions every platform layer (platform/UVCPlatform*.h) implements.">tinyuvc::platform</a> functions (see <a class="el" href="UVCDevice_8h.html" title="The USB Video Class device: descriptors, probe/commit negotiation and streaming of frames....">UVCDevice.h</a>).</p>
 <p>Integrations (include separately):</p><ul>
-<li><a class="el" href="TinyUVCCamera_8h.html" title="Streams a camera of the TinyCamera library (https://github.com/pschatzmann/TinyCamera) as USB webcam:...">TinyUVCCamera.h</a>: stream a TinyCamera (esp32-camera, RP2040, STM32 DCMI)</li>
-<li><a class="el" href="TinyUVCAudioTools_8h.html" title="Integration with the video classes of arduino-audio-tools (https://github.com/pschatzmann/arduino-aud...">TinyUVCAudioTools.h</a>: VideoOutput / VideoFrameSource of arduino-audio-tools </li>
+<li><a class="el" href="TinyCamera_8h.html" title="Streams a camera of the TinyCamera library (https://github.com/pschatzmann/TinyCamera) as USB webcam:...">TinyUVC/TinyCamera.h</a>: stream a TinyCamera (esp32-camera, RP2040, STM32 DCMI)</li>
+<li><a class="el" href="AudioTools_8h.html" title="Integration with the video classes of arduino-audio-tools (https://github.com/pschatzmann/arduino-aud...">TinyUVC/AudioTools.h</a>: VideoOutput / VideoFrameSource of arduino-audio-tools</li>
+<li><a class="el" href="TinyGPU_8h.html" title="Integration with TinyGPU (https://github.com/pschatzmann/TinyGPU): UVCDisplayDriver is a TinyGPU Disp...">TinyUVC/TinyGPU.h</a>: TinyGPU DisplayDriver that renders to the webcam </li>
 </ul>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a4fb9cf40d145de43457716d6aaec9820" name="a4fb9cf40d145de43457716d6aaec9820"></a>

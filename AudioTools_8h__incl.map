@@ -1,19 +1,19 @@
-<map id="src/TinyUVCAudioTools.h" name="src/TinyUVCAudioTools.h">
-<area shape="rect" id="Node000001" title="Integration with the video classes of arduino&#45;audio&#45;tools (https://github.com/pschatzmann/arduino&#45;aud..." alt="" coords="302,5,484,33"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="132,81,276,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="358,36,253,77,250,73,361,32"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="301,81,486,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="394,31,396,66,391,65,392,36"/>
-<area shape="rect" id="Node000004" href="$TinyUVC_8h.html" title="TinyUVC: header&#45;only USB Video Class (UVC) device &#45; turns a microcontroller into a USB webcam." alt="" coords="510,81,599,109"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="422,31,515,74,510,75,422,36"/>
+<map id="src/TinyUVC/AudioTools.h" name="src/TinyUVC/AudioTools.h">
+<area shape="rect" id="Node000001" title="Integration with the video classes of arduino&#45;audio&#45;tools (https://github.com/pschatzmann/arduino&#45;aud..." alt="" coords="294,5,480,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="125,81,270,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="351,36,247,77,243,73,355,32"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="294,81,479,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="388,31,389,66,384,65,386,36"/>
+<area shape="rect" id="Node000004" href="$TinyUVC_8h.html" title="TinyUVC: header&#45;only USB Video Class (UVC) device &#45; turns a microcontroller into a USB webcam." alt="" coords="504,81,605,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="416,31,514,74,509,75,417,36"/>
 <area shape="rect" id="Node000005" href="$UVCConfig_8h.html" title="Compile&#45;time limits and defaults of TinyUVC. Every value can be overridden with a build flag (&#45;DTINYU..." alt="" coords="26,552,188,580"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="508,110,209,190,67,234,23,251,8,263,8,416,15,453,33,487,56,516,81,541,75,542,52,520,28,490,10,454,3,416,3,261,20,247,65,229,208,184,511,105"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="502,111,204,191,65,234,22,252,8,263,8,416,15,453,33,487,56,516,81,541,75,542,52,520,28,490,10,454,3,416,3,261,20,247,63,229,203,186,505,107"/>
 <area shape="rect" id="Node000006" href="$UVCDevice_8h.html" title="The USB Video Class device: descriptors, probe/commit negotiation and streaming of frames...." alt="" coords="381,249,547,277"/>
 <area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="513,111,483,130,468,143,457,158,450,176,449,196,456,236,451,234,444,196,445,175,452,155,464,139,480,126,517,108"/>
 <area shape="rect" id="Node000019" href="$UVCMemory_8h.html" title="Memory for frame sized buffers, taken from PSRAM where the board has it: ESP32 with PSRAM enabled (To..." alt="" coords="667,165,840,193"/>
 <area shape="poly" id="edge22_Node000004_Node000019" title=" " alt="" coords="587,107,710,158,705,159,587,112"/>
 <area shape="rect" id="Node000021" href="$UVCPlatformTinyUSB_8h.html" title="The generic TinyUSB platform layer, for every board that uses the Adafruit TinyUSB Library (Adafruit_..." alt="" coords="865,157,1090,201"/>
-<area shape="poly" id="edge26_Node000004_Node000021" title=" " alt="" coords="600,102,853,152,848,154,600,108"/>
+<area shape="poly" id="edge26_Node000004_Node000021" title=" " alt="" coords="605,103,852,152,848,154,606,109"/>
 <area shape="rect" id="Node000024" href="$UVCTinyUSB_8h.html" title="Connects UVCDevice to TinyUSB as an application class driver (usbd_app_driver_get_cb())...." alt="" coords="466,165,643,193"/>
 <area shape="poly" id="edge31_Node000004_Node000024" title=" " alt="" coords="556,107,557,151,552,149,553,112"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="395,325,461,353"/>

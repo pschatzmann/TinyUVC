@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$structtinyuvc_1_1platform_1_1AppLock.html" title="Serializes app context calls into the USB stack against the USB task, for USB stacks that need that (..." alt="" coords="5,5,147,50"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,14,173,42"/>
+<area shape="rect" id="Node000001" href="$classtinyuvc_1_1UVCDisplayDriver.html" title="TinyGPU DisplayDriver that sends the written surfaces as webcam frames to the USB host: uncompressed ..." alt="" coords="221,5,415,50"/>
+<area shape="poly" id="edge3_Node000000_Node000001" title=" " alt="" coords="188,25,223,27,218,28,189,30"/>
 </map>

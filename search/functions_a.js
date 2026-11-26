@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kick_0',['kick',['../classtinyuvc_1_1UVCDevice.html#ac057bc7d5f00ebe4db135b23b1c9af30',1,'tinyuvc::UVCDevice']]]
+  ['jpegsinkwrite_0',['jpegSinkWrite',['../classtinyuvc_1_1UVCDisplayDriver.html#a8be3cbeb4b58af87bbf77e083eb642cb',1,'tinyuvc::UVCDisplayDriver']]]
 ];

@@ -3,7 +3,7 @@ var searchData=
   ['callxfer_0',['callxfer',['../namespacetinyuvc_1_1tusb__glue.html#a520c12d511b92a8b8b84710e21d2e07f',1,'tinyuvc::tusb_glue::callXfer(bool(*f)(uint8_t, uint8_t, uint8_t *, uint16_t), uint8_t port, uint8_t ep, uint8_t *buf, uint16_t len)'],['../namespacetinyuvc_1_1tusb__glue.html#adfd72f9e441dde003b558e3728a3a34d',1,'tinyuvc::tusb_glue::callXfer(bool(*f)(uint8_t, uint8_t, uint8_t *, uint16_t, bool), uint8_t port, uint8_t ep, uint8_t *buf, uint16_t len)']]],
   ['camera_1',['camera',['../classtinyuvc_1_1UVCCamera.html#a47de94192e6d989adeca576abcd68783',1,'tinyuvc::UVCCamera']]],
   ['camera_5f_2',['camera_',['../classtinyuvc_1_1UVCCamera.html#a58dc531640cdadec23ac33a45cf2415a',1,'tinyuvc::UVCCamera']]],
-  ['capacity_3',['capacity',['../classtinyuvc_1_1UVCFrameBuffer.html#a5cfdad4f7462efe6e5e983dee816d1f5',1,'tinyuvc::UVCFrameBuffer']]],
+  ['capacity_3',['capacity',['../structtinyuvc_1_1UVCDisplayDriver_1_1JpegSink.html#a778553806f65ef36d367d995c6e0f3b7',1,'tinyuvc::UVCDisplayDriver::JpegSink::capacity'],['../classtinyuvc_1_1UVCFrameBuffer.html#a5cfdad4f7462efe6e5e983dee816d1f5',1,'tinyuvc::UVCFrameBuffer::capacity() const']]],
   ['capacity_5f_4',['capacity_',['../classtinyuvc_1_1UVCFrameBuffer.html#a66678433b48b522219ec6ff98952bca1',1,'tinyuvc::UVCFrameBuffer']]],
   ['cc_5fvideo_5',['CC_VIDEO',['../namespacetinyuvc_1_1uvc__spec.html#a58da4113f0065423ad91a29edff3a669',1,'tinyuvc::uvc_spec']]],
   ['claimed_6',['claimed',['../structtinyuvc_1_1UVCSimBus.html#a4b860c00a81c08fb31d6e7e5050a51f5',1,'tinyuvc::UVCSimBus']]],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['pacing_5f_0',['pacing_',['../classtinyuvc_1_1UVCVideoOutput.html#a19833d63405a6bf7322347995aa3bf1c',1,'tinyuvc::UVCVideoOutput']]],
+  ['pacing_5f_0',['pacing_',['../classtinyuvc_1_1UVCVideoOutput.html#a19833d63405a6bf7322347995aa3bf1c',1,'tinyuvc::UVCVideoOutput::pacing_'],['../classtinyuvc_1_1UVCDisplayDriver.html#adb65cf66258226005e24563f1566f2df',1,'tinyuvc::UVCDisplayDriver::pacing_']]],
   ['payloads_5f_1',['payloads_',['../classtinyuvc_1_1UVCHostSimulator.html#a55370f4ebe22bbe80a23276159fb5ff6',1,'tinyuvc::UVCHostSimulator']]],
   ['payloadsize_5f_2',['payloadsize_',['../classtinyuvc_1_1UVCHostSimulator.html#a80b947b24c0344bb5d54f74d0dcdafd5',1,'tinyuvc::UVCHostSimulator::payloadSize_'],['../classtinyuvc_1_1UVCDevice.html#a0f614c4c9713b3a80cc3904198946a08',1,'tinyuvc::UVCDevice::payloadSize_']]],
   ['payloadsizecfg_5f_3',['payloadSizeCfg_',['../classtinyuvc_1_1UVCDevice.html#a06526ad28a459f9b526637baf246249d',1,'tinyuvc::UVCDevice']]],

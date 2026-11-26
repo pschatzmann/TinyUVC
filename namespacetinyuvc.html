@@ -118,6 +118,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCDevice.html">UVCDevice</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB Video Class (UVC 1.1) device - a USB webcam.  <a href="classtinyuvc_1_1UVCDevice.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">UVCDisplayDriver</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TinyGPU DisplayDriver that sends the written surfaces as webcam frames to the USB host: uncompressed (YUY2), or compressed with TinyJPEG (MJPEG) - whichever format the host selected.  <a href="classtinyuvc_1_1UVCDisplayDriver.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtinyuvc_1_1UVCFormatSpec.html">UVCFormatSpec</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One video format (UVC format descriptor) with its resolutions.  <a href="structtinyuvc_1_1UVCFormatSpec.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,6 +153,15 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtinyuvc_1_1UVCStreamSettings.html">UVCStreamSettings</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The format, resolution and frame rate the host selected.  <a href="structtinyuvc_1_1UVCStreamSettings.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtinyuvc_1_1UVCTinyGPUPixel.html">UVCTinyGPUPixel</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a TinyGPU color type to the matching PixelFormat.  <a href="structtinyuvc_1_1UVCTinyGPUPixel.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtinyuvc_1_1UVCTinyGPUPixel_3_01tinygpu_1_1RGB565_01_4.html">UVCTinyGPUPixel&lt; tinygpu::RGB565 &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TinyGPU stores RGB565 byte-swapped: the high byte comes first in memory.  <a href="structtinyuvc_1_1UVCTinyGPUPixel_3_01tinygpu_1_1RGB565_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtinyuvc_1_1UVCTinyGPUPixel_3_01tinygpu_1_1RGB888_01_4.html">UVCTinyGPUPixel&lt; tinygpu::RGB888 &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TinyGPU stores RGB888 as the bytes r, g, b.  <a href="structtinyuvc_1_1UVCTinyGPUPixel_3_01tinygpu_1_1RGB888_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoCopy.html">UVCVideoCopy</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Streams the frames of an audio-tools VideoFrameSource (e.g. CameraFrameSourceTinyCamera) to a <a class="el" href="classtinyuvc_1_1UVCDevice.html" title="USB Video Class (UVC 1.1) device - a USB webcam.">UVCDevice</a>.  <a href="classtinyuvc_1_1UVCVideoCopy.html#details">More...</a><br /></td></tr>
@@ -201,38 +213,37 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:a53a05b8b6bdc9604a668f28de79ba73f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log levels of UVCLogger.  <a href="namespacetinyuvc.html#a53a05b8b6bdc9604a668f28de79ba73f">More...</a><br /></td></tr>
 <tr class="separator:a53a05b8b6bdc9604a668f28de79ba73f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ea61e38c2cac67a3cc89d5840c7bd69" id="r_a1ea61e38c2cac67a3cc89d5840c7bd69"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc.html#a1ea61e38c2cac67a3cc89d5840c7bd69">UVCMemoryType</a> { <a class="el" href="namespacetinyuvc.html#a1ea61e38c2cac67a3cc89d5840c7bd69a06b9281e396db002010bde1de57262eb">Auto</a>
-, <a class="el" href="namespacetinyuvc.html#a1ea61e38c2cac67a3cc89d5840c7bd69a34ef1bdcaaf8c1e2d63bf8c904b06d52">PSRAM</a>
-, <a class="el" href="namespacetinyuvc.html#a1ea61e38c2cac67a3cc89d5840c7bd69ae53619c1fe611a51eeeb8d148ba6e532">RAM</a>
+, <a class="el" href="namespacetinyuvc.html#a1ea61e38c2cac67a3cc89d5840c7bd69a6162b41e1db996457b1f200627115320">PSRAMOnly</a>
+, <a class="el" href="namespacetinyuvc.html#a1ea61e38c2cac67a3cc89d5840c7bd69a02c163a87277e788de337a40c21fcf09">RAMOnly</a>
  }</td></tr>
-<tr class="memdesc:a1ea61e38c2cac67a3cc89d5840c7bd69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where frame buffers are allocated.  <a href="namespacetinyuvc.html#a1ea61e38c2cac67a3cc89d5840c7bd69">More...</a><br /></td></tr>
 <tr class="separator:a1ea61e38c2cac67a3cc89d5840c7bd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a17f5573fa006dfa3543c3df8d75f017a" id="r_a17f5573fa006dfa3543c3df8d75f017a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc.html#a17f5573fa006dfa3543c3df8d75f017a">toPixelFormat</a> (audio_tools::VideoFormat format, <a class="el" href="namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4">PixelFormat</a> &amp;<a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">out</a>)</td></tr>
+<tr class="memdesc:a17f5573fa006dfa3543c3df8d75f017a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps an audio-tools VideoFormat to the matching PixelFormat.  <br /></td></tr>
+<tr class="separator:a17f5573fa006dfa3543c3df8d75f017a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a202df3e7a742d55c6119ce9f1782e6bb" id="r_a202df3e7a742d55c6119ce9f1782e6bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc.html#a202df3e7a742d55c6119ce9f1782e6bb">addResolution</a> (<a class="el" href="classtinyuvc_1_1UVCDevice.html">UVCDevice</a> &amp;<a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uvc</a>, <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">const</a> audio_tools::VideoInfo &amp;<a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">info</a>, <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint32_t</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">maxJpegSize</a>=0)</td></tr>
+<tr class="separator:a202df3e7a742d55c6119ce9f1782e6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6f15c953feb110ac404b5ffb5559d4c" id="r_af6f15c953feb110ac404b5ffb5559d4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtinyuvc_1_1UVCSimBus.html">UVCSimBus</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc.html#af6f15c953feb110ac404b5ffb5559d4c">simBus</a> ()</td></tr>
 <tr class="separator:af6f15c953feb110ac404b5ffb5559d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c5d3630e893e671fc301adeb1581415" id="r_a1c5d3630e893e671fc301adeb1581415"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtinyuvc_1_1UVCDesktopSettings.html">UVCDesktopSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc.html#a1c5d3630e893e671fc301adeb1581415">desktopSettings</a> ()</td></tr>
 <tr class="separator:a1c5d3630e893e671fc301adeb1581415"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4964083d43f922af6eab515ee6be8b30" id="r_a4964083d43f922af6eab515ee6be8b30"><td class="memItemLeft" align="right" valign="top">constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc.html#a4964083d43f922af6eab515ee6be8b30">bytesPerPixel</a> (<a class="el" href="namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4">PixelFormat</a> fmt)</td></tr>
+<tr class="memitem:a4964083d43f922af6eab515ee6be8b30" id="r_a4964083d43f922af6eab515ee6be8b30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">constexpr</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc.html#a4964083d43f922af6eab515ee6be8b30">bytesPerPixel</a> (<a class="el" href="namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4">PixelFormat</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">fmt</a>)</td></tr>
 <tr class="memdesc:a4964083d43f922af6eab515ee6be8b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bytes per pixel of a raw pixel format (0 for JPEG)  <br /></td></tr>
 <tr class="separator:a4964083d43f922af6eab515ee6be8b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42018260aa2cd3dbd101775aa6efa915" id="r_a42018260aa2cd3dbd101775aa6efa915"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc.html#a42018260aa2cd3dbd101775aa6efa915">toString</a> (<a class="el" href="namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4">PixelFormat</a> fmt)</td></tr>
+<tr class="memitem:a42018260aa2cd3dbd101775aa6efa915" id="r_a42018260aa2cd3dbd101775aa6efa915"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">const</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc.html#a42018260aa2cd3dbd101775aa6efa915">toString</a> (<a class="el" href="namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4">PixelFormat</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">fmt</a>)</td></tr>
 <tr class="memdesc:a42018260aa2cd3dbd101775aa6efa915"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of a pixel format, for logging.  <br /></td></tr>
 <tr class="separator:a42018260aa2cd3dbd101775aa6efa915"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3726c4e4634277428587e6413bb1bcc" id="r_af3726c4e4634277428587e6413bb1bcc"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc.html#af3726c4e4634277428587e6413bb1bcc">toString</a> (<a class="el" href="namespacetinyuvc.html#a5983fcb109cbe2d40956fdce99a6ec54">UVCFormat</a> fmt)</td></tr>
+<tr class="memitem:af3726c4e4634277428587e6413bb1bcc" id="r_af3726c4e4634277428587e6413bb1bcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">const</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc.html#af3726c4e4634277428587e6413bb1bcc">toString</a> (<a class="el" href="namespacetinyuvc.html#a5983fcb109cbe2d40956fdce99a6ec54">UVCFormat</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">fmt</a>)</td></tr>
 <tr class="memdesc:af3726c4e4634277428587e6413bb1bcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of a UVC format, for logging.  <br /></td></tr>
 <tr class="separator:af3726c4e4634277428587e6413bb1bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac4e447e2c5c3a01e47890f8964d774d" id="r_aac4e447e2c5c3a01e47890f8964d774d"><td class="memItemLeft" align="right" valign="top">constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc.html#aac4e447e2c5c3a01e47890f8964d774d">fpsToInterval</a> (uint32_t fps)</td></tr>
+<tr class="memitem:aac4e447e2c5c3a01e47890f8964d774d" id="r_aac4e447e2c5c3a01e47890f8964d774d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">constexpr</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc.html#aac4e447e2c5c3a01e47890f8964d774d">fpsToInterval</a> (<a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint32_t</a> fps)</td></tr>
 <tr class="memdesc:aac4e447e2c5c3a01e47890f8964d774d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frame interval in 100ns units for a frame rate.  <br /></td></tr>
 <tr class="separator:aac4e447e2c5c3a01e47890f8964d774d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a832178a541dcb70e8f6ff794e19ee8f0" id="r_a832178a541dcb70e8f6ff794e19ee8f0"><td class="memItemLeft" align="right" valign="top">constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc.html#a832178a541dcb70e8f6ff794e19ee8f0">intervalToFps</a> (uint32_t interval)</td></tr>
+<tr class="memitem:a832178a541dcb70e8f6ff794e19ee8f0" id="r_a832178a541dcb70e8f6ff794e19ee8f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">constexpr</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc.html#a832178a541dcb70e8f6ff794e19ee8f0">intervalToFps</a> (<a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint32_t</a> interval)</td></tr>
 <tr class="memdesc:a832178a541dcb70e8f6ff794e19ee8f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frame rate for a frame interval in 100ns units.  <br /></td></tr>
 <tr class="separator:a832178a541dcb70e8f6ff794e19ee8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17f5573fa006dfa3543c3df8d75f017a" id="r_a17f5573fa006dfa3543c3df8d75f017a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc.html#a17f5573fa006dfa3543c3df8d75f017a">toPixelFormat</a> (audio_tools::VideoFormat format, <a class="el" href="namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4">PixelFormat</a> &amp;out)</td></tr>
-<tr class="memdesc:a17f5573fa006dfa3543c3df8d75f017a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps an audio-tools VideoFormat to the matching PixelFormat.  <br /></td></tr>
-<tr class="separator:a17f5573fa006dfa3543c3df8d75f017a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a202df3e7a742d55c6119ce9f1782e6bb" id="r_a202df3e7a742d55c6119ce9f1782e6bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetinyuvc.html#a202df3e7a742d55c6119ce9f1782e6bb">addResolution</a> (<a class="el" href="classtinyuvc_1_1UVCDevice.html">UVCDevice</a> &amp;uvc, const audio_tools::VideoInfo &amp;info, uint32_t maxJpegSize=0)</td></tr>
-<tr class="separator:a202df3e7a742d55c6119ce9f1782e6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -253,7 +264,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class <a class="el" href="namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4">tinyuvc::PixelFormat</a> : uint8_t</td>
+          <td class="memname"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">enum</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">class</a> <a class="el" href="namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4">tinyuvc::PixelFormat</a> : <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint8_t</a></td>
         </tr>
       </table>
   </td>
@@ -293,7 +304,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class <a class="el" href="namespacetinyuvc.html#ab72a86a7679861f251479b7b9a820c99">tinyuvc::UVCControlResult</a> : uint8_t</td>
+          <td class="memname"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">enum</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">class</a> <a class="el" href="namespacetinyuvc.html#ab72a86a7679861f251479b7b9a820c99">tinyuvc::UVCControlResult</a> : <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint8_t</a></td>
         </tr>
       </table>
   </td>
@@ -329,7 +340,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class <a class="el" href="namespacetinyuvc.html#a5983fcb109cbe2d40956fdce99a6ec54">tinyuvc::UVCFormat</a> : uint8_t</td>
+          <td class="memname"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">enum</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">class</a> <a class="el" href="namespacetinyuvc.html#a5983fcb109cbe2d40956fdce99a6ec54">tinyuvc::UVCFormat</a> : <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint8_t</a></td>
         </tr>
       </table>
   </td>
@@ -359,7 +370,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class <a class="el" href="namespacetinyuvc.html#a53a05b8b6bdc9604a668f28de79ba73f">tinyuvc::UVCLogLevel</a> : int</td>
+          <td class="memname"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">enum</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">class</a> <a class="el" href="namespacetinyuvc.html#a53a05b8b6bdc9604a668f28de79ba73f">tinyuvc::UVCLogLevel</a> : <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">int</a></td>
         </tr>
       </table>
   </td>
@@ -390,7 +401,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class <a class="el" href="namespacetinyuvc.html#a1ea61e38c2cac67a3cc89d5840c7bd69">tinyuvc::UVCMemoryType</a></td>
+          <td class="memname"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">enum</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">class</a> <a class="el" href="namespacetinyuvc.html#a1ea61e38c2cac67a3cc89d5840c7bd69">tinyuvc::UVCMemoryType</a></td>
         </tr>
       </table>
   </td>
@@ -399,14 +410,13 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Where frame buffers are allocated. </p>
+<p>Where frame buffers are allocated (not named PSRAM/RAM: arduino-pico defines a PSRAM macro) </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1ea61e38c2cac67a3cc89d5840c7bd69a06b9281e396db002010bde1de57262eb" name="a1ea61e38c2cac67a3cc89d5840c7bd69a06b9281e396db002010bde1de57262eb"></a>Auto&#160;</td><td class="fielddoc"><p>PSRAM if the board has it, else RAM. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1ea61e38c2cac67a3cc89d5840c7bd69a34ef1bdcaaf8c1e2d63bf8c904b06d52" name="a1ea61e38c2cac67a3cc89d5840c7bd69a34ef1bdcaaf8c1e2d63bf8c904b06d52"></a>PSRAM&#160;</td><td class="fielddoc"><p>PSRAM only: the allocation fails without PSRAM. </p>
+<tr><td class="fieldname"><a id="a1ea61e38c2cac67a3cc89d5840c7bd69a6162b41e1db996457b1f200627115320" name="a1ea61e38c2cac67a3cc89d5840c7bd69a6162b41e1db996457b1f200627115320"></a>PSRAMOnly&#160;</td><td class="fielddoc"><p>PSRAM only: the allocation fails without PSRAM. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1ea61e38c2cac67a3cc89d5840c7bd69ae53619c1fe611a51eeeb8d148ba6e532" name="a1ea61e38c2cac67a3cc89d5840c7bd69ae53619c1fe611a51eeeb8d148ba6e532"></a>RAM&#160;</td><td class="fielddoc"><p>internal RAM only </p>
+<tr><td class="fieldname"><a id="a1ea61e38c2cac67a3cc89d5840c7bd69a02c163a87277e788de337a40c21fcf09" name="a1ea61e38c2cac67a3cc89d5840c7bd69a02c163a87277e788de337a40c21fcf09"></a>RAMOnly&#160;</td><td class="fielddoc"><p>internal RAM only </p>
 </td></tr>
 </table>
 
@@ -423,7 +433,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool tinyuvc::addResolution </td>
+          <td class="memname"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">bool</a> tinyuvc::addResolution </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classtinyuvc_1_1UVCDevice.html">UVCDevice</a> &amp;&#160;</td>
           <td class="paramname"><em>uvc</em>, </td>
@@ -431,13 +441,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const audio_tools::VideoInfo &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">const</a> audio_tools::VideoInfo &amp;&#160;</td>
           <td class="paramname"><em>info</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint32_t</a>&#160;</td>
           <td class="paramname"><em>maxJpegSize</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -466,7 +476,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr uint8_t tinyuvc::bytesPerPixel </td>
+          <td class="memname"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">constexpr</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint8_t</a> tinyuvc::bytesPerPixel </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4">PixelFormat</a>&#160;</td>
           <td class="paramname"><em>fmt</em></td><td>)</td>
@@ -519,9 +529,9 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr uint32_t tinyuvc::fpsToInterval </td>
+          <td class="memname"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">constexpr</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint32_t</a> tinyuvc::fpsToInterval </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint32_t</a>&#160;</td>
           <td class="paramname"><em>fps</em></td><td>)</td>
           <td></td>
         </tr>
@@ -547,9 +557,9 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr uint32_t tinyuvc::intervalToFps </td>
+          <td class="memname"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">constexpr</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint32_t</a> tinyuvc::intervalToFps </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint32_t</a>&#160;</td>
           <td class="paramname"><em>interval</em></td><td>)</td>
           <td></td>
         </tr>
@@ -600,7 +610,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool tinyuvc::toPixelFormat </td>
+          <td class="memname"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">bool</a> tinyuvc::toPixelFormat </td>
           <td>(</td>
           <td class="paramtype">audio_tools::VideoFormat&#160;</td>
           <td class="paramname"><em>format</em>, </td>
@@ -638,7 +648,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char * tinyuvc::toString </td>
+          <td class="memname"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">const</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">char</a> * tinyuvc::toString </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4">PixelFormat</a>&#160;</td>
           <td class="paramname"><em>fmt</em></td><td>)</td>
@@ -666,7 +676,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char * tinyuvc::toString </td>
+          <td class="memname"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">const</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">char</a> * tinyuvc::toString </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacetinyuvc.html#a5983fcb109cbe2d40956fdce99a6ec54">UVCFormat</a>&#160;</td>
           <td class="paramname"><em>fmt</em></td><td>)</td>

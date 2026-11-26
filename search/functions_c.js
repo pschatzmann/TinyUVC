@@ -1,12 +1,8 @@
 var searchData=
 [
-  ['makedriver_0',['makeDriver',['../namespacetinyuvc_1_1tusb__glue.html#a61eb1835aafb521f5acd3817e7742f23',1,'tinyuvc::tusb_glue']]],
-  ['maxinterval_1',['maxInterval',['../structtinyuvc_1_1UVCFrameSpec.html#ab46dec4e82a53ecd09308b7952f95959',1,'tinyuvc::UVCFrameSpec']]],
-  ['maxpacketsize_2',['maxpacketsize',['../classtinyuvc_1_1UVCHostSimulator.html#ad2fdfdfddc7f65c9b7f30b4651aa1be3',1,'tinyuvc::UVCHostSimulator::maxPacketSize()'],['../namespacetinyuvc_1_1platform.html#a61b09aa4644d980e7c3b9122a69c1df9',1,'tinyuvc::platform::maxPacketSize()']]],
-  ['maxpayloadtransfersize_3',['maxPayloadTransferSize',['../structtinyuvc_1_1UVCProbeCommit.html#a11e5f5da3f0cff702c76dcd1648f4aab',1,'tinyuvc::UVCProbeCommit']]],
-  ['maxvideoframesize_4',['maxVideoFrameSize',['../structtinyuvc_1_1UVCProbeCommit.html#adcdcbb8bb9dcf9150b5396a338016ec1',1,'tinyuvc::UVCProbeCommit']]],
-  ['memorytype_5',['memoryType',['../classtinyuvc_1_1UVCFrameBuffer.html#a83e64872eecbb0963899f8228dbf3105',1,'tinyuvc::UVCFrameBuffer']]],
-  ['micros_6',['micros',['../namespacetinyuvc_1_1platform.html#ac2f740b2485be28dce9f42df2aa29314',1,'tinyuvc::platform']]],
-  ['millis_7',['millis',['../namespacetinyuvc_1_1platform.html#a7af840edbb6a2636995528974f13df6d',1,'tinyuvc::platform']]],
-  ['mininterval_8',['minInterval',['../structtinyuvc_1_1UVCFrameSpec.html#a499b0bd5f5ca5f99070495b8b8660953',1,'tinyuvc::UVCFrameSpec']]]
+  ['lastjpegsize_0',['lastJpegSize',['../classtinyuvc_1_1UVCDisplayDriver.html#a70db9b939893522e7475b81028021bb2',1,'tinyuvc::UVCDisplayDriver']]],
+  ['length_1',['length',['../classtinyuvc_1_1UVCDescriptorBuilder.html#a3dc1484ca907b6a203fe967616c90b4a',1,'tinyuvc::UVCDescriptorBuilder']]],
+  ['level_2',['level',['../classtinyuvc_1_1UVCLoggerClass.html#af6ad3ecb7b9146e41e6094b6f8db60df',1,'tinyuvc::UVCLoggerClass']]],
+  ['limit_3',['limit',['../classtinyuvc_1_1UVCDevice.html#a8908dfe3ab1f57bfdd459f037f2195df',1,'tinyuvc::UVCDevice']]],
+  ['log_4',['log',['../classtinyuvc_1_1UVCLoggerClass.html#a9257f091c09ee22e70a741b9b5d5219c',1,'tinyuvc::UVCLoggerClass']]]
 ];

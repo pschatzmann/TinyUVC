@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['_7eapplock_0',['~AppLock',['../structtinyuvc_1_1platform_1_1AppLock.html#a6cff14ea47a50b4e4a57ecea477c0942',1,'tinyuvc::platform::AppLock']]],
-  ['_7euvcdevice_1',['~UVCDevice',['../classtinyuvc_1_1UVCDevice.html#a821ff3fd09dc0c2afbf9fb6c8b7c664c',1,'tinyuvc::UVCDevice']]],
-  ['_7euvcframebuffer_2',['~UVCFrameBuffer',['../classtinyuvc_1_1UVCFrameBuffer.html#a3022127e67c75f1be7a5f15d962092c2',1,'tinyuvc::UVCFrameBuffer']]],
-  ['_7euvchostsimulator_3',['~UVCHostSimulator',['../classtinyuvc_1_1UVCHostSimulator.html#a3dd8ba147b9d05b72a55312c6745aa43',1,'tinyuvc::UVCHostSimulator']]]
+  ['y_0',['y',['../classtinyuvc_1_1UVCConvert.html#a5e327acb7d08edc48bc5efc3eea6c726',1,'tinyuvc::UVCConvert']]],
+  ['yuy2_1',['yuy2',['../namespacetinyuvc.html#a5983fcb109cbe2d40956fdce99a6ec54ac4ae1e9efde614ab49c73b35107eefe1',1,'tinyuvc::YUY2'],['../namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4ac4ae1e9efde614ab49c73b35107eefe1',1,'tinyuvc::YUY2']]],
+  ['yuy2_5f_2',['yuy2_',['../classtinyuvc_1_1UVCCamera.html#a8031fc1e3397805208f4586b97642d8d',1,'tinyuvc::UVCCamera']]]
 ];

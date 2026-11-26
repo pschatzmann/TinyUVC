@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rgb_0',['Rgb',['../structtinyuvc_1_1UVCConvert_1_1Rgb.html',1,'tinyuvc::UVCConvert']]]
+  ['jpegsink_0',['JpegSink',['../structtinyuvc_1_1UVCDisplayDriver_1_1JpegSink.html',1,'tinyuvc::UVCDisplayDriver']]]
 ];

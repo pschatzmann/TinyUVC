@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['urb_5f_0',['urb_',['../classtinyuvc_1_1UVCHostSimulator.html#a62c7724dd7c7d8de40bbfa92fa09c689',1,'tinyuvc::UVCHostSimulator']]],
-  ['urbsize_5f_1',['urbSize_',['../classtinyuvc_1_1UVCHostSimulator.html#a50588fdc663fb55159eb24183d4e7fb8',1,'tinyuvc::UVCHostSimulator']]],
-  ['uvc_5f_2',['uvc_',['../classtinyuvc_1_1UVCVideoOutput.html#a329d3d215f11a38ffbdecbd13b2f626f',1,'tinyuvc::UVCVideoOutput::uvc_'],['../classtinyuvc_1_1UVCVideoCopy.html#a3e58fc715b931b2fd6e5ac758651cf3a',1,'tinyuvc::UVCVideoCopy::uvc_'],['../classtinyuvc_1_1UVCCamera.html#ab0e3936e19be88e83e25e74155dba1e1',1,'tinyuvc::UVCCamera::uvc_']]],
-  ['uvclog_3',['UVCLog',['../namespacetinyuvc.html#af1fd3ef4490bfbda769a66460265a9da',1,'tinyuvc']]]
+  ['timeoutms_5f_0',['timeoutms_',['../classtinyuvc_1_1UVCVideoOutput.html#abf160cfe92beaf65d645d2188199f975',1,'tinyuvc::UVCVideoOutput::timeoutMs_'],['../classtinyuvc_1_1UVCDisplayDriver.html#a77c8982160e5e628453024feec67f88d',1,'tinyuvc::UVCDisplayDriver::timeoutMs_']]],
+  ['transfers_5f_1',['transfers_',['../classtinyuvc_1_1UVCHostSimulator.html#a8755c86322a0f9636a6f406a225fb485',1,'tinyuvc::UVCHostSimulator']]],
+  ['tt_5fstreaming_2',['TT_STREAMING',['../namespacetinyuvc_1_1uvc__spec.html#a06d7f99634325dc308519c0a7d245ae7',1,'tinyuvc::uvc_spec']]],
+  ['tusb_5fcontrol_5frequest_5ft_3',['tusb_control_request_t',['../TinyUSBSim_8h.html#a03d78d31d01ac41406eb6a287740d55b',1,'TinyUSBSim.h']]],
+  ['tusb_5fdesc_5fendpoint_5ft_4',['tusb_desc_endpoint_t',['../TinyUSBSim_8h.html#afd066df392cab9baa98d9a70275f4202',1,'TinyUSBSim.h']]],
+  ['tusb_5fdesc_5finterface_5ft_5',['tusb_desc_interface_t',['../TinyUSBSim_8h.html#a408eefe73d6a6cb906e5e24af36c3472',1,'TinyUSBSim.h']]],
+  ['type_5f_6',['type_',['../classtinyuvc_1_1UVCFrameBuffer.html#a4158f86a8c02cfb67972dda230fc1490',1,'tinyuvc::UVCFrameBuffer']]]
 ];

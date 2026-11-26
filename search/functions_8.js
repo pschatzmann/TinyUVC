@@ -6,5 +6,6 @@ var searchData=
   ['handlestandard_3',['handleStandard',['../classtinyuvc_1_1UVCDevice.html#ae0dc6bcbd7b7d6db6974a551f15f97c8',1,'tinyuvc::UVCDevice']]],
   ['hasinterval_4',['hasInterval',['../structtinyuvc_1_1UVCFrameSpec.html#a5d11fb6c23cf4b10555aacaa2349d090',1,'tinyuvc::UVCFrameSpec']]],
   ['haspsram_5',['hasPSRAM',['../classtinyuvc_1_1UVCMemory.html#a9248f4a2ee9417593fb516ef85ba479d',1,'tinyuvc::UVCMemory']]],
-  ['headerlength_6',['headerLength',['../classtinyuvc_1_1UVCPayloadEncoder.html#ad9f0da0c0c3e5e0c003a5d8dc67ad6f2',1,'tinyuvc::UVCPayloadEncoder']]]
+  ['headerlength_6',['headerLength',['../classtinyuvc_1_1UVCPayloadEncoder.html#ad9f0da0c0c3e5e0c003a5d8dc67ad6f2',1,'tinyuvc::UVCPayloadEncoder']]],
+  ['height_7',['height',['../classtinyuvc_1_1UVCDisplayDriver.html#a9916d429aeb614e187ae43d6eac3c5fb',1,'tinyuvc::UVCDisplayDriver']]]
 ];

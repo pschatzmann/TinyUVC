@@ -87,6 +87,7 @@ Features</h1>
 <li>PSRAM: frame buffers are taken from PSRAM where the board has it (ESP32, RP2350).</li>
 <li><a href="https://github.com/pschatzmann/TinyCamera">TinyCamera</a> integration: ESP32, ESP32-P4, RP2040 and STM32 camera sensors become webcams in a few lines.</li>
 <li><a href="https://github.com/pschatzmann/arduino-audio-tools">arduino-audio-tools</a> integration: video encoders, decoders and demuxers (e.g. <code>MJPEGEncoder</code>, <code>DemuxerAVI</code>) feed the webcam.</li>
+<li><a href="https://github.com/pschatzmann/TinyGPU">TinyGPU</a> integration: the webcam as TinyGPU display, so 2D graphics, text, sprites and 3D wireframes are sent as video (YUY2 or MJPEG).</li>
 <li>Desktop build with CMake: the device code runs against a simulated USB host that behaves like Linux' <code>uvcvideo</code> driver.</li>
 </ul>
 <p>Verified on an ESP32-S3 and a Raspberry Pi Pico with Linux hosts; see <a href="https://github.com/pschatzmann/TinyUVC/wiki/Platforms">Supported platforms</a> for the board settings and the test status, and <a href="https://github.com/pschatzmann/TinyUVC/wiki/Limitations">Limitations</a> for what is not supported.</p>
@@ -107,7 +108,7 @@ Installation in Arduino</h1>
 <div class="fragment"><div class="line">cd  ~/Documents/Arduino/libraries</div>
 <div class="line">git clone https://github.com/pschatzmann/TinyUVC.git</div>
 </div><!-- fragment --><p>I recommend to use git because you can easily update to the latest version just by executing the <code>git pull</code> command in the project folder.</p>
-<p>Optional: <a href="https://github.com/pschatzmann/TinyCamera">TinyCamera</a>, <a href="https://github.com/pschatzmann/arduino-audio-tools">arduino-audio-tools</a> and <a href="https://github.com/pschatzmann/TinyJPEG">TinyJPEG</a>; for STM32 the <a href="https://github.com/adafruit/Adafruit_TinyUSB_Arduino">Adafruit TinyUSB Library</a>.</p>
+<p>Optional: <a href="https://github.com/pschatzmann/TinyCamera">TinyCamera</a>, <a href="https://github.com/pschatzmann/arduino-audio-tools">arduino-audio-tools</a>, <a href="https://github.com/pschatzmann/TinyGPU">TinyGPU</a> and <a href="https://github.com/pschatzmann/TinyJPEG">TinyJPEG</a>; for STM32 the <a href="https://github.com/adafruit/Adafruit_TinyUSB_Arduino">Adafruit TinyUSB Library</a>.</p>
 <p>Then add <code>#include "TinyUVC.h"</code> to your sketch. See the <a href="https://github.com/pschatzmann/TinyUVC/wiki/Usage">usage guide</a> and the <code>TestPatternWebcam</code> example.</p>
 <p>For desktop builds with CMake, see <a href="https://github.com/pschatzmann/TinyUVC/wiki/Desktop">Desktop build and tests</a>. </p>
 </div></div><!-- PageDoc -->

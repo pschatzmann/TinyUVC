@@ -85,7 +85,7 @@ $(function() {
 <p>Streams the frames of an audio-tools VideoFrameSource (e.g. CameraFrameSourceTinyCamera) to a <a class="el" href="classtinyuvc_1_1UVCDevice.html" title="USB Video Class (UVC 1.1) device - a USB webcam.">UVCDevice</a>.  
  <a href="classtinyuvc_1_1UVCVideoCopy.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="TinyUVCAudioTools_8h_source.html">TinyUVCAudioTools.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="AudioTools_8h_source.html">AudioTools.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for tinyuvc::UVCVideoCopy:</div>
 <div class="dyncontent">
@@ -109,14 +109,14 @@ Collaboration diagram for tinyuvc::UVCVideoCopy:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3915ad54064f19d39416538faa363d54" id="r_a3915ad54064f19d39416538faa363d54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoCopy.html#a3915ad54064f19d39416538faa363d54">UVCVideoCopy</a> (<a class="el" href="classtinyuvc_1_1UVCDevice.html">UVCDevice</a> &amp;uvc, audio_tools::VideoFrameSource &amp;source)</td></tr>
+<tr class="memitem:a3915ad54064f19d39416538faa363d54" id="r_a3915ad54064f19d39416538faa363d54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoCopy.html#a3915ad54064f19d39416538faa363d54">UVCVideoCopy</a> (<a class="el" href="classtinyuvc_1_1UVCDevice.html">UVCDevice</a> &amp;<a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uvc</a>, audio_tools::VideoFrameSource &amp;<a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">source</a>)</td></tr>
 <tr class="separator:a3915ad54064f19d39416538faa363d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac4d117f15c2a7b37e64b1c97ef3f86f" id="r_aac4d117f15c2a7b37e64b1c97ef3f86f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoCopy.html#aac4d117f15c2a7b37e64b1c97ef3f86f">begin</a> (uint32_t maxJpegSize=0)</td></tr>
+<tr class="memitem:aac4d117f15c2a7b37e64b1c97ef3f86f" id="r_aac4d117f15c2a7b37e64b1c97ef3f86f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoCopy.html#aac4d117f15c2a7b37e64b1c97ef3f86f">begin</a> (<a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint32_t</a> <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">maxJpegSize</a>=0)</td></tr>
 <tr class="separator:aac4d117f15c2a7b37e64b1c97ef3f86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a70aa8bae1f01ad81ccc2c249b2697d" id="r_a7a70aa8bae1f01ad81ccc2c249b2697d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoCopy.html#a7a70aa8bae1f01ad81ccc2c249b2697d">setPixelFormat</a> (<a class="el" href="namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4">PixelFormat</a> format)</td></tr>
+<tr class="memitem:a7a70aa8bae1f01ad81ccc2c249b2697d" id="r_a7a70aa8bae1f01ad81ccc2c249b2697d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoCopy.html#a7a70aa8bae1f01ad81ccc2c249b2697d">setPixelFormat</a> (<a class="el" href="namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4">PixelFormat</a> format)</td></tr>
 <tr class="memdesc:a7a70aa8bae1f01ad81ccc2c249b2697d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pixel format of the source frames (set by <a class="el" href="classtinyuvc_1_1UVCVideoCopy.html#aac4d117f15c2a7b37e64b1c97ef3f86f">begin()</a>)  <br /></td></tr>
 <tr class="separator:a7a70aa8bae1f01ad81ccc2c249b2697d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25ce70b1a2ed64a128e11a0d99ca3a7c" id="r_a25ce70b1a2ed64a128e11a0d99ca3a7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoCopy.html#a25ce70b1a2ed64a128e11a0d99ca3a7c">copy</a> ()</td></tr>
+<tr class="memitem:a25ce70b1a2ed64a128e11a0d99ca3a7c" id="r_a25ce70b1a2ed64a128e11a0d99ca3a7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoCopy.html#a25ce70b1a2ed64a128e11a0d99ca3a7c">copy</a> ()</td></tr>
 <tr class="separator:a25ce70b1a2ed64a128e11a0d99ca3a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -127,23 +127,25 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:aebf697e01855c6518e9ca1134534560c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7acfcd5e22dfbe4daacf9101193d2d1" id="r_ab7acfcd5e22dfbe4daacf9101193d2d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4">PixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoCopy.html#ab7acfcd5e22dfbe4daacf9101193d2d1">format_</a> = <a class="el" href="namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4a0a5417ce14732e9bdb402be642ebe9ea">PixelFormat::MJPEG</a></td></tr>
 <tr class="separator:ab7acfcd5e22dfbe4daacf9101193d2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a698ccd1d6f315f6bf1abf78ab317710e" id="r_a698ccd1d6f315f6bf1abf78ab317710e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoCopy.html#a698ccd1d6f315f6bf1abf78ab317710e">lastUs_</a> = 0</td></tr>
+<tr class="memitem:a698ccd1d6f315f6bf1abf78ab317710e" id="r_a698ccd1d6f315f6bf1abf78ab317710e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoCopy.html#a698ccd1d6f315f6bf1abf78ab317710e">lastUs_</a> = 0</td></tr>
 <tr class="separator:a698ccd1d6f315f6bf1abf78ab317710e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a717cb0abe9c441f5d4a47debc6e265aa" id="r_a717cb0abe9c441f5d4a47debc6e265aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoCopy.html#a717cb0abe9c441f5d4a47debc6e265aa">sent_</a> = false</td></tr>
+<tr class="memitem:a717cb0abe9c441f5d4a47debc6e265aa" id="r_a717cb0abe9c441f5d4a47debc6e265aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyuvc_1_1UVCVideoCopy.html#a717cb0abe9c441f5d4a47debc6e265aa">sent_</a> = <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">false</a></td></tr>
 <tr class="separator:a717cb0abe9c441f5d4a47debc6e265aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Streams the frames of an audio-tools VideoFrameSource (e.g. CameraFrameSourceTinyCamera) to a <a class="el" href="classtinyuvc_1_1UVCDevice.html" title="USB Video Class (UVC 1.1) device - a USB webcam.">UVCDevice</a>. </p>
-<div class="fragment"><div class="line">CameraFrameSourceTinyCamera source;</div>
-<div class="line"><a class="code hl_class" href="classtinyuvc_1_1UVCDevice.html">UVCDevice</a> uvc;</div>
-<div class="line"><a class="code hl_class" href="classtinyuvc_1_1UVCVideoCopy.html">UVCVideoCopy</a> copier(uvc, source);</div>
-<div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  source.begin(config, 15);</div>
-<div class="line">  copier.begin();          <span class="comment">// offers the source&#39;s resolution, starts uvc</span></div>
+<div class="fragment"><div class="line"><a class="code hl_class" href="classtinyuvc_1_1UVCDisplayDriver.html">CameraFrameSourceTinyCamera</a> <a class="code hl_class" href="classtinyuvc_1_1UVCDisplayDriver.html">source</a>;</div>
+<div class="line"><a class="code hl_class" href="classtinyuvc_1_1UVCDevice.html">UVCDevice</a> <a class="code hl_class" href="classtinyuvc_1_1UVCDisplayDriver.html">uvc</a>;</div>
+<div class="line"><a class="code hl_class" href="classtinyuvc_1_1UVCVideoCopy.html">UVCVideoCopy</a> <a class="code hl_class" href="classtinyuvc_1_1UVCDisplayDriver.html">copier</a>(<a class="code hl_class" href="classtinyuvc_1_1UVCDisplayDriver.html">uvc</a>, <a class="code hl_class" href="classtinyuvc_1_1UVCDisplayDriver.html">source</a>);</div>
+<div class="line"><span class="keywordtype">void</span> <a class="code hl_class" href="classtinyuvc_1_1UVCDisplayDriver.html">setup</a>() {</div>
+<div class="line">  <a class="code hl_class" href="classtinyuvc_1_1UVCDisplayDriver.html">source</a>.<a class="code hl_function" href="classtinyuvc_1_1UVCDisplayDriver.html#a80aa184990e6fbec2669ddd6ba2c5bc9">begin</a>(<a class="code hl_class" href="classtinyuvc_1_1UVCDisplayDriver.html">config</a>, 15);</div>
+<div class="line">  <a class="code hl_class" href="classtinyuvc_1_1UVCDisplayDriver.html">copier</a>.<a class="code hl_function" href="classtinyuvc_1_1UVCDisplayDriver.html#a80aa184990e6fbec2669ddd6ba2c5bc9">begin</a>();          <span class="comment">// offers the source&#39;s resolution, starts uvc</span></div>
 <div class="line">}</div>
-<div class="line"><span class="keywordtype">void</span> loop() { copier.copy(); }</div>
+<div class="line"><span class="keywordtype">void</span> <a class="code hl_class" href="classtinyuvc_1_1UVCDisplayDriver.html">loop</a>() { <a class="code hl_class" href="classtinyuvc_1_1UVCDisplayDriver.html">copier</a>.copy(); }</div>
 <div class="ttc" id="aclasstinyuvc_1_1UVCDevice_html"><div class="ttname"><a href="classtinyuvc_1_1UVCDevice.html">tinyuvc::UVCDevice</a></div><div class="ttdoc">USB Video Class (UVC 1.1) device - a USB webcam.</div><div class="ttdef"><b>Definition</b> UVCDevice.h:95</div></div>
-<div class="ttc" id="aclasstinyuvc_1_1UVCVideoCopy_html"><div class="ttname"><a href="classtinyuvc_1_1UVCVideoCopy.html">tinyuvc::UVCVideoCopy</a></div><div class="ttdoc">Streams the frames of an audio-tools VideoFrameSource (e.g. CameraFrameSourceTinyCamera) to a UVCDevi...</div><div class="ttdef"><b>Definition</b> TinyUVCAudioTools.h:223</div></div>
+<div class="ttc" id="aclasstinyuvc_1_1UVCDisplayDriver_html"><div class="ttname"><a href="classtinyuvc_1_1UVCDisplayDriver.html">tinyuvc::UVCDisplayDriver</a></div><div class="ttdoc">TinyGPU DisplayDriver that sends the written surfaces as webcam frames to the USB host: uncompressed ...</div><div class="ttdef"><b>Definition</b> TinyGPU.h:110</div></div>
+<div class="ttc" id="aclasstinyuvc_1_1UVCDisplayDriver_html_a80aa184990e6fbec2669ddd6ba2c5bc9"><div class="ttname"><a href="classtinyuvc_1_1UVCDisplayDriver.html#a80aa184990e6fbec2669ddd6ba2c5bc9">tinyuvc::UVCDisplayDriver::begin</a></div><div class="ttdeci">bool begin() override</div><div class="ttdoc">Starts the UVC device (if it is not running yet)</div><div class="ttdef"><b>Definition</b> TinyGPU.h:157</div></div>
+<div class="ttc" id="aclasstinyuvc_1_1UVCVideoCopy_html"><div class="ttname"><a href="classtinyuvc_1_1UVCVideoCopy.html">tinyuvc::UVCVideoCopy</a></div><div class="ttdoc">Streams the frames of an audio-tools VideoFrameSource (e.g. CameraFrameSourceTinyCamera) to a UVCDevi...</div><div class="ttdef"><b>Definition</b> AudioTools.h:224</div></div>
 </div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3915ad54064f19d39416538faa363d54" name="a3915ad54064f19d39416538faa363d54"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3915ad54064f19d39416538faa363d54">&#9670;&#160;</a></span>UVCVideoCopy()</h2>
@@ -192,9 +194,9 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool tinyuvc::UVCVideoCopy::begin </td>
+          <td class="memname"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">bool</a> tinyuvc::UVCVideoCopy::begin </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint32_t</a>&#160;</td>
           <td class="paramname"><em>maxJpegSize</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
@@ -219,7 +221,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool tinyuvc::UVCVideoCopy::copy </td>
+          <td class="memname"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">bool</a> tinyuvc::UVCVideoCopy::copy </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -245,7 +247,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void tinyuvc::UVCVideoCopy::setPixelFormat </td>
+          <td class="memname"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">void</a> tinyuvc::UVCVideoCopy::setPixelFormat </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacetinyuvc.html#a8d16c79adf1bf0fde4634a8cdc7fe6e4">PixelFormat</a>&#160;</td>
           <td class="paramname"><em>format</em></td><td>)</td>
@@ -296,7 +298,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t tinyuvc::UVCVideoCopy::lastUs_ = 0</td>
+          <td class="memname"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">uint32_t</a> tinyuvc::UVCVideoCopy::lastUs_ = 0</td>
         </tr>
       </table>
   </td>
@@ -318,7 +320,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool tinyuvc::UVCVideoCopy::sent_ = false</td>
+          <td class="memname"><a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">bool</a> tinyuvc::UVCVideoCopy::sent_ = <a class="el" href="classtinyuvc_1_1UVCDisplayDriver.html">false</a></td>
         </tr>
       </table>
   </td>
@@ -375,7 +377,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/<a class="el" href="TinyUVCAudioTools_8h_source.html">TinyUVCAudioTools.h</a></li>
+<li>src/TinyUVC/<a class="el" href="AudioTools_8h_source.html">AudioTools.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

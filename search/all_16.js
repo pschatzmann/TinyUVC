@@ -1,16 +1,18 @@
 var searchData=
 [
-  ['xfer_0',['xfer',['../namespacetinyuvc_1_1tusb__glue.html#a2ddd4ef7a814f6d939a97c18dc7dbd59',1,'tinyuvc::tusb_glue']]],
-  ['xfer_5f_1',['xfer_',['../classtinyuvc_1_1UVCDevice.html#a81e4aa665f4f46353a5ad13498dcd1bb',1,'tinyuvc::UVCDevice']]],
-  ['xfer_5fcb_2',['xfer_cb',['../structusbd__class__driver__t.html#aae583a8d514c7663d7829cb6e03d3d03',1,'usbd_class_driver_t']]],
-  ['xfer_5fisr_3',['xfer_isr',['../structusbd__class__driver__t.html#aaa6f56f49fbc62745123542ded71b95a',1,'usbd_class_driver_t']]],
-  ['xfer_5fresult_5ffailed_4',['XFER_RESULT_FAILED',['../TinyUSBSim_8h.html#a6a3b3a4d6801fd9b02feb0510c84e5f9a25a26f92e6369131560cb95863c145a7',1,'TinyUSBSim.h']]],
-  ['xfer_5fresult_5finvalid_5',['XFER_RESULT_INVALID',['../TinyUSBSim_8h.html#a6a3b3a4d6801fd9b02feb0510c84e5f9a9063bdc6069f0ac35a6803eb22d1a67d',1,'TinyUSBSim.h']]],
-  ['xfer_5fresult_5fstalled_6',['XFER_RESULT_STALLED',['../TinyUSBSim_8h.html#a6a3b3a4d6801fd9b02feb0510c84e5f9afd15857b96b2f33fd3139cce70c61a09',1,'TinyUSBSim.h']]],
-  ['xfer_5fresult_5fsuccess_7',['XFER_RESULT_SUCCESS',['../TinyUSBSim_8h.html#a6a3b3a4d6801fd9b02feb0510c84e5f9a442f7408d9ab328c0899341a70f2a972',1,'TinyUSBSim.h']]],
-  ['xfer_5fresult_5ft_8',['xfer_result_t',['../TinyUSBSim_8h.html#a6a3b3a4d6801fd9b02feb0510c84e5f9',1,'TinyUSBSim.h']]],
-  ['xfer_5fresult_5ftimeout_9',['XFER_RESULT_TIMEOUT',['../TinyUSBSim_8h.html#a6a3b3a4d6801fd9b02feb0510c84e5f9a1b1134b0b6c468c1469a510b74b2e3d5',1,'TinyUSBSim.h']]],
-  ['xferbuf_10',['xferBuf',['../structtinyuvc_1_1UVCSimBus.html#ab06a719876bf02470243390bdd112962',1,'tinyuvc::UVCSimBus']]],
-  ['xferfn_11',['XferFn',['../classtinyuvc_1_1UVCDevice.html#ad8323915b11464fa4fdbb2a7ae637f66',1,'tinyuvc::UVCDevice']]],
-  ['xferlen_12',['xferLen',['../structtinyuvc_1_1UVCSimBus.html#a7556a1cbc95c38bb309110b279d36cf7',1,'tinyuvc::UVCSimBus']]]
+  ['v_0',['v',['../classtinyuvc_1_1UVCConvert.html#a2f8efe59081364c3e22d95339c11ce23',1,'tinyuvc::UVCConvert']]],
+  ['vc_5fheader_1',['VC_HEADER',['../namespacetinyuvc_1_1uvc__spec.html#ab7dc01543ad14333617d710832ec4457',1,'tinyuvc::uvc_spec']]],
+  ['vc_5finput_5fterminal_2',['VC_INPUT_TERMINAL',['../namespacetinyuvc_1_1uvc__spec.html#aa2b34d276e043b8689fb08fe45296b78',1,'tinyuvc::uvc_spec']]],
+  ['vc_5foutput_5fterminal_3',['VC_OUTPUT_TERMINAL',['../namespacetinyuvc_1_1uvc__spec.html#ac7fbdeb3a0fe8b45d8e9b9353f63972e',1,'tinyuvc::uvc_spec']]],
+  ['vc_5frequest_5ferror_5fcode_5fcontrol_4',['VC_REQUEST_ERROR_CODE_CONTROL',['../namespacetinyuvc_1_1uvc__spec.html#a179bae46ab6bb49cf6f4674a5d589cab',1,'tinyuvc::uvc_spec']]],
+  ['vcitf_5f_5',['vcItf_',['../classtinyuvc_1_1UVCHostSimulator.html#a6799eab3630fcfe8dca9f8c5846ae1d1',1,'tinyuvc::UVCHostSimulator']]],
+  ['vendor_6',['Vendor',['../structtinyuvc_1_1UVCRequest.html#a4c813cae127d90f79528faa04a2936dca39e69e8672456f034c83ecf9d9b11f48',1,'tinyuvc::UVCRequest']]],
+  ['vs_5fcolorformat_7',['VS_COLORFORMAT',['../namespacetinyuvc_1_1uvc__spec.html#a81e6fdebe0251e65eedba6890756c693',1,'tinyuvc::uvc_spec']]],
+  ['vs_5fcommit_5fcontrol_8',['VS_COMMIT_CONTROL',['../namespacetinyuvc_1_1uvc__spec.html#a1e2fcea0d03810ceaad9e992485c635d',1,'tinyuvc::uvc_spec']]],
+  ['vs_5fformat_5fmjpeg_9',['VS_FORMAT_MJPEG',['../namespacetinyuvc_1_1uvc__spec.html#a1351224f5fd7075deb16777413ffec02',1,'tinyuvc::uvc_spec']]],
+  ['vs_5fformat_5funcompressed_10',['VS_FORMAT_UNCOMPRESSED',['../namespacetinyuvc_1_1uvc__spec.html#a821845c267191f26e24faee969171911',1,'tinyuvc::uvc_spec']]],
+  ['vs_5fframe_5fmjpeg_11',['VS_FRAME_MJPEG',['../namespacetinyuvc_1_1uvc__spec.html#a2c7df39cf462b8036916afc8d3604c20',1,'tinyuvc::uvc_spec']]],
+  ['vs_5fframe_5funcompressed_12',['VS_FRAME_UNCOMPRESSED',['../namespacetinyuvc_1_1uvc__spec.html#a0ff623aac318c42865a524761b6c66fc',1,'tinyuvc::uvc_spec']]],
+  ['vs_5finput_5fheader_13',['VS_INPUT_HEADER',['../namespacetinyuvc_1_1uvc__spec.html#a7438b9e72dbfb1209dddcdc1123fc193',1,'tinyuvc::uvc_spec']]],
+  ['vs_5fprobe_5fcontrol_14',['VS_PROBE_CONTROL',['../namespacetinyuvc_1_1uvc__spec.html#ac6bfab23ce3ee69f356e536dca3dd1d6',1,'tinyuvc::uvc_spec']]]
 ];
