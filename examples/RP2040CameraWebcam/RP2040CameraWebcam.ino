@@ -9,6 +9,7 @@
  *
  * RP2040 camera modules have no standard pinout: set the pins below.
  */
+#include "TinyUVC.h"  // first: lets Arduino find the library
 #include "TinyUVC/TinyCamera.h"
 
 using namespace tiny_camera;

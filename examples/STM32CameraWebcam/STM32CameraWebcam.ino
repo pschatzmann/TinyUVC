@@ -9,6 +9,7 @@
  * "None" (TinyUSB drives the USB port).
  */
 #include "TinyCameraPins.h"
+#include "TinyUVC.h"  // first: lets Arduino find the library
 #include "TinyUVC/TinyCamera.h"
 
 using namespace tiny_camera;

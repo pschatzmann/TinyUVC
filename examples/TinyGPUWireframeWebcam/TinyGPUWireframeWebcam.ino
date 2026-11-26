@@ -17,6 +17,7 @@
  */
 #define JE_MAX_WIDTH 640      // widest MJPEG frame
 #include "TinyJPEGEncoder.h"  // enables MJPEG
+#include "TinyUVC.h"  // first: lets Arduino find the library
 #include "TinyUVC/TinyGPU.h"
 
 #if defined(ARDUINO_ARCH_ESP32)

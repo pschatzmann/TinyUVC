@@ -274,7 +274,7 @@ class UVCDisplayDriver : public tinygpu::DisplayDriver<RGB_T> {
     return TINYUVC_JPEG_ESP32 && UVCTinyGPUPixel<RGB_T>::bytes == 2;
   }
 
-  /// Output of fmt2jpg_cb() into a frame buffer
+  /// @brief Output of fmt2jpg_cb() into a frame buffer
   struct JpegSink {
     uint8_t *data;
     size_t capacity;
@@ -305,6 +305,7 @@ class UVCDisplayDriver : public tinygpu::DisplayDriver<RGB_T> {
   uint32_t mismatched_ = 0;
   size_t lastJpegSize_ = 0;
 
+  /// @brief A resolution with the max frame size reported to the host
   struct Size {
     size_t width = 0;
     size_t height = 0;

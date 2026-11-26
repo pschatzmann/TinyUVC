@@ -14,6 +14,7 @@
  * (setPinsXiaoEsp32S3, setPinsM5StackCamS3Unit, setPinsEsp32S3CamLcd, ...).
  */
 #include "TinyCameraPins.h"
+#include "TinyUVC.h"  // first: lets Arduino find the library
 #include "TinyUVC/TinyCamera.h"
 
 using namespace tiny_camera;

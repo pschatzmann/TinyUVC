@@ -15,6 +15,7 @@
 // Tools > Operating System > FreeRTOS, on STM32 install STM32FreeRTOS
 #include "AudioTools/Concurrency/RTOS.h"
 #include "AudioTools/Video/CodecJPEG.h"
+#include "TinyUVC.h"  // first: lets Arduino find the library
 #include "TinyUVC/AudioTools.h"
 
 #if defined(ARDUINO_ARCH_ESP32)
